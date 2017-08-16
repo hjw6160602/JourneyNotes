@@ -47,10 +47,8 @@ let NOTI_CENTER   = NotificationCenter.default
 /** KeyWindow [UIApplication sharedApplication].keyWindow */
 let KEY_WINDOW    = UIApplication.shared.keyWindow
 /** 沙盒缓存路径 */
-let DOC_PATH      = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
+let DOC_PATH      = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).first
 /** 手机的UUID */
 let iPhone_UUID   = UIDevice.current.identifierForVendor?.uuidString
-/** 主Bundle */
-let MAIN_BUNDLE   = Bundle.main
 
 

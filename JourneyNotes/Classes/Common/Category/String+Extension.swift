@@ -14,7 +14,7 @@ extension String {
         let dataWeb:Data = self.data(using: String.Encoding.utf8, allowLossyConversion: false)!
         var returnData:[String: AnyObject]?
         do {
-            let json : Any = try JSONSerialization.jsonObject(with: dataWeb, options: JSONSerialization.ReadingOptions.mutableContainers)
+            let json : Any = try JSONSerialization.jsonObject(with: dataWeb, options: .mutableContainers)
             returnData = json as? [String: AnyObject]
         }  catch{
             print(error)

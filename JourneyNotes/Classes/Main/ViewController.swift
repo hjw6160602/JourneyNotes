@@ -19,6 +19,39 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.contentInset = UIEdgeInsetsMake(-21, 0, 0, 0)
+        
+        writePlistFromJson()
+        
+        
+
+    }
+    
+    
+    private func readArrayFromPlist() -> NSArray {
+        if let filePath = Bundle.main.path(forResource: "Journey", ofType: "plist") {
+            let array = NSArray.init(contentsOfFile: filePath)!
+            print(array)
+            return array
+        }
+        return []
+    }
+    
+    private func writePlistFromJson() {
+        if let filePathUrl = Bundle.main.url(forResource: "Journey", withExtension: "plist") {
+            do {
+                let json = try String.init(contentsOf: filePathUrl)
+                if let responseDict = json.stringToDic {
+                    let nsDict:NSDictionary = responseDict as NSDictionary
+                    let filePath = DOC_PATH! + "/Journey.plist"
+                    nsDict.write(toFile: filePath, atomically: true)
+                    
+                    let journeyDetails = responseDict["prodLineRouteDetailVoList"]!
+                    print(journeyDetails)
+                }
+            } catch {
+                print(error)
+            }
+        }
     }
 }
 

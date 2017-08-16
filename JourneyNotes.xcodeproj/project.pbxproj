@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		675A13071F4468FB00985E68 /* Journey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 675A13061F4468FB00985E68 /* Journey.plist */; };
 		67A462651F42DA69003B7298 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4625B1F42DA69003B7298 /* AppDelegate.swift */; };
 		67A462661F42DA69003B7298 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4625E1F42DA69003B7298 /* Dictionary+Extension.swift */; };
 		67A462671F42DA69003B7298 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4625F1F42DA69003B7298 /* String+Extension.swift */; };
@@ -56,13 +57,14 @@
 		67BCCF701F44488E00CAF600 /* tnwifi.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67BCCF521F44488E00CAF600 /* tnwifi.xcassets */; };
 		67BCCF711F44488E00CAF600 /* train.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67BCCF531F44488E00CAF600 /* train.xcassets */; };
 		67BCCF721F44488E00CAF600 /* user.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67BCCF541F44488E00CAF600 /* user.xcassets */; };
-		67BCCF731F44488E00CAF600 /* PackageTourGetOneLineDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = 67BCCF561F44488E00CAF600 /* PackageTourGetOneLineDetail.json */; };
+		67BCCF731F44488E00CAF600 /* Journey.json in Resources */ = {isa = PBXBuildFile; fileRef = 67BCCF561F44488E00CAF600 /* Journey.json */; };
 		718F38837847D8B0183910B5 /* Pods_JourneyNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0418D4A591CF62CFC2E69384 /* Pods_JourneyNotes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0418D4A591CF62CFC2E69384 /* Pods_JourneyNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JourneyNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CD01288BD0C377FCE98313 /* Pods-JourneyNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JourneyNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JourneyNotes/Pods-JourneyNotes.debug.xcconfig"; sourceTree = "<group>"; };
+		675A13061F4468FB00985E68 /* Journey.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Journey.plist; sourceTree = "<group>"; };
 		677FE91E1F42CF5900C2B1C5 /* JourneyNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JourneyNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		677FE92D1F42CF5900C2B1C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67A4625B1F42DA69003B7298 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +116,7 @@
 		67BCCF521F44488E00CAF600 /* tnwifi.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = tnwifi.xcassets; sourceTree = "<group>"; };
 		67BCCF531F44488E00CAF600 /* train.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = train.xcassets; sourceTree = "<group>"; };
 		67BCCF541F44488E00CAF600 /* user.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = user.xcassets; sourceTree = "<group>"; };
-		67BCCF561F44488E00CAF600 /* PackageTourGetOneLineDetail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PackageTourGetOneLineDetail.json; sourceTree = "<group>"; };
+		67BCCF561F44488E00CAF600 /* Journey.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Journey.json; sourceTree = "<group>"; };
 		D1ABE4A5171AEC23FF466FF8 /* Pods-JourneyNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JourneyNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-JourneyNotes/Pods-JourneyNotes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -254,6 +256,7 @@
 		67BCCF361F44488E00CAF600 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				675A13061F4468FB00985E68 /* Journey.plist */,
 				67BCCF371F44488E00CAF600 /* Main.storyboard */,
 				67BCCF391F44488E00CAF600 /* imageAsssets */,
 				67BCCF551F44488E00CAF600 /* json */,
@@ -298,7 +301,7 @@
 		67BCCF551F44488E00CAF600 /* json */ = {
 			isa = PBXGroup;
 			children = (
-				67BCCF561F44488E00CAF600 /* PackageTourGetOneLineDetail.json */,
+				67BCCF561F44488E00CAF600 /* Journey.json */,
 			);
 			path = json;
 			sourceTree = "<group>";
@@ -375,7 +378,8 @@
 				67BCCF5A1F44488E00CAF600 /* base.xcassets in Resources */,
 				67BCCF571F44488E00CAF600 /* Main.storyboard in Resources */,
 				67BCCF641F44488E00CAF600 /* destination.xcassets in Resources */,
-				67BCCF731F44488E00CAF600 /* PackageTourGetOneLineDetail.json in Resources */,
+				675A13071F4468FB00985E68 /* Journey.plist in Resources */,
+				67BCCF731F44488E00CAF600 /* Journey.json in Resources */,
 				67BCCF631F44488E00CAF600 /* dc.xcassets in Resources */,
 				67BCCF6C1F44488E00CAF600 /* p_topBar.xcassets in Resources */,
 				67BCCF6E1F44488E00CAF600 /* search.xcassets in Resources */,
