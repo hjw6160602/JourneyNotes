@@ -24,7 +24,12 @@ enum JourneySummaryItemStyle : Int {
 }
 
 class JourneyEachDayItemView: UIView {
-    init(style: JourneySummaryItemStyle, itemEntity: JourenyDetailGroupEntity, frame: CGRect) {
+    convenience init(style: JourneySummaryItemStyle, itemEntity: JourenyDetailGroupEntity, frame: CGRect) {
+        self.init()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
 
 
