@@ -1,16 +1,31 @@
 PODS:
+  - Alamofire (4.5.0)
+  - Himotoki (3.0.1)
+  - Kingfisher (3.10.4)
   - RxCocoa (3.6.1):
     - RxSwift (~> 3.6)
   - RxSwift (3.6.1)
+  - SnapKit (3.2.0)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
+  - Alamofire
+  - Himotoki
+  - Kingfisher
   - RxCocoa (~> 3.0)
   - RxSwift (~> 3.0)
+  - SnapKit
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  Himotoki: 85fda41d4d0e14f7228317a3b474175cdfb8f515
+  Kingfisher: dc3a4983e86d2dfa89513664983a82340c11a289
   RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
   RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 3176605c688b56de08bf7f2953192e59011ff9b6
+PODFILE CHECKSUM: 96828a8f2239e26ada09f53a6f7606f40baaf7ce
 
 COCOAPODS: 1.1.1
