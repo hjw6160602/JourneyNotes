@@ -22,7 +22,20 @@ enum JourneySummaryItemStyle : String {
 }
 
 class JourneyEachDayItemView: UIView {
-
+    
+    /** 某一项具体活动的数据Entity */
+    var itemEntity: JourenyDetailGroupEntity = JourenyDetailGroupEntity()
+    
+    convenience init(style: JourneySummaryItemStyle, itemEntity: JourenyDetailGroupEntity, frame: CGRect) {
+        self.init(frame:frame)
+        self.itemEntity = itemEntity;
+        initUI()
+    }
+    
+    private func initUI() {
+        
+    }
+    
 }
 
 

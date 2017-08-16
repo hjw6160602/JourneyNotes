@@ -9,15 +9,16 @@
 import UIKit
 
 class JourneyDetailViewController: UIViewController {
-
-    var numOfDays:Int = 0
+    
+    var journeyList:NSArray = []
+    
     let tableView = UITableView.init(frame: SCREEN_FRAME, style: .grouped)
     
     fileprivate let kReuseIdentifier = "journeyDetailReuseIdentifier"
     
-    convenience init(days numOfDays:Int) {
+    convenience init(journeyList list: NSArray) {
         self.init()
-        self.numOfDays = numOfDays
+        journeyList = list
     }
     
     override func viewDidLoad() {
@@ -40,28 +41,24 @@ class JourneyDetailViewController: UIViewController {
 
 extension JourneyDetailViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return numOfDays
+        return journeyList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: kReuseIdentifier)
         if cell == nil {
-            cell = JourneyDetaiCell.init(style: .default, reuseIdentifier: kReuseIdentifier)
+            cell = JourneyDetaiTalbeViewCell.init(style: .default, reuseIdentifier: kReuseIdentifier)
         }
-        cell!.textLabel?.text = "\(indexPath.row)"
+        cell!.textLabel?.text = "\(indexPath.row + 1)"
         return cell!
     }
-    
-    
 }
 
 
 extension JourneyDetailViewController: UITableViewDelegate {
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100;
     }
-    
 }
 
 

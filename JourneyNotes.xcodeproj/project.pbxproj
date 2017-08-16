@@ -18,7 +18,7 @@
 		67A4626E1F42DC98003B7298 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4626D1F42DC98003B7298 /* Const.swift */; };
 		67AB106B1F42E9490048B1FE /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AB106A1F42E9490048B1FE /* UIImage+Extension.swift */; };
 		67BCCF181F4424B800CAF600 /* JourneyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF171F4424B800CAF600 /* JourneyDetailViewController.swift */; };
-		67BCCF1A1F44267600CAF600 /* JourneyDetaiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF191F44267600CAF600 /* JourneyDetaiCell.swift */; };
+		67BCCF1A1F44267600CAF600 /* JourneyDetaiTalbeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF191F44267600CAF600 /* JourneyDetaiTalbeViewCell.swift */; };
 		67BCCF1C1F44279C00CAF600 /* JourneyEachDayItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF1B1F44279C00CAF600 /* JourneyEachDayItemView.swift */; };
 		67BCCF1E1F44292000CAF600 /* JourneyOptionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF1D1F44292000CAF600 /* JourneyOptionItemView.swift */; };
 		67BCCF201F44293100CAF600 /* JourneySummaryImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF1F1F44293100CAF600 /* JourneySummaryImageView.swift */; };
@@ -77,7 +77,7 @@
 		67A4626D1F42DC98003B7298 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		67AB106A1F42E9490048B1FE /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		67BCCF171F4424B800CAF600 /* JourneyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyDetailViewController.swift; sourceTree = "<group>"; };
-		67BCCF191F44267600CAF600 /* JourneyDetaiCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyDetaiCell.swift; sourceTree = "<group>"; };
+		67BCCF191F44267600CAF600 /* JourneyDetaiTalbeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyDetaiTalbeViewCell.swift; sourceTree = "<group>"; };
 		67BCCF1B1F44279C00CAF600 /* JourneyEachDayItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyEachDayItemView.swift; sourceTree = "<group>"; };
 		67BCCF1D1F44292000CAF600 /* JourneyOptionItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyOptionItemView.swift; sourceTree = "<group>"; };
 		67BCCF1F1F44293100CAF600 /* JourneySummaryImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneySummaryImageView.swift; sourceTree = "<group>"; };
@@ -231,7 +231,7 @@
 			children = (
 				67BCCF211F442D1300CAF600 /* Entity */,
 				67BCCF171F4424B800CAF600 /* JourneyDetailViewController.swift */,
-				67BCCF191F44267600CAF600 /* JourneyDetaiCell.swift */,
+				67BCCF191F44267600CAF600 /* JourneyDetaiTalbeViewCell.swift */,
 				67BCCF1B1F44279C00CAF600 /* JourneyEachDayItemView.swift */,
 				67BCCF1D1F44292000CAF600 /* JourneyOptionItemView.swift */,
 				67BCCF1F1F44293100CAF600 /* JourneySummaryImageView.swift */,
@@ -470,7 +470,7 @@
 				67A462681F42DA69003B7298 /* UIView+AutoLayout.swift in Sources */,
 				67BCCF291F442E0A00CAF600 /* JourenyDetailShoppingEntity.swift in Sources */,
 				67BCCF2B1F442E1900CAF600 /* JourenyDetailMealEntity.swift in Sources */,
-				67BCCF1A1F44267600CAF600 /* JourneyDetaiCell.swift in Sources */,
+				67BCCF1A1F44267600CAF600 /* JourneyDetaiTalbeViewCell.swift in Sources */,
 				67BCCF251F442DC600CAF600 /* JourenyDetailScenicEntity.swift in Sources */,
 				67BCCF2F1F44363300CAF600 /* ProdLineRouteDetail.swift in Sources */,
 				67A4626E1F42DC98003B7298 /* Const.swift in Sources */,

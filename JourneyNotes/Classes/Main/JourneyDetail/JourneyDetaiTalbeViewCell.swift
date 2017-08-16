@@ -1,5 +1,5 @@
 //
-//  JourneyDetaiCell.swift
+//  JourneyDetaiTalbeViewCell.swift
 //  JourneyNotes
 //
 //  Created by SaiDicaprio on 2017/8/16.
@@ -11,7 +11,7 @@ import UIKit
 fileprivate let marginH: CGFloat = 5.0
 fileprivate let LineSpaceMargin: CGFloat = 4
 
-class JourneyDetaiCell: UITableViewCell {
+class JourneyDetaiTalbeViewCell: UITableViewCell {
 
     var eachDayEntity: ProdLineRouteDetail = ProdLineRouteDetail()
     var titleLabelTxt = ""
@@ -21,18 +21,17 @@ class JourneyDetaiCell: UITableViewCell {
     /** 用来保存Cell的高度 */
     var cellHeight: CGFloat = 0.0
     
-    convenience init(style: JourneySummaryItemStyle, eachDayEntity: ProdLineRouteDetail, frame: CGRect) {
-        self.init(frame:frame)
-        self.eachDayEntity = eachDayEntity;
-        initUI()
+    convenience init(eachDayEntity: ProdLineRouteDetail, style: UITableViewCellStyle, reuseIdentifier: String) {
+        self.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.eachDayEntity = eachDayEntity
     }
 
     private func initUI() {
         contentView.addSubview(titleLabel)
         contentView.addSubview(nDayLabel)
-        for clientItemEntity: JourenyDetailGroupEntity in self.eachDayEntity.prodRouteDetailGroupList {
-            print(clientItemEntity.detailId)
-            addEachDayItemView(withStyle: getItemStyle(clientItemEntity.moduleType), itemEntity: clientItemEntity)
+        for itemEntity: JourenyDetailGroupEntity in self.eachDayEntity.prodRouteDetailGroupList {
+            print(itemEntity.detailId)
+            addEachDayItemView(withStyle: getItemStyle(itemEntity.moduleType), itemEntity: itemEntity)
         }
         let seperatorLineH: CGFloat = 0.5
         cellHeight += marginH
@@ -67,9 +66,9 @@ class JourneyDetaiCell: UITableViewCell {
         return style
     }
     
-    private func addEachDayItemView(withStyle: JourneySummaryItemStyle, itemEntity: JourenyDetailGroupEntity) {
+    private func addEachDayItemView(withStyle style: JourneySummaryItemStyle, itemEntity: JourenyDetailGroupEntity) {
         let frame = CGRect(x: 0, y: cellHeight, width: SCREEN_WIDTH, height: 50)
-        let itemView = JourneyEachDayItemView(frame: frame)
+        let itemView = JourneyEachDayItemView.init(style: style, itemEntity: itemEntity, frame: frame)
         itemView.backgroundColor = UIColor.cyan
         cellHeight += itemView.height
         contentView.addSubview(itemView)

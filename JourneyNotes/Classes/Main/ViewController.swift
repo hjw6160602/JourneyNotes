@@ -9,8 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let numOfDays = 9
-    let contents = ["住宿", "餐饮", "交通", "景点", "购物", "玩乐", "其他"]
+
+    let contents = ["住宿", "餐饮", "交通", "景点", "购物", "玩乐"]
+    var journeyList:NSArray = []
     
     fileprivate let kReuseIdentifier = "reuseIdentifier"
     
@@ -19,13 +20,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.contentInset = UIEdgeInsetsMake(-21, 0, 0, 0)
-        
-        writePlistFromJson()
-        
-        
-
+//        writePlistFromJson()
+        journeyList = readArrayFromPlist()
     }
-    
     
     private func readArrayFromPlist() -> NSArray {
         if let filePath = Bundle.main.path(forResource: "Journey", ofType: "plist") {
@@ -57,7 +54,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return numOfDays
+        return journeyList.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -82,7 +79,7 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let journeyDetailVC = JourneyDetailViewController.init(days: numOfDays)
+        let journeyDetailVC = JourneyDetailViewController.init(journeyList: self.journeyList)
 //        journeyDetailVC.title = "第\(indexPath.section + 1)天  " + contents[indexPath.row]
         navigationController?.pushViewController(journeyDetailVC, animated: true)
     }
