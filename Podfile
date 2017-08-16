@@ -5,4 +5,9 @@ use_frameworks!
 target 'JourneyNotes' do
     pod 'RxSwift',  '~> 3.0'
     pod 'RxCocoa',  '~> 3.0'
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+    pod 'SnapKit'
+    pod 'Kingfisher'
+    pod 'Himotoki'
 end
