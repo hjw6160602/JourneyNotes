@@ -1,0 +1,1651 @@
+{
+    "code": "1",
+    "costTime": 37,
+    "data": {
+        "groupDateVoInFive": [],
+        "lineDetailUrl": "https://m.lvmama.com/h5/detailPublic/simpleRoute?productId=1442634&H5_fromApp=1&lineId=330363",
+        "lineDetailtext": "以上行程时间安排可能会因天气、路况等原因做相应调整，敬请谅解",
+        "lineRouteId": 330363,
+        "listNotice": [],
+        "prodLineRouteDetailVoList": [{
+                                      "content": "1、全天  飞机\r\n飞行时间：约16小时0分钟  \r\n参考航班： KA831  0840/1130 - CX253  1435/2030 \r\n于上海浦东国际机场集合，搭乘国际航班经转机飞往伦敦。抵达后，由专人专车接机至酒店休息。\r\n参考航班（以下信息仅供参考，以实际航班为准）\r\n2、全天  享用【早餐自理】【中餐自理】【晚餐自理】，餐费敬请自理\r\n3、\r\n入住酒店：伦敦，当地酒店，标准间",
+                                      "detailId": 3641045,
+                                      "generalGroupMap": {
+                                      "VEHICLE": [{
+                                                  "id": 2871878,
+                                                  "moduleType": "VEHICLE",
+                                                  "name": "飞机",
+                                                  "useTemplateFlag": false,
+                                                  "vehicleDesc": "参考航班： KA831  0840/1130 - CX253  1435/2030 \r\n于上海浦东国际机场集合，搭乘国际航班经转机飞往伦敦。抵达后，由专人专车接机至酒店休息。\r\n参考航班（以下信息仅供参考，以实际航班为准）",
+                                                  "vehicleTime": "16:0"
+                                                  }],
+                                      "MEAL": [{
+                                               "id": 3603466,
+                                               "moduleType": "MEAL",
+                                               "name": "早餐自理|中餐自理|晚餐自理",
+                                               "templateText": "享用【早餐自理】【中餐自理】【晚餐自理】， 餐费敬请自理，",
+                                               "useTemplateFlag": true
+                                               }],
+                                      "HOTEL": [{
+                                                "moduleType": "HOTEL",
+                                                "name": "当地酒店",
+                                                "roomType": "标准间",
+                                                "useTemplateFlag": false
+                                                }]
+                                      },
+                                      "nDay": 1,
+                                      "prodRouteDetailGroupList": [{
+                                                                   "detailId": 3641045,
+                                                                   "groupId": 8639927,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "VEHICLE",
+                                                                   "prodRouteDetailVehicleList": [{
+                                                                                                  "groupId": 8639927,
+                                                                                                  "pickUpFlag": "N",
+                                                                                                  "useTemplateFlag": "N",
+                                                                                                  "vehicleDesc": "参考航班： KA831  0840/1130 - CX253  1435/2030 \r\n于上海浦东国际机场集合，搭乘国际航班经转机飞往伦敦。抵达后，由专人专车接机至酒店休息。\r\n参考航班（以下信息仅供参考，以实际航班为准）",
+                                                                                                  "vehicleId": 2871878,
+                                                                                                  "vehicleName": "飞机",
+                                                                                                  "vehicleTime": "16:0",
+                                                                                                  "vehicleType": "PLANE"
+                                                                                                  }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 1,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641045,
+                                                                   "groupId": 8639929,
+                                                                   "hotelTemplateText": "入住酒店当地酒店",
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "HOTEL",
+                                                                   "prodRouteDetailHotelList": [{
+                                                                                                "belongToPlace": "伦敦",
+                                                                                                "groupId": 8639929,
+                                                                                                "hotelId": 2770521,
+                                                                                                "hotelName": "当地酒店",
+                                                                                                "roomType": "标准间",
+                                                                                                "starLevel": "-1",
+                                                                                                "travelType": "DRIVE",
+                                                                                                "useTemplateFlag": "N"
+                                                                                                }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 3,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641045,
+                                                                   "groupId": 8639928,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "MEAL",
+                                                                   "prodRouteDetailMealList": [{
+                                                                                               "groupId": 8639928,
+                                                                                               "mealId": 3603466,
+                                                                                               "mealName": "SELF_BREAKFAST|SELF_LUNCH|SELF_DINNER",
+                                                                                               "mealTime": "",
+                                                                                               "mealType": "SELF_BREAKFAST|SELF_LUNCH|SELF_DINNER",
+                                                                                               "meals": [{
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "早餐自理",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }, {
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "中餐自理",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }, {
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "晚餐自理",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }],
+                                                                                               "templateCode": "CODE_DEFAULT",
+                                                                                               "templateText": "享用【早餐自理】【中餐自理】【晚餐自理】， 餐费敬请自理，",
+                                                                                               "useTemplateFlag": "Y"
+                                                                                               }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 2,
+                                                                   "startTime": "全天"
+                                                                   }],
+                                      "routeId": 330363,
+                                      "stayDesc": "当地酒店",
+                                      "stayType": "其他",
+                                      "title": "上海—香港—伦敦",
+                                      "trafficType": "PLANE",
+                                      "trafficTypeZh": "飞机"
+                                      }, {
+                                      "breakfastFlag": "Y",
+                                      "content": "1、全天  巴士\r\n2、前往游览【哈利波特Studio】（游览时间约2小时）位于伦敦西北20英里。这里原先是《哈利波特》系列电影的拍摄片场，后来被华纳兄弟买下，改装成主题乐园，内部有大量真实拍摄场景，道具和体验，堪称哈迷的天堂。和  前往游览【剑桥】（游览时间约3小时）乘坐平底船，可以领略到剑河全长约3/4的景致，真正感受一次完整的历史人文和自然之旅。游船沿途经过7所学院、著名的数学桥和叹息桥，以及剑桥大学的标志性建筑——国王学院的教堂。\r\n后跟随导游的脚步来一次Cambridge Safari Trail（寻找剑桥建筑上的动物），\r\n之后参观剑桥动物学博物馆（约1.5小时）\r\n3、晚上  \r\n入住酒店：曼彻斯特附近峰区酒店\r\n4、全天  享用【早餐】【中餐】【晚餐】，餐费已含",
+                                      "detailId": 3641046,
+                                      "dinnerFlag": "Y",
+                                      "generalGroupMap": {
+                                      "SCENIC": [{
+                                                 "moduleType": "SCENIC",
+                                                 "name": "哈利波特Studio",
+                                                 "templateText": "前往游览哈利波特Studio （ 游览时间约2小时 ） 位于伦敦西北20英里。这里原先是《哈利波特》系列电影的拍摄片场，后来被华纳兄弟买下，改装成主题乐园，内部有大量真实拍摄场景，道具和体验，堪称哈迷的天堂。\r\n\r\n",
+                                                 "useTemplateFlag": true
+                                                 }, {
+                                                 "logicRelateionName": "和",
+                                                 "moduleType": "SCENIC",
+                                                 "name": "剑桥",
+                                                 "templateText": "前往游览剑桥 （ 游览时间约3小时 ） 乘坐平底船，可以领略到剑河全长约3/4的景致，真正感受一次完整的历史人文和自然之旅。游船沿途经过7所学院、著名的数学桥和叹息桥，以及剑桥大学的标志性建筑——国王学院的教堂。 后跟随导游的脚步来一次Cambridge Safari Trail（寻找剑桥建筑上的动物）， 之后参观剑桥动物学博物馆（约1.5小时）\r\n\r\n",
+                                                 "useTemplateFlag": true
+                                                 }],
+                                      "VEHICLE": [{
+                                                  "id": 2871880,
+                                                  "moduleType": "VEHICLE",
+                                                  "name": "汽车",
+                                                  "useTemplateFlag": false
+                                                  }],
+                                      "MEAL": [{
+                                               "id": 3603468,
+                                               "moduleType": "MEAL",
+                                               "name": "早餐|中餐|晚餐",
+                                               "templateText": "享用【早餐】【中餐】【晚餐】， 餐费已含，",
+                                               "useTemplateFlag": true
+                                               }],
+                                      "HOTEL": [{
+                                                "moduleType": "HOTEL",
+                                                "name": "曼彻斯特附近峰区酒店",
+                                                "useTemplateFlag": false
+                                                }]
+                                      },
+                                      "lunchFlag": "Y",
+                                      "nDay": 2,
+                                      "prodRouteDetailGroupList": [{
+                                                                   "detailId": 3641046,
+                                                                   "groupId": 8639930,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "VEHICLE",
+                                                                   "prodRouteDetailVehicleList": [{
+                                                                                                  "groupId": 8639930,
+                                                                                                  "pickUpFlag": "N",
+                                                                                                  "useTemplateFlag": "N",
+                                                                                                  "vehicleId": 2871880,
+                                                                                                  "vehicleName": "汽车",
+                                                                                                  "vehicleType": "BARS"
+                                                                                                  }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 1,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641046,
+                                                                   "groupId": 8639931,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "SCENIC",
+                                                                   "prodRouteDetailScenicList": [{
+                                                                                                 "currency": "人民币",
+                                                                                                 "groupId": 8639931,
+                                                                                                 "referencePrice": 0,
+                                                                                                 "scenicDesc": "位于伦敦西北20英里。这里原先是《哈利波特》系列电影的拍摄片场，后来被华纳兄弟买下，改装成主题乐园，内部有大量真实拍摄场景，道具和体验，堪称哈迷的天堂。",
+                                                                                                 "scenicId": 4234331,
+                                                                                                 "scenicName": "哈利波特Studio",
+                                                                                                 "templateCode": "CODE_ROUTE_INCLUDED",
+                                                                                                 "templateText": "前往游览哈利波特Studio （ 游览时间约2小时 ） 位于伦敦西北20英里。这里原先是《哈利波特》系列电影的拍摄片场，后来被华纳兄弟买下，改装成主题乐园，内部有大量真实拍摄场景，道具和体验，堪称哈迷的天堂。\r\n\r\n",
+                                                                                                 "travelTime": "",
+                                                                                                 "travelType": "DRIVE",
+                                                                                                 "useTemplateFlag": "Y",
+                                                                                                 "visitTime": "2小时"
+                                                                                                 }, {
+                                                                                                 "currency": "人民币",
+                                                                                                 "groupId": 8639931,
+                                                                                                 "logicRelateion": "AND",
+                                                                                                 "logicRelateionName": "和",
+                                                                                                 "referencePrice": 0,
+                                                                                                 "scenicDesc": "乘坐平底船，可以领略到剑河全长约3/4的景致，真正感受一次完整的历史人文和自然之旅。游船沿途经过7所学院、著名的数学桥和叹息桥，以及剑桥大学的标志性建筑——国王学院的教堂。\r\n后跟随导游的脚步来一次Cambridge Safari Trail（寻找剑桥建筑上的动物），\r\n之后参观剑桥动物学博物馆（约1.5小时）",
+                                                                                                 "scenicId": 4234332,
+                                                                                                 "scenicName": "剑桥",
+                                                                                                 "templateCode": "CODE_ROUTE_INCLUDED",
+                                                                                                 "templateText": "前往游览剑桥 （ 游览时间约3小时 ） 乘坐平底船，可以领略到剑河全长约3/4的景致，真正感受一次完整的历史人文和自然之旅。游船沿途经过7所学院、著名的数学桥和叹息桥，以及剑桥大学的标志性建筑——国王学院的教堂。 后跟随导游的脚步来一次Cambridge Safari Trail（寻找剑桥建筑上的动物）， 之后参观剑桥动物学博物馆（约1.5小时）\r\n\r\n",
+                                                                                                 "travelTime": "",
+                                                                                                 "travelType": "DRIVE",
+                                                                                                 "useTemplateFlag": "Y",
+                                                                                                 "visitTime": "3小时"
+                                                                                                 }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 2,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641046,
+                                                                   "groupId": 8639932,
+                                                                   "hotelTemplateText": "入住酒店曼彻斯特附近峰区酒店",
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "HOTEL",
+                                                                   "prodRouteDetailHotelList": [{
+                                                                                                "groupId": 8639932,
+                                                                                                "hotelId": 2770523,
+                                                                                                "hotelName": "曼彻斯特附近峰区酒店",
+                                                                                                "starLevel": "-1",
+                                                                                                "travelType": "DRIVE",
+                                                                                                "useTemplateFlag": "N"
+                                                                                                }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 3,
+                                                                   "startTime": "晚上"
+                                                                   }, {
+                                                                   "detailId": 3641046,
+                                                                   "groupId": 8639933,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "MEAL",
+                                                                   "prodRouteDetailMealList": [{
+                                                                                               "groupId": 8639933,
+                                                                                               "mealId": 3603468,
+                                                                                               "mealName": "BREAKFAST|LUNCH|DINNER",
+                                                                                               "mealTime": "",
+                                                                                               "mealType": "BREAKFAST|LUNCH|DINNER",
+                                                                                               "meals": [{
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "早餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }, {
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "中餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }, {
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "晚餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }],
+                                                                                               "templateCode": "CODE_DEFAULT",
+                                                                                               "templateText": "享用【早餐】【中餐】【晚餐】， 餐费已含，",
+                                                                                               "useTemplateFlag": "Y"
+                                                                                               }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 5,
+                                                                   "startTime": "全天"
+                                                                   }],
+                                      "routeId": 330363,
+                                      "stayDesc": "曼彻斯特附近峰区酒店",
+                                      "stayType": "其他",
+                                      "title": "伦敦—哈利波特Studio—剑桥—曼彻斯特附近",
+                                      "trafficType": "BARS",
+                                      "trafficTypeZh": "巴士"
+                                      }, {
+                                      "breakfastFlag": "Y",
+                                      "content": "1、全天  巴士\r\n2、前往游览【约克大教堂】（游览时间约1小时0分钟）是欧洲现存中世纪时期出名的教堂，也是世界上设计和建筑艺术精湛的教堂之一。和  前往游览【火车博物馆】（游览时间约2小时0分钟）世界有名的火车博物馆，英国作为火车的发源地，国家铁路博物馆内的珍品仿佛诉说着一段铁路的发展史，从古老的蒸汽式火车到日本的新干线，这段人类历史上重要的发明改变了我们的生活，所以这里聚集了众多的铁路迷前来参观。和  前往游览【达西庄园+花园】（游览时间约3小时0分钟）达西庄园+花园，就是因为它这么美丽，Chatsworth庄园俨然已经成为电影里贵族住宅的代表。英国新拍的《傲慢与偏见》里，这里就用做了达西（Mr Darcy）的住宅，而且简奥斯汀在写这本书时，达西家的原型也就是这个庄园。如果你看过《傲慢与偏见》，你一定会对里面的情景相当熟悉。两百年前，简.奥斯丁在明亮的窗台旁，用沾着墨水的羽毛笔写下了这个爱情故事。和  前往景点：英式下午茶\r\n在庄园内享用英式下午茶\r\n悠闲的漫步于庄园内的花园，忘却时间，亲近大自然。\r\n3、晚上  \r\n入住酒店：曼彻斯特附近峰区酒店\r\n4、全天  享用【早餐】【晚餐】【中餐自理】",
+                                      "detailId": 3641047,
+                                      "dinnerFlag": "Y",
+                                      "generalGroupMap": {
+                                      "SCENIC": [{
+                                                 "moduleType": "SCENIC",
+                                                 "name": "约克大教堂",
+                                                 "templateText": "前往游览约克大教堂 （ 游览时间约1小时 ） 是欧洲现存中世纪时期出名的教堂，也是世界上设计和建筑艺术精湛的教堂之一。\r\n\r\n",
+                                                 "useTemplateFlag": true
+                                                 }, {
+                                                 "logicRelateionName": "和",
+                                                 "moduleType": "SCENIC",
+                                                 "name": "火车博物馆",
+                                                 "templateText": "前往游览火车博物馆 （ 游览时间约2小时 ） 世界有名的火车博物馆，英国作为火车的发源地，国家铁路博物馆内的珍品仿佛诉说着一段铁路的发展史，从古老的蒸汽式火车到日本的新干线，这段人类历史上重要的发明改变了我们的生活，所以这里聚集了众多的铁路迷前来参观。\r\n\r\n",
+                                                 "useTemplateFlag": true
+                                                 }, {
+                                                 "logicRelateionName": "和",
+                                                 "moduleType": "SCENIC",
+                                                 "name": "达西庄园+花园",
+                                                 "templateText": "前往游览达西庄园+花园 （ 游览时间约3小时 ） 达西庄园+花园，就是因为它这么美丽，Chatsworth庄园俨然已经成为电影里贵族住宅的代表。英国新拍的《傲慢与偏见》里，这里就用做了达西（Mr Darcy）的住宅，而且简奥斯汀在写这本书时，达西家的原型也就是这个庄园。如果你看过《傲慢与偏见》，你一定会对里面的情景相当熟悉。两百年前，简.奥斯丁在明亮的窗台旁，用沾着墨水的羽毛笔写下了这个爱情故事。\r\n\r\n",
+                                                 "useTemplateFlag": true
+                                                 }, {
+                                                 "logicRelateionName": "和",
+                                                 "moduleType": "SCENIC",
+                                                 "name": "英式下午茶",
+                                                 "useTemplateFlag": false
+                                                 }],
+                                      "VEHICLE": [{
+                                                  "id": 2898088,
+                                                  "moduleType": "VEHICLE",
+                                                  "name": "汽车",
+                                                  "useTemplateFlag": false
+                                                  }],
+                                      "MEAL": [{
+                                               "id": 3635634,
+                                               "moduleType": "MEAL",
+                                               "name": "早餐|晚餐|中餐自理",
+                                               "templateText": "享用【早餐】【晚餐】【中餐自理】，",
+                                               "useTemplateFlag": true
+                                               }],
+                                      "HOTEL": [{
+                                                "moduleType": "HOTEL",
+                                                "name": "曼彻斯特附近峰区酒店",
+                                                "useTemplateFlag": false
+                                                }]
+                                      },
+                                      "nDay": 3,
+                                      "prodRouteDetailGroupList": [{
+                                                                   "detailId": 3641047,
+                                                                   "groupId": 8639934,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "VEHICLE",
+                                                                   "prodRouteDetailVehicleList": [{
+                                                                                                  "groupId": 8639934,
+                                                                                                  "pickUpFlag": "N",
+                                                                                                  "useTemplateFlag": "N",
+                                                                                                  "vehicleId": 2898088,
+                                                                                                  "vehicleName": "汽车",
+                                                                                                  "vehicleType": "BARS"
+                                                                                                  }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 1,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641047,
+                                                                   "groupId": 8639935,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "SCENIC",
+                                                                   "prodRouteDetailScenicList": [{
+                                                                                                 "currency": "人民币",
+                                                                                                 "groupId": 8639935,
+                                                                                                 "referencePrice": 0,
+                                                                                                 "scenicDesc": "是欧洲现存中世纪时期出名的教堂，也是世界上设计和建筑艺术精湛的教堂之一。",
+                                                                                                 "scenicId": 4270404,
+                                                                                                 "scenicName": "约克大教堂",
+                                                                                                 "templateCode": "CODE_ROUTE_INCLUDED",
+                                                                                                 "templateText": "前往游览约克大教堂 （ 游览时间约1小时 ） 是欧洲现存中世纪时期出名的教堂，也是世界上设计和建筑艺术精湛的教堂之一。\r\n\r\n",
+                                                                                                 "travelTime": "",
+                                                                                                 "travelType": "DRIVE",
+                                                                                                 "useTemplateFlag": "Y",
+                                                                                                 "visitTime": "1小时"
+                                                                                                 }, {
+                                                                                                 "currency": "人民币",
+                                                                                                 "groupId": 8639935,
+                                                                                                 "logicRelateion": "AND",
+                                                                                                 "logicRelateionName": "和",
+                                                                                                 "referencePrice": 0,
+                                                                                                 "scenicDesc": "世界有名的火车博物馆，英国作为火车的发源地，国家铁路博物馆内的珍品仿佛诉说着一段铁路的发展史，从古老的蒸汽式火车到日本的新干线，这段人类历史上重要的发明改变了我们的生活，所以这里聚集了众多的铁路迷前来参观。",
+                                                                                                 "scenicId": 4270405,
+                                                                                                 "scenicName": "火车博物馆",
+                                                                                                 "templateCode": "CODE_ROUTE_INCLUDED",
+                                                                                                 "templateText": "前往游览火车博物馆 （ 游览时间约2小时 ） 世界有名的火车博物馆，英国作为火车的发源地，国家铁路博物馆内的珍品仿佛诉说着一段铁路的发展史，从古老的蒸汽式火车到日本的新干线，这段人类历史上重要的发明改变了我们的生活，所以这里聚集了众多的铁路迷前来参观。\r\n\r\n",
+                                                                                                 "travelTime": "",
+                                                                                                 "travelType": "DRIVE",
+                                                                                                 "useTemplateFlag": "Y",
+                                                                                                 "visitTime": "2小时"
+                                                                                                 }, {
+                                                                                                 "currency": "人民币",
+                                                                                                 "groupId": 8639935,
+                                                                                                 "logicRelateion": "AND",
+                                                                                                 "logicRelateionName": "和",
+                                                                                                 "referencePrice": 0,
+                                                                                                 "scenicDesc": "达西庄园+花园，就是因为它这么美丽，Chatsworth庄园俨然已经成为电影里贵族住宅的代表。英国新拍的《傲慢与偏见》里，这里就用做了达西（Mr Darcy）的住宅，而且简奥斯汀在写这本书时，达西家的原型也就是这个庄园。如果你看过《傲慢与偏见》，你一定会对里面的情景相当熟悉。两百年前，简.奥斯丁在明亮的窗台旁，用沾着墨水的羽毛笔写下了这个爱情故事。",
+                                                                                                 "scenicId": 4270406,
+                                                                                                 "scenicName": "达西庄园+花园",
+                                                                                                 "templateCode": "CODE_ROUTE_INCLUDED",
+                                                                                                 "templateText": "前往游览达西庄园+花园 （ 游览时间约3小时 ） 达西庄园+花园，就是因为它这么美丽，Chatsworth庄园俨然已经成为电影里贵族住宅的代表。英国新拍的《傲慢与偏见》里，这里就用做了达西（Mr Darcy）的住宅，而且简奥斯汀在写这本书时，达西家的原型也就是这个庄园。如果你看过《傲慢与偏见》，你一定会对里面的情景相当熟悉。两百年前，简.奥斯丁在明亮的窗台旁，用沾着墨水的羽毛笔写下了这个爱情故事。\r\n\r\n",
+                                                                                                 "travelTime": "",
+                                                                                                 "travelType": "DRIVE",
+                                                                                                 "useTemplateFlag": "Y",
+                                                                                                 "visitTime": "3小时"
+                                                                                                 }, {
+                                                                                                 "currency": "CNY",
+                                                                                                 "groupId": 8639935,
+                                                                                                 "logicRelateion": "AND",
+                                                                                                 "logicRelateionName": "和",
+                                                                                                 "referencePrice": 0,
+                                                                                                 "scenicDesc": "在庄园内享用英式下午茶\r\n悠闲的漫步于庄园内的花园，忘却时间，亲近大自然。\r\n",
+                                                                                                 "scenicId": 4270407,
+                                                                                                 "scenicName": "英式下午茶",
+                                                                                                 "templateCode": "CODE_ROUTE_INCLUDED",
+                                                                                                 "travelType": "DRIVE",
+                                                                                                 "useTemplateFlag": "N"
+                                                                                                 }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 2,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641047,
+                                                                   "groupId": 8639936,
+                                                                   "hotelTemplateText": "入住酒店曼彻斯特附近峰区酒店",
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "HOTEL",
+                                                                   "prodRouteDetailHotelList": [{
+                                                                                                "groupId": 8639936,
+                                                                                                "hotelId": 2805416,
+                                                                                                "hotelName": "曼彻斯特附近峰区酒店",
+                                                                                                "starLevel": "-1",
+                                                                                                "travelType": "DRIVE",
+                                                                                                "useTemplateFlag": "N"
+                                                                                                }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 3,
+                                                                   "startTime": "晚上"
+                                                                   }, {
+                                                                   "detailId": 3641047,
+                                                                   "groupId": 8639937,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "MEAL",
+                                                                   "prodRouteDetailMealList": [{
+                                                                                               "groupId": 8639937,
+                                                                                               "mealId": 3635634,
+                                                                                               "mealName": "BREAKFAST|DINNER|SELF_LUNCH",
+                                                                                               "mealTime": "",
+                                                                                               "mealType": "BREAKFAST|DINNER|SELF_LUNCH",
+                                                                                               "meals": [{
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "早餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }, {
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "晚餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }, {
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "中餐自理",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }],
+                                                                                               "templateCode": "CODE_DEFAULT",
+                                                                                               "templateText": "享用【早餐】【晚餐】【中餐自理】，",
+                                                                                               "useTemplateFlag": "Y"
+                                                                                               }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 7,
+                                                                   "startTime": "全天"
+                                                                   }],
+                                      "routeId": 330363,
+                                      "stayDesc": "曼彻斯特附近峰区酒店",
+                                      "stayType": "其他",
+                                      "title": "曼彻斯特附近—约克—Chatsworth —曼彻斯特",
+                                      "trafficType": "BARS",
+                                      "trafficTypeZh": "巴士"
+                                      }, {
+                                      "breakfastFlag": "Y",
+                                      "content": "1、全天  巴士\r\n2、前往游览【华威城堡】（游览时间约5小时）城堡的历史可以追溯到11世纪，伊丽莎白一世女王和威廉三世国王都曾到过这座城堡。坐落于断崖边，俯瞰著雅芳河的转弯处。现在这里可以说是孩子的乐园，内有射箭之类的活动，还有很多工作人员穿着古装与孩子们互动，孩子们也可以自行在城堡里变装。\r\n3、\r\n入住酒店：科兹沃茨乡村酒店，标准间\r\n4、全天  享用【早餐】【晚餐】【中餐自理】",
+                                      "detailId": 3641048,
+                                      "dinnerFlag": "Y",
+                                      "generalGroupMap": {
+                                      "SCENIC": [{
+                                                 "moduleType": "SCENIC",
+                                                 "name": "华威城堡",
+                                                 "templateText": "前往游览华威城堡 （ 游览时间约5小时 ） 城堡的历史可以追溯到11世纪，伊丽莎白一世女王和威廉三世国王都曾到过这座城堡。坐落于断崖边，俯瞰著雅芳河的转弯处。现在这里可以说是孩子的乐园，内有射箭之类的活动，还有很多工作人员穿着古装与孩子们互动，孩子们也可以自行在城堡里变装。\r\n\r\n",
+                                                 "useTemplateFlag": true
+                                                 }],
+                                      "VEHICLE": [{
+                                                  "id": 2871884,
+                                                  "moduleType": "VEHICLE",
+                                                  "name": "汽车",
+                                                  "useTemplateFlag": false
+                                                  }],
+                                      "MEAL": [{
+                                               "id": 3603472,
+                                               "moduleType": "MEAL",
+                                               "name": "早餐|晚餐|中餐自理",
+                                               "templateText": "享用【早餐】【晚餐】【中餐自理】，",
+                                               "useTemplateFlag": true
+                                               }],
+                                      "HOTEL": [{
+                                                "moduleType": "HOTEL",
+                                                "name": "科兹沃茨乡村酒店",
+                                                "roomType": "标准间",
+                                                "useTemplateFlag": false
+                                                }]
+                                      },
+                                      "nDay": 4,
+                                      "prodRouteDetailGroupList": [{
+                                                                   "detailId": 3641048,
+                                                                   "groupId": 8639938,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "VEHICLE",
+                                                                   "prodRouteDetailVehicleList": [{
+                                                                                                  "groupId": 8639938,
+                                                                                                  "pickUpFlag": "N",
+                                                                                                  "useTemplateFlag": "N",
+                                                                                                  "vehicleId": 2871884,
+                                                                                                  "vehicleName": "汽车",
+                                                                                                  "vehicleType": "BARS"
+                                                                                                  }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 1,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641048,
+                                                                   "groupId": 8639939,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "SCENIC",
+                                                                   "prodRouteDetailScenicList": [{
+                                                                                                 "currency": "人民币",
+                                                                                                 "groupId": 8639939,
+                                                                                                 "referencePrice": 0,
+                                                                                                 "scenicDesc": "城堡的历史可以追溯到11世纪，伊丽莎白一世女王和威廉三世国王都曾到过这座城堡。坐落于断崖边，俯瞰著雅芳河的转弯处。现在这里可以说是孩子的乐园，内有射箭之类的活动，还有很多工作人员穿着古装与孩子们互动，孩子们也可以自行在城堡里变装。",
+                                                                                                 "scenicId": 4234339,
+                                                                                                 "scenicName": "华威城堡",
+                                                                                                 "templateCode": "CODE_ROUTE_INCLUDED",
+                                                                                                 "templateText": "前往游览华威城堡 （ 游览时间约5小时 ） 城堡的历史可以追溯到11世纪，伊丽莎白一世女王和威廉三世国王都曾到过这座城堡。坐落于断崖边，俯瞰著雅芳河的转弯处。现在这里可以说是孩子的乐园，内有射箭之类的活动，还有很多工作人员穿着古装与孩子们互动，孩子们也可以自行在城堡里变装。\r\n\r\n",
+                                                                                                 "travelTime": "",
+                                                                                                 "travelType": "DRIVE",
+                                                                                                 "useTemplateFlag": "Y",
+                                                                                                 "visitTime": "5小时"
+                                                                                                 }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 2,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641048,
+                                                                   "groupId": 8639940,
+                                                                   "hotelTemplateText": "入住酒店科兹沃茨乡村酒店",
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "HOTEL",
+                                                                   "prodRouteDetailHotelList": [{
+                                                                                                "groupId": 8639940,
+                                                                                                "hotelId": 2770527,
+                                                                                                "hotelName": "科兹沃茨乡村酒店",
+                                                                                                "roomType": "标准间",
+                                                                                                "starLevel": "-1",
+                                                                                                "travelType": "DRIVE",
+                                                                                                "useTemplateFlag": "N"
+                                                                                                }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 3,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641048,
+                                                                   "groupId": 8639941,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "MEAL",
+                                                                   "prodRouteDetailMealList": [{
+                                                                                               "groupId": 8639941,
+                                                                                               "mealId": 3603472,
+                                                                                               "mealName": "BREAKFAST|DINNER|SELF_LUNCH",
+                                                                                               "mealTime": "",
+                                                                                               "mealType": "BREAKFAST|DINNER|SELF_LUNCH",
+                                                                                               "meals": [{
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "早餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }, {
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "晚餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }, {
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "中餐自理",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }],
+                                                                                               "templateCode": "CODE_DEFAULT",
+                                                                                               "templateText": "享用【早餐】【晚餐】【中餐自理】，",
+                                                                                               "useTemplateFlag": "Y"
+                                                                                               }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 4,
+                                                                   "startTime": "全天"
+                                                                   }],
+                                      "routeId": 330363,
+                                      "stayDesc": "科兹沃茨乡村酒店",
+                                      "stayType": "其他",
+                                      "title": "华威城堡—科兹沃茨",
+                                      "trafficType": "BARS",
+                                      "trafficTypeZh": "巴士"
+                                      }, {
+                                      "breakfastFlag": "Y",
+                                      "content": "1、全天  巴士\r\n2、前往游览【巴斯小镇】（游览时间约2小时0分钟）被列入世界文化遗产的城市之一。和  前往游览【巨石阵】（游览时间约1小时30分钟）约建于公元前4000～2000年，是欧洲著名的史前时代文化神庙遗址。\r\n3、\r\n入住酒店：科兹沃茨乡村酒店，标准间\r\n4、全天  享用【早餐】【中餐】【晚餐】，餐费已含",
+                                      "detailId": 3641049,
+                                      "dinnerFlag": "Y",
+                                      "generalGroupMap": {
+                                      "SCENIC": [{
+                                                 "moduleType": "SCENIC",
+                                                 "name": "巴斯小镇",
+                                                 "templateText": "前往游览巴斯小镇 （ 游览时间约2小时 ） 被列入世界文化遗产的城市之一。\r\n\r\n",
+                                                 "useTemplateFlag": true
+                                                 }, {
+                                                 "logicRelateionName": "和",
+                                                 "moduleType": "SCENIC",
+                                                 "name": "巨石阵",
+                                                 "templateText": "前往游览巨石阵 （ 游览时间约1小时30分钟 ） 约建于公元前4000～2000年，是欧洲著名的史前时代文化神庙遗址。\r\n\r\n",
+                                                 "useTemplateFlag": true
+                                                 }],
+                                      "VEHICLE": [{
+                                                  "id": 2871886,
+                                                  "moduleType": "VEHICLE",
+                                                  "name": "汽车",
+                                                  "useTemplateFlag": false
+                                                  }],
+                                      "MEAL": [{
+                                               "id": 3603474,
+                                               "moduleType": "MEAL",
+                                               "name": "早餐|中餐|晚餐",
+                                               "templateText": "享用【早餐】【中餐】【晚餐】， 餐费已含，",
+                                               "useTemplateFlag": true
+                                               }],
+                                      "HOTEL": [{
+                                                "moduleType": "HOTEL",
+                                                "name": "科兹沃茨乡村酒店",
+                                                "roomType": "标准间",
+                                                "useTemplateFlag": false
+                                                }]
+                                      },
+                                      "lunchFlag": "Y",
+                                      "nDay": 5,
+                                      "prodRouteDetailGroupList": [{
+                                                                   "detailId": 3641049,
+                                                                   "groupId": 8639942,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "VEHICLE",
+                                                                   "prodRouteDetailVehicleList": [{
+                                                                                                  "groupId": 8639942,
+                                                                                                  "pickUpFlag": "N",
+                                                                                                  "useTemplateFlag": "N",
+                                                                                                  "vehicleId": 2871886,
+                                                                                                  "vehicleName": "汽车",
+                                                                                                  "vehicleType": "BARS"
+                                                                                                  }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 1,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641049,
+                                                                   "groupId": 8639943,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "SCENIC",
+                                                                   "prodRouteDetailScenicList": [{
+                                                                                                 "currency": "人民币",
+                                                                                                 "groupId": 8639943,
+                                                                                                 "referencePrice": 0,
+                                                                                                 "scenicDesc": "被列入世界文化遗产的城市之一。",
+                                                                                                 "scenicId": 4234341,
+                                                                                                 "scenicName": "巴斯小镇",
+                                                                                                 "templateCode": "CODE_ROUTE_INCLUDED",
+                                                                                                 "templateText": "前往游览巴斯小镇 （ 游览时间约2小时 ） 被列入世界文化遗产的城市之一。\r\n\r\n",
+                                                                                                 "travelTime": "",
+                                                                                                 "travelType": "DRIVE",
+                                                                                                 "useTemplateFlag": "Y",
+                                                                                                 "visitTime": "2小时"
+                                                                                                 }, {
+                                                                                                 "currency": "人民币",
+                                                                                                 "groupId": 8639943,
+                                                                                                 "logicRelateion": "AND",
+                                                                                                 "logicRelateionName": "和",
+                                                                                                 "referencePrice": 0,
+                                                                                                 "scenicDesc": "约建于公元前4000～2000年，是欧洲著名的史前时代文化神庙遗址。\r\n",
+                                                                                                 "scenicId": 4234342,
+                                                                                                 "scenicName": "巨石阵",
+                                                                                                 "templateCode": "CODE_ROUTE_INCLUDED",
+                                                                                                 "templateText": "前往游览巨石阵 （ 游览时间约1小时30分钟 ） 约建于公元前4000～2000年，是欧洲著名的史前时代文化神庙遗址。\r\n\r\n",
+                                                                                                 "travelTime": "",
+                                                                                                 "travelType": "DRIVE",
+                                                                                                 "useTemplateFlag": "Y",
+                                                                                                 "visitTime": "1小时30分钟"
+                                                                                                 }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 2,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641049,
+                                                                   "groupId": 8639944,
+                                                                   "hotelTemplateText": "入住酒店科兹沃茨乡村酒店",
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "HOTEL",
+                                                                   "prodRouteDetailHotelList": [{
+                                                                                                "groupId": 8639944,
+                                                                                                "hotelId": 2770529,
+                                                                                                "hotelName": "科兹沃茨乡村酒店",
+                                                                                                "roomType": "标准间",
+                                                                                                "starLevel": "-1",
+                                                                                                "travelType": "DRIVE",
+                                                                                                "useTemplateFlag": "N"
+                                                                                                }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 3,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641049,
+                                                                   "groupId": 8639945,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "MEAL",
+                                                                   "prodRouteDetailMealList": [{
+                                                                                               "groupId": 8639945,
+                                                                                               "mealId": 3603474,
+                                                                                               "mealName": "BREAKFAST|LUNCH|DINNER",
+                                                                                               "mealTime": "",
+                                                                                               "mealType": "BREAKFAST|LUNCH|DINNER",
+                                                                                               "meals": [{
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "早餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }, {
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "中餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }, {
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "晚餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }],
+                                                                                               "templateCode": "CODE_DEFAULT",
+                                                                                               "templateText": "享用【早餐】【中餐】【晚餐】， 餐费已含，",
+                                                                                               "useTemplateFlag": "Y"
+                                                                                               }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 4,
+                                                                   "startTime": "全天"
+                                                                   }],
+                                      "routeId": 330363,
+                                      "stayDesc": "科兹沃茨乡村酒店",
+                                      "stayType": "其他",
+                                      "title": "科兹沃茨—巴斯—巨石阵—科兹沃茨",
+                                      "trafficType": "BARS",
+                                      "trafficTypeZh": "巴士"
+                                      }, {
+                                      "breakfastFlag": "Y",
+                                      "content": "1、全天  巴士\r\n2、前往游览【阿什莫林博物馆】（游览时间约2小时）牛津大学声名远扬，却很少有人知道隶属于牛津大学的阿什莫林博物馆的异彩纷呈。英国BBC曾经推出了一部博物馆竞答节目，叫The Quizeum，四位艺术史学家分成两组，一边回答主持人的问题，一边调侃着艺术品的历史和故事。节目的第一集就是在阿什莫林博物馆拍摄，这也是对它独特的历史意义的肯定。和  前往游览【牛津自然历史博物馆】（游览时间约2小时）博物馆收藏了大量恐龙化石，另外收集的馆藏含昆虫学、地质学、矿物学与岩石学及动物学等标本，最有名的是世界上保留最完整的渡渡鸟标本），同一时间，父母也可以去比斯特村自由购物。\r\n3、\r\n入住酒店：科兹沃茨乡村酒店，标准间\r\n4、全天  享用【早餐】【中餐】【晚餐】，餐费已含",
+                                      "detailId": 3641050,
+                                      "dinnerFlag": "Y",
+                                      "generalGroupMap": {
+                                      "SCENIC": [{
+                                                 "id": 184528,
+                                                 "moduleType": "SCENIC",
+                                                 "name": "阿什莫林博物馆",
+                                                 "templateText": "前往游览阿什莫林博物馆 （ 游览时间约2小时 ） 牛津大学声名远扬，却很少有人知道隶属于牛津大学的阿什莫林博物馆的异彩纷呈。英国BBC曾经推出了一部博物馆竞答节目，叫The Quizeum，四位艺术史学家分成两组，一边回答主持人的问题，一边调侃着艺术品的历史和故事。节目的第一集就是在阿什莫林博物馆拍摄，这也是对它独特的历史意义的肯定。\r\n\r\n",
+                                                 "useTemplateFlag": true
+                                                 }, {
+                                                 "logicRelateionName": "和",
+                                                 "moduleType": "SCENIC",
+                                                 "name": "牛津自然历史博物馆",
+                                                 "templateText": "前往游览牛津自然历史博物馆 （ 游览时间约2小时 ） 博物馆收藏了大量恐龙化石，另外收集的馆藏含昆虫学、地质学、矿物学与岩石学及动物学等标本，最有名的是世界上保留最完整的渡渡鸟标本），同一时间，父母也可以去比斯特村自由购物。\r\n\r\n",
+                                                 "useTemplateFlag": true
+                                                 }],
+                                      "VEHICLE": [{
+                                                  "id": 2871888,
+                                                  "moduleType": "VEHICLE",
+                                                  "name": "汽车",
+                                                  "useTemplateFlag": false
+                                                  }],
+                                      "MEAL": [{
+                                               "id": 3603476,
+                                               "moduleType": "MEAL",
+                                               "name": "早餐|中餐|晚餐",
+                                               "templateText": "享用【早餐】【中餐】【晚餐】， 餐费已含，",
+                                               "useTemplateFlag": true
+                                               }],
+                                      "HOTEL": [{
+                                                "moduleType": "HOTEL",
+                                                "name": "科兹沃茨乡村酒店",
+                                                "roomType": "标准间",
+                                                "useTemplateFlag": false
+                                                }]
+                                      },
+                                      "lunchFlag": "Y",
+                                      "nDay": 6,
+                                      "prodRouteDetailGroupList": [{
+                                                                   "detailId": 3641050,
+                                                                   "groupId": 8639946,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "VEHICLE",
+                                                                   "prodRouteDetailVehicleList": [{
+                                                                                                  "groupId": 8639946,
+                                                                                                  "pickUpFlag": "N",
+                                                                                                  "useTemplateFlag": "N",
+                                                                                                  "vehicleId": 2871888,
+                                                                                                  "vehicleName": "汽车",
+                                                                                                  "vehicleType": "BARS"
+                                                                                                  }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 1,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641050,
+                                                                   "groupId": 8639947,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "SCENIC",
+                                                                   "prodRouteDetailScenicList": [{
+                                                                                                 "currency": "人民币",
+                                                                                                 "groupId": 8639947,
+                                                                                                 "referencePrice": 0,
+                                                                                                 "scenicDesc": "牛津大学声名远扬，却很少有人知道隶属于牛津大学的阿什莫林博物馆的异彩纷呈。英国BBC曾经推出了一部博物馆竞答节目，叫The Quizeum，四位艺术史学家分成两组，一边回答主持人的问题，一边调侃着艺术品的历史和故事。节目的第一集就是在阿什莫林博物馆拍摄，这也是对它独特的历史意义的肯定。",
+                                                                                                 "scenicId": 4270422,
+                                                                                                 "scenicName": "阿什莫林博物馆",
+                                                                                                 "scenicNameId": 184528,
+                                                                                                 "templateCode": "CODE_ROUTE_INCLUDED",
+                                                                                                 "templateText": "前往游览阿什莫林博物馆 （ 游览时间约2小时 ） 牛津大学声名远扬，却很少有人知道隶属于牛津大学的阿什莫林博物馆的异彩纷呈。英国BBC曾经推出了一部博物馆竞答节目，叫The Quizeum，四位艺术史学家分成两组，一边回答主持人的问题，一边调侃着艺术品的历史和故事。节目的第一集就是在阿什莫林博物馆拍摄，这也是对它独特的历史意义的肯定。\r\n\r\n",
+                                                                                                 "travelTime": "",
+                                                                                                 "travelType": "DRIVE",
+                                                                                                 "useTemplateFlag": "Y",
+                                                                                                 "visitTime": "2小时"
+                                                                                                 }, {
+                                                                                                 "currency": "人民币",
+                                                                                                 "groupId": 8639947,
+                                                                                                 "logicRelateion": "AND",
+                                                                                                 "logicRelateionName": "和",
+                                                                                                 "referencePrice": 0,
+                                                                                                 "scenicDesc": "博物馆收藏了大量恐龙化石，另外收集的馆藏含昆虫学、地质学、矿物学与岩石学及动物学等标本，最有名的是世界上保留最完整的渡渡鸟标本），同一时间，父母也可以去比斯特村自由购物。",
+                                                                                                 "scenicId": 4270423,
+                                                                                                 "scenicName": "牛津自然历史博物馆",
+                                                                                                 "templateCode": "CODE_ROUTE_INCLUDED",
+                                                                                                 "templateText": "前往游览牛津自然历史博物馆 （ 游览时间约2小时 ） 博物馆收藏了大量恐龙化石，另外收集的馆藏含昆虫学、地质学、矿物学与岩石学及动物学等标本，最有名的是世界上保留最完整的渡渡鸟标本），同一时间，父母也可以去比斯特村自由购物。\r\n\r\n",
+                                                                                                 "travelTime": "",
+                                                                                                 "travelType": "DRIVE",
+                                                                                                 "useTemplateFlag": "Y",
+                                                                                                 "visitTime": "2小时"
+                                                                                                 }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 2,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641050,
+                                                                   "groupId": 8639948,
+                                                                   "hotelTemplateText": "入住酒店科兹沃茨乡村酒店",
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "HOTEL",
+                                                                   "prodRouteDetailHotelList": [{
+                                                                                                "groupId": 8639948,
+                                                                                                "hotelId": 2770531,
+                                                                                                "hotelName": "科兹沃茨乡村酒店",
+                                                                                                "roomType": "标准间",
+                                                                                                "starLevel": "-1",
+                                                                                                "travelType": "DRIVE",
+                                                                                                "useTemplateFlag": "N"
+                                                                                                }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 3,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641050,
+                                                                   "groupId": 8639949,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "MEAL",
+                                                                   "prodRouteDetailMealList": [{
+                                                                                               "groupId": 8639949,
+                                                                                               "mealId": 3603476,
+                                                                                               "mealName": "BREAKFAST|LUNCH|DINNER",
+                                                                                               "mealTime": "",
+                                                                                               "mealType": "BREAKFAST|LUNCH|DINNER",
+                                                                                               "meals": [{
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "早餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }, {
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "中餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }, {
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "晚餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }],
+                                                                                               "templateCode": "CODE_DEFAULT",
+                                                                                               "templateText": "享用【早餐】【中餐】【晚餐】， 餐费已含，",
+                                                                                               "useTemplateFlag": "Y"
+                                                                                               }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 4,
+                                                                   "startTime": "全天"
+                                                                   }],
+                                      "routeId": 330363,
+                                      "stayDesc": "科兹沃茨乡村酒店",
+                                      "stayType": "其他",
+                                      "title": "科兹沃茨—牛津—科兹沃茨",
+                                      "trafficType": "BARS",
+                                      "trafficTypeZh": "巴士"
+                                      }, {
+                                      "breakfastFlag": "Y",
+                                      "content": "1、全天  巴士\r\n2、前往游览【科茨沃茨小镇】（游览时间约2小时）跟随者导游的脚步，漫步在科茨沃茨小镇，亲身感受不同的英伦乡村小镇。和  前往游览【温莎城堡】（游览时间约2小时）（含电子专业讲解）最初由威廉一世营建，目的在于保护泰晤士河上来往的船只和王室的安全，自12世纪以来一直是英王的行宫。1936年，英王爱德华八世在此向曾两度离婚的美国平民辛普森夫人求婚，为了爱情毅然放弃王冠，由一国之君降为温莎公爵，出走英伦三岛，直到1972年其灵柩才重返温莎。这段“不爱江山爱美人”的风流逸事，不但使古堡声名远播，也为温莎平添了几分缠绵浪漫的气氛。\r\n3、\r\n入住酒店：温莎，标准间\r\n4、全天  享用【早餐】【中餐】【晚餐】，餐费已含",
+                                      "detailId": 3641051,
+                                      "dinnerFlag": "Y",
+                                      "generalGroupMap": {
+                                      "SCENIC": [{
+                                                 "moduleType": "SCENIC",
+                                                 "name": "科茨沃茨小镇",
+                                                 "templateText": "前往游览科茨沃茨小镇 （ 游览时间约2小时 ） 跟随者导游的脚步，漫步在科茨沃茨小镇，亲身感受不同的英伦乡村小镇。\r\n\r\n",
+                                                 "useTemplateFlag": true
+                                                 }, {
+                                                 "logicRelateionName": "和",
+                                                 "moduleType": "SCENIC",
+                                                 "name": "温莎城堡",
+                                                 "templateText": "前往游览温莎城堡 （ 游览时间约2小时 ） （含电子专业讲解）最初由威廉一世营建，目的在于保护泰晤士河上来往的船只和王室的安全，自12世纪以来一直是英王的行宫。1936年，英王爱德华八世在此向曾两度离婚的美国平民辛普森夫人求婚，为了爱情毅然放弃王冠，由一国之君降为温莎公爵，出走英伦三岛，直到1972年其灵柩才重返温莎。这段“不爱江山爱美人”的风流逸事，不但使古堡声名远播，也为温莎平添了几分缠绵浪漫的气氛。\r\n\r\n",
+                                                 "useTemplateFlag": true
+                                                 }],
+                                      "VEHICLE": [{
+                                                  "id": 2871890,
+                                                  "moduleType": "VEHICLE",
+                                                  "name": "汽车",
+                                                  "useTemplateFlag": false
+                                                  }],
+                                      "MEAL": [{
+                                               "id": 3603478,
+                                               "moduleType": "MEAL",
+                                               "name": "早餐|中餐|晚餐",
+                                               "templateText": "享用【早餐】【中餐】【晚餐】， 餐费已含，",
+                                               "useTemplateFlag": true
+                                               }],
+                                      "HOTEL": [{
+                                                "moduleType": "HOTEL",
+                                                "name": "温莎",
+                                                "roomType": "标准间",
+                                                "useTemplateFlag": false
+                                                }]
+                                      },
+                                      "lunchFlag": "Y",
+                                      "nDay": 7,
+                                      "prodRouteDetailGroupList": [{
+                                                                   "detailId": 3641051,
+                                                                   "groupId": 8639950,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "VEHICLE",
+                                                                   "prodRouteDetailVehicleList": [{
+                                                                                                  "groupId": 8639950,
+                                                                                                  "pickUpFlag": "N",
+                                                                                                  "useTemplateFlag": "N",
+                                                                                                  "vehicleId": 2871890,
+                                                                                                  "vehicleName": "汽车",
+                                                                                                  "vehicleType": "BARS"
+                                                                                                  }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 1,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641051,
+                                                                   "groupId": 8639951,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "SCENIC",
+                                                                   "prodRouteDetailScenicList": [{
+                                                                                                 "currency": "人民币",
+                                                                                                 "groupId": 8639951,
+                                                                                                 "referencePrice": 0,
+                                                                                                 "scenicDesc": "跟随者导游的脚步，漫步在科茨沃茨小镇，亲身感受不同的英伦乡村小镇。",
+                                                                                                 "scenicId": 4270428,
+                                                                                                 "scenicName": "科茨沃茨小镇",
+                                                                                                 "templateCode": "CODE_ROUTE_INCLUDED",
+                                                                                                 "templateText": "前往游览科茨沃茨小镇 （ 游览时间约2小时 ） 跟随者导游的脚步，漫步在科茨沃茨小镇，亲身感受不同的英伦乡村小镇。\r\n\r\n",
+                                                                                                 "travelTime": "",
+                                                                                                 "travelType": "DRIVE",
+                                                                                                 "useTemplateFlag": "Y",
+                                                                                                 "visitTime": "2小时"
+                                                                                                 }, {
+                                                                                                 "currency": "人民币",
+                                                                                                 "groupId": 8639951,
+                                                                                                 "logicRelateion": "AND",
+                                                                                                 "logicRelateionName": "和",
+                                                                                                 "referencePrice": 0,
+                                                                                                 "scenicDesc": "（含电子专业讲解）最初由威廉一世营建，目的在于保护泰晤士河上来往的船只和王室的安全，自12世纪以来一直是英王的行宫。1936年，英王爱德华八世在此向曾两度离婚的美国平民辛普森夫人求婚，为了爱情毅然放弃王冠，由一国之君降为温莎公爵，出走英伦三岛，直到1972年其灵柩才重返温莎。这段“不爱江山爱美人”的风流逸事，不但使古堡声名远播，也为温莎平添了几分缠绵浪漫的气氛。",
+                                                                                                 "scenicId": 4270429,
+                                                                                                 "scenicName": "温莎城堡",
+                                                                                                 "templateCode": "CODE_ROUTE_INCLUDED",
+                                                                                                 "templateText": "前往游览温莎城堡 （ 游览时间约2小时 ） （含电子专业讲解）最初由威廉一世营建，目的在于保护泰晤士河上来往的船只和王室的安全，自12世纪以来一直是英王的行宫。1936年，英王爱德华八世在此向曾两度离婚的美国平民辛普森夫人求婚，为了爱情毅然放弃王冠，由一国之君降为温莎公爵，出走英伦三岛，直到1972年其灵柩才重返温莎。这段“不爱江山爱美人”的风流逸事，不但使古堡声名远播，也为温莎平添了几分缠绵浪漫的气氛。\r\n\r\n",
+                                                                                                 "travelTime": "",
+                                                                                                 "travelType": "DRIVE",
+                                                                                                 "useTemplateFlag": "Y",
+                                                                                                 "visitTime": "2小时"
+                                                                                                 }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 2,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641051,
+                                                                   "groupId": 8639952,
+                                                                   "hotelTemplateText": "入住酒店温莎",
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "HOTEL",
+                                                                   "prodRouteDetailHotelList": [{
+                                                                                                "groupId": 8639952,
+                                                                                                "hotelId": 2770533,
+                                                                                                "hotelName": "温莎",
+                                                                                                "roomType": "标准间",
+                                                                                                "starLevel": "-1",
+                                                                                                "travelType": "DRIVE",
+                                                                                                "useTemplateFlag": "N"
+                                                                                                }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 3,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641051,
+                                                                   "groupId": 8639953,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "MEAL",
+                                                                   "prodRouteDetailMealList": [{
+                                                                                               "groupId": 8639953,
+                                                                                               "mealId": 3603478,
+                                                                                               "mealName": "BREAKFAST|LUNCH|DINNER",
+                                                                                               "mealTime": "",
+                                                                                               "mealType": "BREAKFAST|LUNCH|DINNER",
+                                                                                               "meals": [{
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "早餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }, {
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "中餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }, {
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "晚餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }],
+                                                                                               "templateCode": "CODE_DEFAULT",
+                                                                                               "templateText": "享用【早餐】【中餐】【晚餐】， 餐费已含，",
+                                                                                               "useTemplateFlag": "Y"
+                                                                                               }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 4,
+                                                                   "startTime": "全天"
+                                                                   }],
+                                      "routeId": 330363,
+                                      "stayDesc": "温莎",
+                                      "stayType": "其他",
+                                      "title": "科茨沃茨—温莎",
+                                      "trafficType": "BARS",
+                                      "trafficTypeZh": "巴士"
+                                      }, {
+                                      "breakfastFlag": "Y",
+                                      "content": "1、全天  巴士\r\n2、前往游览【温莎乐高乐园】（游览时间约5小时）LEGOLAND WINDSOR中有历时3年用2千万块乐高建构的迷你城(Miniland)，里面的迷你伦敦，圣保罗大教堂、伦敦塔、大本钟等都栩栩如生，还有儿童喜欢的恐龙模型。温莎乐高乐园有各种各样的游乐设施如云霄飞车、自由落体、飞行器等，园内的现场表演每天有不同节目，从简单的童话故事到马力团表演应有尽有，各种用乐高组成的模型，对创造力的发挥和学习有正面助益。\r\n3、\r\n入住酒店：温莎，标准间\r\n4、全天  享用【早餐】【晚餐】【中餐自理】",
+                                      "detailId": 3641052,
+                                      "dinnerFlag": "Y",
+                                      "generalGroupMap": {
+                                      "SCENIC": [{
+                                                 "moduleType": "SCENIC",
+                                                 "name": "温莎乐高乐园",
+                                                 "templateText": "前往游览温莎乐高乐园 （ 游览时间约5小时 ） LEGOLAND WINDSOR中有历时3年用2千万块乐高建构的迷你城(Miniland)，里面的迷你伦敦，圣保罗大教堂、伦敦塔、大本钟等都栩栩如生，还有儿童喜欢的恐龙模型。温莎乐高乐园有各种各样的游乐设施如云霄飞车、自由落体、飞行器等，园内的现场表演每天有不同节目，从简单的童话故事到马力团表演应有尽有，各种用乐高组成的模型，对创造力的发挥和学习有正面助益。\r\n\r\n",
+                                                 "useTemplateFlag": true
+                                                 }],
+                                      "VEHICLE": [{
+                                                  "id": 2871892,
+                                                  "moduleType": "VEHICLE",
+                                                  "name": "汽车",
+                                                  "useTemplateFlag": false
+                                                  }],
+                                      "MEAL": [{
+                                               "id": 3603480,
+                                               "moduleType": "MEAL",
+                                               "name": "早餐|晚餐|中餐自理",
+                                               "templateText": "享用【早餐】【晚餐】【中餐自理】，",
+                                               "useTemplateFlag": true
+                                               }],
+                                      "HOTEL": [{
+                                                "moduleType": "HOTEL",
+                                                "name": "温莎",
+                                                "roomType": "标准间",
+                                                "useTemplateFlag": false
+                                                }]
+                                      },
+                                      "nDay": 8,
+                                      "prodRouteDetailGroupList": [{
+                                                                   "detailId": 3641052,
+                                                                   "groupId": 8639954,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "VEHICLE",
+                                                                   "prodRouteDetailVehicleList": [{
+                                                                                                  "groupId": 8639954,
+                                                                                                  "pickUpFlag": "N",
+                                                                                                  "useTemplateFlag": "N",
+                                                                                                  "vehicleId": 2871892,
+                                                                                                  "vehicleName": "汽车",
+                                                                                                  "vehicleType": "BARS"
+                                                                                                  }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 1,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641052,
+                                                                   "groupId": 8639955,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "SCENIC",
+                                                                   "prodRouteDetailScenicList": [{
+                                                                                                 "currency": "人民币",
+                                                                                                 "groupId": 8639955,
+                                                                                                 "referencePrice": 0,
+                                                                                                 "scenicDesc": "LEGOLAND WINDSOR中有历时3年用2千万块乐高建构的迷你城(Miniland)，里面的迷你伦敦，圣保罗大教堂、伦敦塔、大本钟等都栩栩如生，还有儿童喜欢的恐龙模型。温莎乐高乐园有各种各样的游乐设施如云霄飞车、自由落体、飞行器等，园内的现场表演每天有不同节目，从简单的童话故事到马力团表演应有尽有，各种用乐高组成的模型，对创造力的发挥和学习有正面助益。",
+                                                                                                 "scenicId": 4234350,
+                                                                                                 "scenicName": "温莎乐高乐园",
+                                                                                                 "templateCode": "CODE_ROUTE_INCLUDED",
+                                                                                                 "templateText": "前往游览温莎乐高乐园 （ 游览时间约5小时 ） LEGOLAND WINDSOR中有历时3年用2千万块乐高建构的迷你城(Miniland)，里面的迷你伦敦，圣保罗大教堂、伦敦塔、大本钟等都栩栩如生，还有儿童喜欢的恐龙模型。温莎乐高乐园有各种各样的游乐设施如云霄飞车、自由落体、飞行器等，园内的现场表演每天有不同节目，从简单的童话故事到马力团表演应有尽有，各种用乐高组成的模型，对创造力的发挥和学习有正面助益。\r\n\r\n",
+                                                                                                 "travelTime": "",
+                                                                                                 "travelType": "DRIVE",
+                                                                                                 "useTemplateFlag": "Y",
+                                                                                                 "visitTime": "5小时"
+                                                                                                 }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 2,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641052,
+                                                                   "groupId": 8639956,
+                                                                   "hotelTemplateText": "入住酒店温莎",
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "HOTEL",
+                                                                   "prodRouteDetailHotelList": [{
+                                                                                                "groupId": 8639956,
+                                                                                                "hotelId": 2770535,
+                                                                                                "hotelName": "温莎",
+                                                                                                "roomType": "标准间",
+                                                                                                "starLevel": "-1",
+                                                                                                "travelType": "DRIVE",
+                                                                                                "useTemplateFlag": "N"
+                                                                                                }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 3,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641052,
+                                                                   "groupId": 8639957,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "MEAL",
+                                                                   "prodRouteDetailMealList": [{
+                                                                                               "groupId": 8639957,
+                                                                                               "mealId": 3603480,
+                                                                                               "mealName": "BREAKFAST|DINNER|SELF_LUNCH",
+                                                                                               "mealTime": "",
+                                                                                               "mealType": "BREAKFAST|DINNER|SELF_LUNCH",
+                                                                                               "meals": [{
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "早餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }, {
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "晚餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }, {
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "中餐自理",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }],
+                                                                                               "templateCode": "CODE_DEFAULT",
+                                                                                               "templateText": "享用【早餐】【晚餐】【中餐自理】，",
+                                                                                               "useTemplateFlag": "Y"
+                                                                                               }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 4,
+                                                                   "startTime": "全天"
+                                                                   }],
+                                      "routeId": 330363,
+                                      "stayDesc": "温莎",
+                                      "stayType": "其他",
+                                      "title": "温莎—乐高乐园—温莎",
+                                      "trafficType": "BARS",
+                                      "trafficTypeZh": "巴士"
+                                      }, {
+                                      "breakfastFlag": "Y",
+                                      "content": "1、全天  巴士\r\n2、前往游览【大英博物馆】（游览时间约4小时）（博物馆内教育部专家老师中文讲解）世界四大博物馆之一。让我们在展品前席地而坐，听专家细细道来。和  前往游览【白金汉宫、西敏寺、国会大厦大本钟、皇家骑兵营、伦敦塔桥及伦敦塔】以上均外观（约2小时）和  前往景点：自然历史博物馆\r\n晚上前往伦敦自然历史博物馆享用西式简餐，后由英文专业老师分组，和不同国\r\n家的小朋友进行活动，活动分为几项不同的项目，包括在博物馆内做手工等。晚上宿于伦敦自然历史博物馆，我社会在境外会提供睡袋。\r\n特别建议：夜宿必须由一位成人带领一位儿童（年龄在6-12岁之间），最好要有英文基础。若当天不选择夜宿，则入住伦敦市区酒店。\r\n3、\r\n入住酒店：伦敦自然历史博物馆\r\n4、全天  享用【早餐】【晚餐】【中餐自理】",
+                                      "detailId": 3641053,
+                                      "dinnerFlag": "Y",
+                                      "generalGroupMap": {
+                                      "SCENIC": [{
+                                                 "moduleType": "SCENIC",
+                                                 "name": "大英博物馆",
+                                                 "templateText": "前往游览大英博物馆 （ 游览时间约4小时 ） （博物馆内教育部专家老师中文讲解）世界四大博物馆之一。让我们在展品前席地而坐，听专家细细道来。\r\n\r\n",
+                                                 "useTemplateFlag": true
+                                                 }, {
+                                                 "logicRelateionName": "和",
+                                                 "moduleType": "SCENIC",
+                                                 "name": "白金汉宫、西敏寺、国会大厦大本钟、皇家骑兵营、伦敦塔桥及伦敦塔",
+                                                 "templateText": "前往游览白金汉宫、西敏寺、国会大厦大本钟、皇家骑兵营、伦敦塔桥及伦敦塔 （ 游览时间约 ） 以上均外观（约2小时）\r\n\r\n",
+                                                 "useTemplateFlag": true
+                                                 }, {
+                                                 "logicRelateionName": "和",
+                                                 "moduleType": "SCENIC",
+                                                 "name": "自然历史博物馆",
+                                                 "useTemplateFlag": false
+                                                 }],
+                                      "VEHICLE": [{
+                                                  "id": 2871894,
+                                                  "moduleType": "VEHICLE",
+                                                  "name": "汽车",
+                                                  "useTemplateFlag": false
+                                                  }],
+                                      "MEAL": [{
+                                               "id": 3603482,
+                                               "moduleType": "MEAL",
+                                               "name": "早餐|晚餐|中餐自理",
+                                               "templateText": "享用【早餐】【晚餐】【中餐自理】，",
+                                               "useTemplateFlag": true
+                                               }],
+                                      "HOTEL": [{
+                                                "moduleType": "HOTEL",
+                                                "name": "伦敦自然历史博物馆",
+                                                "useTemplateFlag": false
+                                                }]
+                                      },
+                                      "nDay": 9,
+                                      "prodRouteDetailGroupList": [{
+                                                                   "detailId": 3641053,
+                                                                   "groupId": 8639958,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "VEHICLE",
+                                                                   "prodRouteDetailVehicleList": [{
+                                                                                                  "groupId": 8639958,
+                                                                                                  "pickUpFlag": "N",
+                                                                                                  "useTemplateFlag": "N",
+                                                                                                  "vehicleId": 2871894,
+                                                                                                  "vehicleName": "汽车",
+                                                                                                  "vehicleType": "BARS"
+                                                                                                  }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 1,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641053,
+                                                                   "groupId": 8639959,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "SCENIC",
+                                                                   "prodRouteDetailScenicList": [{
+                                                                                                 "currency": "人民币",
+                                                                                                 "groupId": 8639959,
+                                                                                                 "referencePrice": 0,
+                                                                                                 "scenicDesc": "（博物馆内教育部专家老师中文讲解）世界四大博物馆之一。让我们在展品前席地而坐，听专家细细道来。",
+                                                                                                 "scenicId": 4270441,
+                                                                                                 "scenicName": "大英博物馆",
+                                                                                                 "templateCode": "CODE_ROUTE_INCLUDED",
+                                                                                                 "templateText": "前往游览大英博物馆 （ 游览时间约4小时 ） （博物馆内教育部专家老师中文讲解）世界四大博物馆之一。让我们在展品前席地而坐，听专家细细道来。\r\n\r\n",
+                                                                                                 "travelTime": "",
+                                                                                                 "travelType": "DRIVE",
+                                                                                                 "useTemplateFlag": "Y",
+                                                                                                 "visitTime": "4小时"
+                                                                                                 }, {
+                                                                                                 "currency": "人民币",
+                                                                                                 "groupId": 8639959,
+                                                                                                 "logicRelateion": "AND",
+                                                                                                 "logicRelateionName": "和",
+                                                                                                 "referencePrice": 0,
+                                                                                                 "scenicDesc": "以上均外观（约2小时）",
+                                                                                                 "scenicId": 4270442,
+                                                                                                 "scenicName": "白金汉宫、西敏寺、国会大厦大本钟、皇家骑兵营、伦敦塔桥及伦敦塔",
+                                                                                                 "templateCode": "CODE_ROUTE_INCLUDED",
+                                                                                                 "templateText": "前往游览白金汉宫、西敏寺、国会大厦大本钟、皇家骑兵营、伦敦塔桥及伦敦塔 （ 游览时间约 ） 以上均外观（约2小时）\r\n\r\n",
+                                                                                                 "travelTime": "",
+                                                                                                 "travelType": "DRIVE",
+                                                                                                 "useTemplateFlag": "Y",
+                                                                                                 "visitTime": ""
+                                                                                                 }, {
+                                                                                                 "currency": "CNY",
+                                                                                                 "groupId": 8639959,
+                                                                                                 "logicRelateion": "AND",
+                                                                                                 "logicRelateionName": "和",
+                                                                                                 "referencePrice": 0,
+                                                                                                 "scenicDesc": "晚上前往伦敦自然历史博物馆享用西式简餐，后由英文专业老师分组，和不同国\r\n家的小朋友进行活动，活动分为几项不同的项目，包括在博物馆内做手工等。晚上宿于伦敦自然历史博物馆，我社会在境外会提供睡袋。\r\n特别建议：夜宿必须由一位成人带领一位儿童（年龄在6-12岁之间），最好要有英文基础。若当天不选择夜宿，则入住伦敦市区酒店。\r\n",
+                                                                                                 "scenicId": 4270443,
+                                                                                                 "scenicName": "自然历史博物馆",
+                                                                                                 "templateCode": "CODE_ROUTE_INCLUDED",
+                                                                                                 "travelType": "DRIVE",
+                                                                                                 "useTemplateFlag": "N"
+                                                                                                 }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 2,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641053,
+                                                                   "groupId": 8639960,
+                                                                   "hotelTemplateText": "入住酒店伦敦自然历史博物馆",
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "HOTEL",
+                                                                   "prodRouteDetailHotelList": [{
+                                                                                                "groupId": 8639960,
+                                                                                                "hotelId": 2770537,
+                                                                                                "hotelName": "伦敦自然历史博物馆",
+                                                                                                "starLevel": "-1",
+                                                                                                "travelType": "DRIVE",
+                                                                                                "useTemplateFlag": "N"
+                                                                                                }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 3,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641053,
+                                                                   "groupId": 8639961,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "MEAL",
+                                                                   "prodRouteDetailMealList": [{
+                                                                                               "groupId": 8639961,
+                                                                                               "mealId": 3603482,
+                                                                                               "mealName": "BREAKFAST|DINNER|SELF_LUNCH",
+                                                                                               "mealTime": "",
+                                                                                               "mealType": "BREAKFAST|DINNER|SELF_LUNCH",
+                                                                                               "meals": [{
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "早餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }, {
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "晚餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }, {
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "中餐自理",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }],
+                                                                                               "templateCode": "CODE_DEFAULT",
+                                                                                               "templateText": "享用【早餐】【晚餐】【中餐自理】，",
+                                                                                               "useTemplateFlag": "Y"
+                                                                                               }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 4,
+                                                                   "startTime": "全天"
+                                                                   }],
+                                      "routeId": 330363,
+                                      "stayDesc": "伦敦自然历史博物馆",
+                                      "stayType": "其他",
+                                      "title": "伦敦",
+                                      "trafficType": "BARS",
+                                      "trafficTypeZh": "巴士"
+                                      }, {
+                                      "breakfastFlag": "Y",
+                                      "content": "1、全天  巴士\r\n2、前往景点：伦敦自然历史博物馆\r\n游览时间：约3小时  \r\n博物馆早餐后，上午参观学习：伦敦自然历史博物馆*（馆内教育部专家互动讲解，夏季将展出蓝鲸骨架），这里是英国人最喜爱的旅行目的地，博物馆总建筑面积为4万多平方米，馆内大约藏有世界各地的7000万件标本，其中昆虫标本有2800万件。英国自然历史博物馆是欧洲最大的自然历史博物馆。\r\n和  前往游览【格林威治天文台】1884年，经过这个天文台的子午线被确定为全球的时间和经度计量的标准参考子午线，也称为零度经线。\r\n返回伦敦后，前往乘座伦敦眼*。\r\n3、\r\n入住酒店：伦敦市区酒店，标准间\r\n4、全天  早餐、晚餐、中餐自理\r\n餐费标准：早餐  /人/餐  中餐  /人/餐  晚餐  /人/餐  \r\n用餐时间：早餐    中餐    晚餐",
+                                      "detailId": 3641054,
+                                      "dinnerFlag": "Y",
+                                      "generalGroupMap": {
+                                      "SCENIC": [{
+                                                 "moduleType": "SCENIC",
+                                                 "name": "伦敦自然历史博物馆",
+                                                 "useTemplateFlag": false
+                                                 }, {
+                                                 "id": 184453,
+                                                 "logicRelateionName": "和",
+                                                 "moduleType": "SCENIC",
+                                                 "name": "格林威治天文台",
+                                                 "templateText": "前往游览格林威治天文台 （ 游览时间约 ） 1884年，经过这个天文台的子午线被确定为全球的时间和经度计量的标准参考子午线，也称为零度经线。 返回伦敦后，前往乘座伦敦眼*。\r\n\r\n",
+                                                 "useTemplateFlag": true
+                                                 }],
+                                      "VEHICLE": [{
+                                                  "id": 2871896,
+                                                  "moduleType": "VEHICLE",
+                                                  "name": "汽车",
+                                                  "useTemplateFlag": false
+                                                  }],
+                                      "MEAL": [{
+                                               "id": 3603484,
+                                               "moduleType": "MEAL",
+                                               "name": "早餐|晚餐|中餐自理",
+                                               "useTemplateFlag": false
+                                               }],
+                                      "HOTEL": [{
+                                                "moduleType": "HOTEL",
+                                                "name": "伦敦市区酒店",
+                                                "roomType": "标准间",
+                                                "useTemplateFlag": false
+                                                }]
+                                      },
+                                      "nDay": 10,
+                                      "prodRouteDetailGroupList": [{
+                                                                   "detailId": 3641054,
+                                                                   "groupId": 8639962,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "VEHICLE",
+                                                                   "prodRouteDetailVehicleList": [{
+                                                                                                  "groupId": 8639962,
+                                                                                                  "pickUpFlag": "N",
+                                                                                                  "useTemplateFlag": "N",
+                                                                                                  "vehicleId": 2871896,
+                                                                                                  "vehicleName": "汽车",
+                                                                                                  "vehicleType": "BARS"
+                                                                                                  }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 1,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641054,
+                                                                   "groupId": 8639963,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "SCENIC",
+                                                                   "prodRouteDetailScenicList": [{
+                                                                                                 "currency": "CNY",
+                                                                                                 "groupId": 8639963,
+                                                                                                 "referencePrice": 0,
+                                                                                                 "scenicDesc": "博物馆早餐后，上午参观学习：伦敦自然历史博物馆*（馆内教育部专家互动讲解，夏季将展出蓝鲸骨架），这里是英国人最喜爱的旅行目的地，博物馆总建筑面积为4万多平方米，馆内大约藏有世界各地的7000万件标本，其中昆虫标本有2800万件。英国自然历史博物馆是欧洲最大的自然历史博物馆。",
+                                                                                                 "scenicId": 4234356,
+                                                                                                 "scenicName": "伦敦自然历史博物馆",
+                                                                                                 "templateCode": "CODE_ROUTE_INCLUDED",
+                                                                                                 "travelType": "DRIVE",
+                                                                                                 "useTemplateFlag": "N",
+                                                                                                 "visitTime": "3:"
+                                                                                                 }, {
+                                                                                                 "currency": "人民币",
+                                                                                                 "groupId": 8639963,
+                                                                                                 "logicRelateion": "AND",
+                                                                                                 "logicRelateionName": "和",
+                                                                                                 "referencePrice": 0,
+                                                                                                 "scenicDesc": "1884年，经过这个天文台的子午线被确定为全球的时间和经度计量的标准参考子午线，也称为零度经线。\r\n返回伦敦后，前往乘座伦敦眼*。\r\n",
+                                                                                                 "scenicId": 4234357,
+                                                                                                 "scenicName": "格林威治天文台",
+                                                                                                 "scenicNameId": 184453,
+                                                                                                 "templateCode": "CODE_ROUTE_INCLUDED",
+                                                                                                 "templateText": "前往游览格林威治天文台 （ 游览时间约 ） 1884年，经过这个天文台的子午线被确定为全球的时间和经度计量的标准参考子午线，也称为零度经线。 返回伦敦后，前往乘座伦敦眼*。\r\n\r\n",
+                                                                                                 "travelTime": "",
+                                                                                                 "travelType": "DRIVE",
+                                                                                                 "useTemplateFlag": "Y",
+                                                                                                 "visitTime": ""
+                                                                                                 }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 2,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641054,
+                                                                   "groupId": 8639964,
+                                                                   "hotelTemplateText": "入住酒店伦敦市区酒店",
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "HOTEL",
+                                                                   "prodRouteDetailHotelList": [{
+                                                                                                "groupId": 8639964,
+                                                                                                "hotelId": 2770539,
+                                                                                                "hotelName": "伦敦市区酒店",
+                                                                                                "roomType": "标准间",
+                                                                                                "starLevel": "-1",
+                                                                                                "travelType": "DRIVE",
+                                                                                                "useTemplateFlag": "N"
+                                                                                                }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 3,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641054,
+                                                                   "groupId": 8639965,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "MEAL",
+                                                                   "prodRouteDetailMealList": [{
+                                                                                               "groupId": 8639965,
+                                                                                               "mealId": 3603484,
+                                                                                               "mealName": "BREAKFAST|DINNER|SELF_LUNCH",
+                                                                                               "mealTime": "",
+                                                                                               "mealType": "BREAKFAST|DINNER|SELF_LUNCH",
+                                                                                               "meals": [{
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "早餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }, {
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "晚餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }, {
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "中餐自理",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }],
+                                                                                               "templateCode": "CODE_DEFAULT",
+                                                                                               "templateText": "享用【早餐】【晚餐】【中餐自理】",
+                                                                                               "useTemplateFlag": "N"
+                                                                                               }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 4,
+                                                                   "startTime": "全天"
+                                                                   }],
+                                      "routeId": 330363,
+                                      "stayDesc": "伦敦市区酒店",
+                                      "stayType": "其他",
+                                      "title": "伦敦",
+                                      "trafficType": "BARS",
+                                      "trafficTypeZh": "巴士"
+                                      }, {
+                                      "breakfastFlag": "Y",
+                                      "content": "1、全天  飞机\r\n飞行时间：约13小时40分钟  \r\n参考航班： CX256   2010/1505+1   KA872  1800/2040\r\n参考航班（以下信息仅供参考，以实际航班为准）\r\n2、前往游览【英国国家美术馆】（游览时间约3小时）（馆内专家讲解），在国家美术馆迷宫似的展厅，从达芬奇、拉斐尔，到威尼斯画派、英国山水画派、法国写实派、前期印象派，直到塞尚、梵高。\r\n3、全天  享用【早餐】【中餐自理】【晚餐自理】\r\n4、\r\n到了和难忘的英国说再见的时候了。我们将乘机返回温暖的家园，也为这美妙的英国之旅画下个美妙句点。欢迎您再次参加我社组织的团队！\r\n\r\n-----乘机返回上海，结束旅程！",
+                                      "detailId": 3641055,
+                                      "generalGroupMap": {
+                                      "SCENIC": [{
+                                                 "moduleType": "SCENIC",
+                                                 "name": "英国国家美术馆",
+                                                 "templateText": "前往游览英国国家美术馆 （ 游览时间约3小时 ） （馆内专家讲解），在国家美术馆迷宫似的展厅，从达芬奇、拉斐尔，到威尼斯画派、英国山水画派、法国写实派、前期印象派，直到塞尚、梵高。\r\n\r\n",
+                                                 "useTemplateFlag": true
+                                                 }],
+                                      "VEHICLE": [{
+                                                  "id": 2871898,
+                                                  "moduleType": "VEHICLE",
+                                                  "name": "飞机",
+                                                  "useTemplateFlag": false,
+                                                  "vehicleDesc": "参考航班： CX256   2010/1505+1   KA872  1800/2040\r\n参考航班（以下信息仅供参考，以实际航班为准）",
+                                                  "vehicleTime": "13:40"
+                                                  }],
+                                      "MEAL": [{
+                                               "id": 3603486,
+                                               "moduleType": "MEAL",
+                                               "name": "早餐|中餐自理|晚餐自理",
+                                               "templateText": "享用【早餐】【中餐自理】【晚餐自理】，",
+                                               "useTemplateFlag": true
+                                               }],
+                                      "OTHER_ACTIVITY": [{
+                                                         "activityDesc": "到了和难忘的英国说再见的时候了。我们将乘机返回温暖的家园，也为这美妙的英国之旅画下个美妙句点。欢迎您再次参加我社组织的团队！\r\n\r\n-----乘机返回上海，结束旅程！ ",
+                                                         "id": 1699180,
+                                                         "moduleType": "OTHER_ACTIVITY",
+                                                         "useTemplateFlag": false
+                                                         }]
+                                      },
+                                      "nDay": 11,
+                                      "prodRouteDetailGroupList": [{
+                                                                   "detailId": 3641055,
+                                                                   "groupId": 8639966,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "VEHICLE",
+                                                                   "prodRouteDetailVehicleList": [{
+                                                                                                  "groupId": 8639966,
+                                                                                                  "pickUpFlag": "N",
+                                                                                                  "useTemplateFlag": "N",
+                                                                                                  "vehicleDesc": "参考航班： CX256   2010/1505+1   KA872  1800/2040\r\n参考航班（以下信息仅供参考，以实际航班为准）",
+                                                                                                  "vehicleId": 2871898,
+                                                                                                  "vehicleName": "飞机",
+                                                                                                  "vehicleTime": "13:40",
+                                                                                                  "vehicleType": "PLANE"
+                                                                                                  }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 1,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641055,
+                                                                   "groupId": 8639967,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "SCENIC",
+                                                                   "prodRouteDetailScenicList": [{
+                                                                                                 "currency": "人民币",
+                                                                                                 "groupId": 8639967,
+                                                                                                 "referencePrice": 0,
+                                                                                                 "scenicDesc": "（馆内专家讲解），在国家美术馆迷宫似的展厅，从达芬奇、拉斐尔，到威尼斯画派、英国山水画派、法国写实派、前期印象派，直到塞尚、梵高。",
+                                                                                                 "scenicId": 4234359,
+                                                                                                 "scenicName": "英国国家美术馆",
+                                                                                                 "templateCode": "CODE_ROUTE_INCLUDED",
+                                                                                                 "templateText": "前往游览英国国家美术馆 （ 游览时间约3小时 ） （馆内专家讲解），在国家美术馆迷宫似的展厅，从达芬奇、拉斐尔，到威尼斯画派、英国山水画派、法国写实派、前期印象派，直到塞尚、梵高。\r\n\r\n",
+                                                                                                 "travelTime": "",
+                                                                                                 "travelType": "DRIVE",
+                                                                                                 "useTemplateFlag": "Y",
+                                                                                                 "visitTime": "3小时"
+                                                                                                 }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 2,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641055,
+                                                                   "groupId": 8639970,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "OTHER_ACTIVITY",
+                                                                   "prodRouteDetailActivityList": [{
+                                                                                                   "activityDesc": "到了和难忘的英国说再见的时候了。我们将乘机返回温暖的家园，也为这美妙的英国之旅画下个美妙句点。欢迎您再次参加我社组织的团队！\r\n\r\n-----乘机返回上海，结束旅程！ ",
+                                                                                                   "activityId": 1699180,
+                                                                                                   "groupId": 8639970,
+                                                                                                   "travelType": "DRIVE"
+                                                                                                   }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 7,
+                                                                   "startTime": "全天"
+                                                                   }, {
+                                                                   "detailId": 3641055,
+                                                                   "groupId": 8639969,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "MEAL",
+                                                                   "prodRouteDetailMealList": [{
+                                                                                               "groupId": 8639969,
+                                                                                               "mealId": 3603486,
+                                                                                               "mealName": "BREAKFAST|SELF_LUNCH|SELF_DINNER",
+                                                                                               "mealTime": "",
+                                                                                               "mealType": "BREAKFAST|SELF_LUNCH|SELF_DINNER",
+                                                                                               "meals": [{
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "早餐",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }, {
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "中餐自理",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }, {
+                                                                                                         "mealCurrency": "人民币",
+                                                                                                         "mealName": "晚餐自理",
+                                                                                                         "mealPrice": 0,
+                                                                                                         "mealTime": ""
+                                                                                                         }],
+                                                                                               "templateCode": "CODE_DEFAULT",
+                                                                                               "templateText": "享用【早餐】【中餐自理】【晚餐自理】，",
+                                                                                               "useTemplateFlag": "Y"
+                                                                                               }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 5,
+                                                                   "startTime": "全天"
+                                                                   }],
+                                      "routeId": 330363,
+                                      "title": "伦敦—香港—上海",
+                                      "trafficType": "PLANE",
+                                      "trafficTypeZh": "飞机"
+                                      }, {
+                                      "content": "1、\r\n抵达上海",
+                                      "detailId": 3641056,
+                                      "generalGroupMap": {
+                                      "OTHER_ACTIVITY": [{
+                                                         "activityDesc": "抵达上海",
+                                                         "id": 1699182,
+                                                         "moduleType": "OTHER_ACTIVITY",
+                                                         "useTemplateFlag": false
+                                                         }]
+                                      },
+                                      "nDay": 12,
+                                      "prodRouteDetailGroupList": [{
+                                                                   "detailId": 3641056,
+                                                                   "groupId": 8639971,
+                                                                   "localTimeFlag": "N",
+                                                                   "moduleType": "OTHER_ACTIVITY",
+                                                                   "prodRouteDetailActivityList": [{
+                                                                                                   "activityDesc": "抵达上海",
+                                                                                                   "activityId": 1699182,
+                                                                                                   "groupId": 8639971,
+                                                                                                   "travelType": "DRIVE"
+                                                                                                   }],
+                                                                   "routeId": 330363,
+                                                                   "sortValue": 1,
+                                                                   "startTime": "全天"
+                                                                   }],
+                                      "routeId": 330363,
+                                      "title": "上海"
+                                      }],
+        "productId": 1442634,
+        "routeName": "A行程",
+        "routeNum": 12,
+        "stayNum": 10,
+        "trafficNum": 0,
+        "visa": false
+    },
+    "success": true,
+    "version": "c2f9bc6d1251aabda989af98785158c9"
+}

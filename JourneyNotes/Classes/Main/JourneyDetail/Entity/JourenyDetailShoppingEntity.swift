@@ -11,7 +11,7 @@ import Foundation
 struct JourenyDetailShoppingEntity {
     var groupId: Int = 0
     /** 公里数 */
-    var distanceKM: CGFloat = 0.0
+    var distanceKM: Float = 0.0
     /** 出行类型（徒步、行驶）*/
     var travelType: String = ""
     /** 出行交通时间，几小时几分钟，另有全天，上午，下午等特殊值 */

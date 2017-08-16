@@ -8,29 +8,24 @@
 
 import UIKit
 
-enum JourneySummaryItemStyle : Int {
+enum JourneySummaryItemStyle : String {
     // 景点
-    case scenic = 1
+    case scenic = "SCENIC"
     // 景点
-    case hotel = 2
-    // 酒店
-    case vehicle = 3
+    case hotel = "HOTEL"
     // 交通
-    case meal = 4
+    case vehicle = "VEHICLE"
     // 餐饮
-    case shopping = 5
+    case meal = "MEAL"
     // 购物
-    case freeActivity = 6
+    case shopping = "SHOPPING"
 }
 
 class JourneyEachDayItemView: UIView {
-    convenience init(style: JourneySummaryItemStyle, itemEntity: JourenyDetailGroupEntity, frame: CGRect) {
-        self.init()
-    }
+
+}
+
+
+extension JourneyEachDayItemView {
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-
-
 }
