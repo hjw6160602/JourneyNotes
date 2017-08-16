@@ -2,14 +2,13 @@
 //  ProdLineRouteDetail.swift
 //  JourneyNotes
 //
-//  Created by 贺嘉炜 on 2017/8/16.
-//  Copyright © 2017年 贺嘉炜. All rights reserved.
+//  Created by SaiDicaprio on 2017/8/16.
+//  Copyright © 2017年 SaiDicaprio. All rights reserved.
 //
 
 import Foundation
 
 struct ProdLineRouteDetail {
-    
     // 明细id
     var detailId: Int64 = 0
     //第几天

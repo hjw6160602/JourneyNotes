@@ -28,7 +28,6 @@
 		67BCCF2B1F442E1900CAF600 /* JourenyDetailMealEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF2A1F442E1900CAF600 /* JourenyDetailMealEntity.swift */; };
 		67BCCF2D1F442E2800CAF600 /* JourenyDetailVehicleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF2C1F442E2800CAF600 /* JourenyDetailVehicleEntity.swift */; };
 		67BCCF2F1F44363300CAF600 /* ProdLineRouteDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF2E1F44363300CAF600 /* ProdLineRouteDetail.swift */; };
-		67BCCF351F4447BF00CAF600 /* ProdLineRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF341F4447BF00CAF600 /* ProdLineRoute.swift */; };
 		67BCCF571F44488E00CAF600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67BCCF371F44488E00CAF600 /* Main.storyboard */; };
 		67BCCF581F44488E00CAF600 /* aireplane.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67BCCF3A1F44488E00CAF600 /* aireplane.xcassets */; };
 		67BCCF591F44488E00CAF600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67BCCF3B1F44488E00CAF600 /* Assets.xcassets */; };
@@ -87,7 +86,6 @@
 		67BCCF2A1F442E1900CAF600 /* JourenyDetailMealEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourenyDetailMealEntity.swift; sourceTree = "<group>"; };
 		67BCCF2C1F442E2800CAF600 /* JourenyDetailVehicleEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourenyDetailVehicleEntity.swift; sourceTree = "<group>"; };
 		67BCCF2E1F44363300CAF600 /* ProdLineRouteDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProdLineRouteDetail.swift; sourceTree = "<group>"; };
-		67BCCF341F4447BF00CAF600 /* ProdLineRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProdLineRoute.swift; sourceTree = "<group>"; };
 		67BCCF381F44488E00CAF600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67BCCF3A1F44488E00CAF600 /* aireplane.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = aireplane.xcassets; sourceTree = "<group>"; };
 		67BCCF3B1F44488E00CAF600 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -242,7 +240,6 @@
 		67BCCF211F442D1300CAF600 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				67BCCF341F4447BF00CAF600 /* ProdLineRoute.swift */,
 				67BCCF2E1F44363300CAF600 /* ProdLineRouteDetail.swift */,
 				67BCCF221F442D5D00CAF600 /* JourenyDetailGroupEntity.swift */,
 				67BCCF241F442DC600CAF600 /* JourenyDetailScenicEntity.swift */,
@@ -474,7 +471,6 @@
 				67BCCF2F1F44363300CAF600 /* ProdLineRouteDetail.swift in Sources */,
 				67A4626E1F42DC98003B7298 /* Const.swift in Sources */,
 				67A462671F42DA69003B7298 /* String+Extension.swift in Sources */,
-				67BCCF351F4447BF00CAF600 /* ProdLineRoute.swift in Sources */,
 				67BCCF271F442DFB00CAF600 /* JourenyDetailHotelEntity.swift in Sources */,
 				67BCCF1E1F44292000CAF600 /* JourneyOptionItemView.swift in Sources */,
 				67A462661F42DA69003B7298 /* Dictionary+Extension.swift in Sources */,
