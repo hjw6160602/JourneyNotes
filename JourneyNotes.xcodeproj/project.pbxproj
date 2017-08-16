@@ -44,6 +44,17 @@
 		67BCCEF11F43E5B700CAF600 /* tnwifi.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67BCCEF01F43E5B700CAF600 /* tnwifi.xcassets */; };
 		67BCCEF31F43E5C500CAF600 /* package.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67BCCEF21F43E5C500CAF600 /* package.xcassets */; };
 		67BCCEF51F43E65700CAF600 /* p_topBar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67BCCEF41F43E65700CAF600 /* p_topBar.xcassets */; };
+		67BCCF181F4424B800CAF600 /* JourneyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF171F4424B800CAF600 /* JourneyDetailViewController.swift */; };
+		67BCCF1A1F44267600CAF600 /* JourneyDetaiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF191F44267600CAF600 /* JourneyDetaiCell.swift */; };
+		67BCCF1C1F44279C00CAF600 /* JourneyEachDayItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF1B1F44279C00CAF600 /* JourneyEachDayItemView.swift */; };
+		67BCCF1E1F44292000CAF600 /* JourneyOptionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF1D1F44292000CAF600 /* JourneyOptionItemView.swift */; };
+		67BCCF201F44293100CAF600 /* JourneySummaryImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF1F1F44293100CAF600 /* JourneySummaryImageView.swift */; };
+		67BCCF231F442D5D00CAF600 /* JourenyDetailGroupEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF221F442D5D00CAF600 /* JourenyDetailGroupEntity.swift */; };
+		67BCCF251F442DC600CAF600 /* JourenyDetailScenicEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF241F442DC600CAF600 /* JourenyDetailScenicEntity.swift */; };
+		67BCCF271F442DFB00CAF600 /* JourenyDetailHotelEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF261F442DFB00CAF600 /* JourenyDetailHotelEntity.swift */; };
+		67BCCF291F442E0A00CAF600 /* JourenyDetailShoppingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF281F442E0A00CAF600 /* JourenyDetailShoppingEntity.swift */; };
+		67BCCF2B1F442E1900CAF600 /* JourenyDetailMealEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF2A1F442E1900CAF600 /* JourenyDetailMealEntity.swift */; };
+		67BCCF2D1F442E2800CAF600 /* JourenyDetailVehicleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF2C1F442E2800CAF600 /* JourenyDetailVehicleEntity.swift */; };
 		718F38837847D8B0183910B5 /* Pods_JourneyNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0418D4A591CF62CFC2E69384 /* Pods_JourneyNotes.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +100,17 @@
 		67BCCEF01F43E5B700CAF600 /* tnwifi.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = tnwifi.xcassets; sourceTree = "<group>"; };
 		67BCCEF21F43E5C500CAF600 /* package.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = package.xcassets; sourceTree = "<group>"; };
 		67BCCEF41F43E65700CAF600 /* p_topBar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = p_topBar.xcassets; sourceTree = "<group>"; };
+		67BCCF171F4424B800CAF600 /* JourneyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyDetailViewController.swift; sourceTree = "<group>"; };
+		67BCCF191F44267600CAF600 /* JourneyDetaiCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyDetaiCell.swift; sourceTree = "<group>"; };
+		67BCCF1B1F44279C00CAF600 /* JourneyEachDayItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyEachDayItemView.swift; sourceTree = "<group>"; };
+		67BCCF1D1F44292000CAF600 /* JourneyOptionItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyOptionItemView.swift; sourceTree = "<group>"; };
+		67BCCF1F1F44293100CAF600 /* JourneySummaryImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneySummaryImageView.swift; sourceTree = "<group>"; };
+		67BCCF221F442D5D00CAF600 /* JourenyDetailGroupEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourenyDetailGroupEntity.swift; sourceTree = "<group>"; };
+		67BCCF241F442DC600CAF600 /* JourenyDetailScenicEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourenyDetailScenicEntity.swift; sourceTree = "<group>"; };
+		67BCCF261F442DFB00CAF600 /* JourenyDetailHotelEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourenyDetailHotelEntity.swift; sourceTree = "<group>"; };
+		67BCCF281F442E0A00CAF600 /* JourenyDetailShoppingEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourenyDetailShoppingEntity.swift; sourceTree = "<group>"; };
+		67BCCF2A1F442E1900CAF600 /* JourenyDetailMealEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourenyDetailMealEntity.swift; sourceTree = "<group>"; };
+		67BCCF2C1F442E2800CAF600 /* JourenyDetailVehicleEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourenyDetailVehicleEntity.swift; sourceTree = "<group>"; };
 		D1ABE4A5171AEC23FF466FF8 /* Pods-JourneyNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JourneyNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-JourneyNotes/Pods-JourneyNotes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +205,7 @@
 		67A462631F42DA69003B7298 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				67BCCF161F4424B800CAF600 /* JourneyDetail */,
 				67A462641F42DA69003B7298 /* ViewController.swift */,
 			);
 			path = Main;
@@ -230,6 +253,32 @@
 				67BCCED71F42FF3800CAF600 /* user.xcassets */,
 			);
 			path = imageAsssets;
+			sourceTree = "<group>";
+		};
+		67BCCF161F4424B800CAF600 /* JourneyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				67BCCF211F442D1300CAF600 /* Entity */,
+				67BCCF171F4424B800CAF600 /* JourneyDetailViewController.swift */,
+				67BCCF191F44267600CAF600 /* JourneyDetaiCell.swift */,
+				67BCCF1B1F44279C00CAF600 /* JourneyEachDayItemView.swift */,
+				67BCCF1D1F44292000CAF600 /* JourneyOptionItemView.swift */,
+				67BCCF1F1F44293100CAF600 /* JourneySummaryImageView.swift */,
+			);
+			path = JourneyDetail;
+			sourceTree = "<group>";
+		};
+		67BCCF211F442D1300CAF600 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				67BCCF221F442D5D00CAF600 /* JourenyDetailGroupEntity.swift */,
+				67BCCF241F442DC600CAF600 /* JourenyDetailScenicEntity.swift */,
+				67BCCF261F442DFB00CAF600 /* JourenyDetailHotelEntity.swift */,
+				67BCCF281F442E0A00CAF600 /* JourenyDetailShoppingEntity.swift */,
+				67BCCF2A1F442E1900CAF600 /* JourenyDetailMealEntity.swift */,
+				67BCCF2C1F442E2800CAF600 /* JourenyDetailVehicleEntity.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,13 +431,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				67A4626B1F42DA69003B7298 /* ViewController.swift in Sources */,
+				67BCCF1C1F44279C00CAF600 /* JourneyEachDayItemView.swift in Sources */,
 				67A462651F42DA69003B7298 /* AppDelegate.swift in Sources */,
+				67BCCF181F4424B800CAF600 /* JourneyDetailViewController.swift in Sources */,
 				67A462691F42DA69003B7298 /* UIVIew+Extension.swift in Sources */,
 				67AB106B1F42E9490048B1FE /* UIImage+Extension.swift in Sources */,
+				67BCCF2D1F442E2800CAF600 /* JourenyDetailVehicleEntity.swift in Sources */,
+				67BCCF231F442D5D00CAF600 /* JourenyDetailGroupEntity.swift in Sources */,
+				67BCCF201F44293100CAF600 /* JourneySummaryImageView.swift in Sources */,
 				67A4626A1F42DA69003B7298 /* NavigationController.swift in Sources */,
 				67A462681F42DA69003B7298 /* UIView+AutoLayout.swift in Sources */,
+				67BCCF291F442E0A00CAF600 /* JourenyDetailShoppingEntity.swift in Sources */,
+				67BCCF2B1F442E1900CAF600 /* JourenyDetailMealEntity.swift in Sources */,
+				67BCCF1A1F44267600CAF600 /* JourneyDetaiCell.swift in Sources */,
+				67BCCF251F442DC600CAF600 /* JourenyDetailScenicEntity.swift in Sources */,
 				67A4626E1F42DC98003B7298 /* Const.swift in Sources */,
 				67A462671F42DA69003B7298 /* String+Extension.swift in Sources */,
+				67BCCF271F442DFB00CAF600 /* JourenyDetailHotelEntity.swift in Sources */,
+				67BCCF1E1F44292000CAF600 /* JourneyOptionItemView.swift in Sources */,
 				67A462661F42DA69003B7298 /* Dictionary+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

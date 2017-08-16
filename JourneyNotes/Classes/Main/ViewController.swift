@@ -2,14 +2,14 @@
 //  ViewController.swift
 //  JourneyNotes
 //
-//  Created by 贺嘉炜 on 2017/8/15.
-//  Copyright © 2017年 贺嘉炜. All rights reserved.
+//  Created by SaiDicaprio on 2017/8/15.
+//  Copyright © 2017年 SaiDicaprio. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-    let days = 9
+    let numOfDays = 9
     let contents = ["住宿", "餐饮", "交通", "景点", "购物", "玩乐", "其他"]
     
     fileprivate let kReuseIdentifier = "reuseIdentifier"
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return days
+        return numOfDays
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -49,10 +49,9 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let viewController = UIViewController()
-        viewController.title = "第\(indexPath.section + 1)天  " + contents[indexPath.row]
-        viewController.view.backgroundColor = UIColor.white
-        navigationController?.pushViewController(viewController, animated: true)
+        let journeyDetailVC = JourneyDetailViewController.init(days: numOfDays)
+//        journeyDetailVC.title = "第\(indexPath.section + 1)天  " + contents[indexPath.row]
+        navigationController?.pushViewController(journeyDetailVC, animated: true)
     }
 }
 

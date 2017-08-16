@@ -2,8 +2,8 @@
 //  NavigationController.swift
 //  JourneyNotes
 //
-//  Created by 贺嘉炜 on 2017/8/15.
-//  Copyright © 2017年 贺嘉炜. All rights reserved.
+//  Created by SaiDicaprio on 2017/8/15.
+//  Copyright © 2017年 SaiDicaprio. All rights reserved.
 //
 
 import UIKit
@@ -17,7 +17,7 @@ class NavigationController: UINavigationController {
 //        let image2 = UIImage.init(named: "user_profile_header_background_320x100_");
         navigationBar.setBackgroundImage(image, for: .default)
         navigationBar.isTranslucent = false
-        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName:UIFont.systemFont(ofSize: 17)]
+        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName:UIFont.boldSystemFont(ofSize: 18)]
     }
     
     /**
