@@ -11,7 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     let contents = ["住宿", "餐饮", "交通", "景点", "购物", "玩乐"]
-    var journeyList:NSArray = []
+    /** 原始数据 */
+    var jsonList: NSArray = []
+    /** 解析过后的数据 */
+    var journeyList: [ProdLineRouteDetail] = []
     
     fileprivate let kReuseIdentifier = "reuseIdentifier"
     
@@ -21,16 +24,26 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.tableView.contentInset = UIEdgeInsetsMake(-21, 0, 0, 0)
 //        writePlistFromJson()
-        journeyList = readArrayFromPlist()
+        jsonList = readArrayFromPlist()
+        parseEntityFromJson()
     }
     
     private func readArrayFromPlist() -> NSArray {
         if let filePath = Bundle.main.path(forResource: "Journey", ofType: "plist") {
             let array = NSArray.init(contentsOfFile: filePath)!
-            print(array)
+//            print(array)
             return array
         }
         return []
+    }
+    
+    private func parseEntityFromJson() {
+        for item in jsonList {
+            let jsonDict = item as! [String:AnyObject]
+            if let eachDayEntity = try? ProdLineRouteDetail.decodeValue(jsonDict) {
+                journeyList.append(eachDayEntity)
+            }
+        }
     }
     
     private func writePlistFromJson() {
@@ -54,7 +67,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return journeyList.count
+        return jsonList.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -79,7 +92,8 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let journeyDetailVC = JourneyDetailViewController.init(journeyList: self.journeyList)
+        
+        let journeyDetailVC = JourneyDetailViewController.init(journeyList: journeyList)
 //        journeyDetailVC.title = "第\(indexPath.section + 1)天  " + contents[indexPath.row]
         navigationController?.pushViewController(journeyDetailVC, animated: true)
     }

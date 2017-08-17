@@ -30,10 +30,10 @@ class JourneyDetaiTalbeViewCell: UITableViewCell {
     private func initUI() {
         contentView.addSubview(titleLabel)
         contentView.addSubview(nDayLabel)
-        for itemEntity: JourenyDetailGroupEntity in self.eachDayEntity.prodRouteDetailGroupList {
-            print(itemEntity.detailId)
-            addEachDayItemView(withStyle: getItemStyle(itemEntity.moduleType), itemEntity: itemEntity)
-        }
+//        for itemEntity: JourenyDetailGroupEntity in self.eachDayEntity.prodRouteDetailGroupList {
+//            print(itemEntity.detailId)
+//            addEachDayItemView(withStyle: getItemStyle(itemEntity.moduleType), itemEntity: itemEntity)
+//        }
         let seperatorLineH: CGFloat = 0.5
         cellHeight += marginH
         let seperatorLineY: CGFloat = cellHeight - seperatorLineH

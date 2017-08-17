@@ -10,13 +10,13 @@ import UIKit
 
 class JourneyDetailViewController: UIViewController {
     
-    var journeyList:NSArray = []
+    var journeyList:[ProdLineRouteDetail] = []
     
     let tableView = UITableView.init(frame: SCREEN_FRAME, style: .grouped)
     
     fileprivate let kReuseIdentifier = "journeyDetailReuseIdentifier"
     
-    convenience init(journeyList list: NSArray) {
+    convenience init(journeyList list: [ProdLineRouteDetail]) {
         self.init()
         journeyList = list
     }
@@ -48,7 +48,7 @@ extension JourneyDetailViewController: UITableViewDataSource {
         var cell = tableView.dequeueReusableCell(withIdentifier: kReuseIdentifier)
         if cell == nil {
 //            cell = JourneyDetaiTalbeViewCell.init(style: .default, reuseIdentifier: kReuseIdentifier)
-            cell = JourneyDetaiTalbeViewCell.init(eachDayEntity: self.journeyList[indexPath.row] as! ProdLineRouteDetail, reuseIdentifier: kReuseIdentifier)
+            cell = JourneyDetaiTalbeViewCell.init(eachDayEntity: self.journeyList[indexPath.row], reuseIdentifier: kReuseIdentifier)
         }
         cell!.textLabel?.text = "\(indexPath.row + 1)"
         return cell!
