@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import Himotoki
 
-struct ProdLineRouteDetail {
+struct ProdLineRouteDetail: Himotoki.Decodable {
     // 明细id
     var detailId: Int64 = 0
     //第几天
@@ -42,10 +43,45 @@ struct ProdLineRouteDetail {
     //交通工具类型中文
     var trafficTypeZh: String = ""
     //图片
-    var imageList = [Any]()
+    var imageList = [String]()
     // 线路明细组列表（结构化用）
-    var generalGroupMap = [AnyHashable: Any]()
+//    var generalGroupMap = [String: Any]()
     
     /** 7.9.7 汪雨璐 新增 详细行程概要 */
     var prodRouteDetailGroupList = [JourenyDetailGroupEntity]()
+    
+    // MARK: Himotoki.Decodable
+    
+//    static func decode(_ e: Extractor) throws -> ProdLineRouteDetail {
+//        return try ProdLineRouteDetail(
+//            name: e <| "name",
+//            floor: e <| "floor",
+//            locationName: e <| [ "location", "name" ], 
+//            optional: e <||? "optional"
+//        )
+//    }
+    
+    static func decode(_ e: Extractor) throws -> ProdLineRouteDetail {
+        return try ProdLineRouteDetail (
+            detailId : e <| "detailId",
+            nDay : e <| "nDay",
+            content : e <| "content",
+            breakfastDesc : e <| "breakfastDesc",
+            isBreakfastFlag : e <| "isBreakfastFlag",
+            dinnerDesc : e <| "dinnerDesc",
+            isDinnerFlag : e <| "isDinnerFlag",
+            lunchDesc : e <| "lunchDesc",
+            isLunchFlag : e <| "isLunchFlag",
+            routeId : e <| "routeId",
+            stayDesc : e <| "stayDesc",
+            stayType : e <| "stayType",
+            title : e <| "title",
+            trafficOther : e <| "trafficOther",
+            trafficType : e <| "trafficType",
+            trafficTypeZh : e <| "trafficTypeZh",
+            imageList : e <|| "imageList",
+//            generalGroupMap : e <|-| "generalGroupMap",
+            prodRouteDetailGroupList : e <|| "prodRouteDetailGroupList"
+        )
+    }
 }

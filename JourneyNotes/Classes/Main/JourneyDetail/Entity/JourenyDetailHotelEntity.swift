@@ -7,12 +7,9 @@
 //
 
 import Foundation
+import Himotoki
 
-struct JourenyDetailHotelEntity {
-    //  The converted code is limited by 1 KB.
-    //  Please Sign Up (Free!) to remove this limitation.
-    
-    //  Converted with Swiftify v1.0.6423 - https://objectivec2swift.com/
+struct JourenyDetailHotelEntity: Himotoki.Decodable {
     // MARK: - 共有的属性
     /** 组ID */
     var groupId: Int = 0
@@ -57,5 +54,32 @@ struct JourenyDetailHotelEntity {
     var starLevelName: String = ""
     /** 大于三星级显示 */
     var starBigThree: String = ""
+    
+    
+    static func decode(_ e: Extractor) throws -> JourenyDetailHotelEntity {
+        return try JourenyDetailHotelEntity (
+            groupId : e <| "groupId",
+            distanceKM : e <| "distanceKM",
+            travelType : e <| "travelType",
+            travelTime : e <| "travelTime",
+            isUseTemplateFlag : e <| "isUseTemplateFlag",
+            templateCode : e <| "templateCode",
+            templateText : e <| "templateText",
+            logicRelateion : e <| "logicRelateion",
+            logicRelateionName : e <| "logicRelateionName",
+            createTime : e <| "createTime",
+            updateTime : e <| "updateTime",
+            hotelId : e <| "hotelId",
+            productId : e <| "productId",
+            roomTypeId : e <| "roomTypeId",
+            hotelName : e <| "hotelName",
+            belongToPlace : e <| "belongToPlace",
+            roomType : e <| "roomType",
+            starLevel : e <| "starLevel",
+            hotelDesc : e <| "hotelDesc",
+            starLevelName : e <| "starLevelName",
+            starBigThree : e <| "starBigThree"
+        )
+    }
 
 }

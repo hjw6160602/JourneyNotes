@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import Himotoki
 
-struct JourenyDetailGroupEntity {
+struct JourenyDetailGroupEntity: Himotoki.Decodable {
     /** 主键ID */
     var groupId: Int = 0
     /** 行程ID */
@@ -41,4 +42,26 @@ struct JourenyDetailGroupEntity {
     var prodRouteDetailMealList = [JourenyDetailMealEntity]()
     /** 交通模块 详细 */
     var prodRouteDetailVehicleList = [JourenyDetailVehicleEntity]()
+    
+    static func decode(_ e: Extractor) throws -> JourenyDetailGroupEntity {
+        return try JourenyDetailGroupEntity (
+            groupId : e <| "groupId",
+            routeId : e <| "routeId",
+            detailId : e <| "detailId",
+            productId : e <| "productId",
+            sortValue : e <| "sortValue",
+            moduleType : e <| "moduleType",
+            startTime : e <| "startTime",
+            hotelTemplateText : e <| "hotelTemplateText",
+            localTimeFlag : e <| "localTimeFlag",
+            createTime : e <| "createTime",
+            updateTime : e <| "updateTime",
+            prodRouteDetailScenicList : e <|| "prodRouteDetailScenicList",
+            prodRouteDetailHotelList : e <|| "prodRouteDetailHotelList",
+            prodRouteDetailShoppingList : e <|| "prodRouteDetailShoppingList",
+            prodRouteDetailMealList : e <|| "prodRouteDetailMealList",
+            prodRouteDetailVehicleList : e <|| "prodRouteDetailVehicleList"
+        )
+    }
+    
 }

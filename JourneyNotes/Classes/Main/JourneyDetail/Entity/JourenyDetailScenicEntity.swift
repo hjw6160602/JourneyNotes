@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import Himotoki
 
-struct JourenyDetailScenicEntity {
+struct JourenyDetailScenicEntity: Himotoki.Decodable {
     var scenicId: Int = 0
     /** 组ID */
     var groupId: Int = 0
@@ -52,4 +53,31 @@ struct JourenyDetailScenicEntity {
     var templateText: String = ""
     /** 景点图片url的List */
     var imageUrl = [String]()
+    
+    static func decode(_ e: Extractor) throws -> JourenyDetailScenicEntity {
+        return try JourenyDetailScenicEntity (
+            scenicId : e <| "scenicId",
+            groupId : e <| "groupId",
+            scenicNameId : e <| "scenicNameId",
+            referencePrice : e <| "referencePrice",
+            scenicName : e <| "scenicName",
+            briefExplain : e <| "briefExplain",
+            scenicExplain : e <| "scenicExplain",
+            currency : e <| "currency",
+            otherFeesTip : e <| "otherFeesTip",
+            travelType : e <| "travelType",
+            travelTime : e <| "travelTime",
+            distanceKM : e <| "distanceKM",
+            visitTime : e <| "visitTime",
+            scenicDesc : e <| "scenicDesc",
+            isUseTemplateFlag : e <| "isUseTemplateFlag",
+            templateCode : e <| "templateCode",
+            logicRelateion : e <| "logicRelateion",
+            logicRelateionName : e <| "logicRelateionName",
+            createTime : e <| "createTime",
+            updateTime : e <| "updateTime",
+            templateText : e <| "templateText",
+            imageUrl : e <|| "imageUrl"
+        )
+    }
 }

@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import Himotoki
 
-struct JourenyDetailMealEntity {
+struct JourenyDetailMealEntity: Himotoki.Decodable {
     /** 主键ID */
     var mealId: Int = 0
     /** 组ID */
@@ -37,4 +38,23 @@ struct JourenyDetailMealEntity {
     var updateTime: String = ""
     /** 话术模板文本 */
     var templateText: String = ""
+    
+    static func decode(_ e: Extractor) throws -> JourenyDetailMealEntity {
+        return try JourenyDetailMealEntity (
+            mealId : e <| "mealId",
+            groupId : e <| "groupId",
+            price : e <| "price",
+            currency : e <| "currency",
+            mealType : e <| "mealType",
+            mealName : e <| "mealName",
+            mealDesc : e <| "mealDesc",
+            mealTime : e <| "mealTime",
+            mealPlace : e <| "mealPlace",
+            mealPlaceOther : e <| "mealPlaceOther",
+            isUseTemplateFlag : e <| "isUseTemplateFlag",
+            createTime : e <| "createTime",
+            updateTime : e <| "updateTime",
+            templateText : e <| "templateText"
+        )
+    }
 }

@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import Himotoki
 
-struct JourenyDetailShoppingEntity {
+struct JourenyDetailShoppingEntity: Himotoki.Decodable {
+
     var groupId: Int = 0
     /** 公里数 */
     var distanceKM: Float = 0.0
@@ -52,4 +54,32 @@ struct JourenyDetailShoppingEntity {
     var starLevelName: String = ""
     /** 大于三星级显示 */
     var starBigThree: String = ""
+    
+    
+    
+    static func decode(_ e: Extractor) throws -> JourenyDetailShoppingEntity {
+        return try JourenyDetailShoppingEntity (
+            groupId : e <| "groupId",
+            distanceKM : e <| "distanceKM",
+            travelType : e <| "travelType",
+            travelTime : e <| "travelTime",
+            isUseTemplateFlag : e <| "isUseTemplateFlag",
+            templateCode : e <| "templateCode",
+            logicRelation : e <| "logicRelation",
+            logicRelationName : e <| "logicRelationName",
+            createTime : e <| "createTime",
+            updateTime : e <| "updateTime",
+            templateText : e <| "templateText",
+            visitTime : e <| "visitTime",
+            shoppingId : e <| "shoppingId",
+            destId : e <| "destId",
+            address : e <| "address",
+            shoppingName : e <| "shoppingName",
+            mainProducts : e <| "mainProducts",
+            subjoinProducts : e <| "subjoinProducts",
+            shoppingDesc : e <| "shoppingDesc",
+            starLevelName : e <| "starLevelName",
+            starBigThree : e <| "starBigThree"
+        )
+    }
 }
