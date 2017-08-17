@@ -47,7 +47,8 @@ extension JourneyDetailViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: kReuseIdentifier)
         if cell == nil {
-            cell = JourneyDetaiTalbeViewCell.init(style: .default, reuseIdentifier: kReuseIdentifier)
+//            cell = JourneyDetaiTalbeViewCell.init(style: .default, reuseIdentifier: kReuseIdentifier)
+            cell = JourneyDetaiTalbeViewCell.init(eachDayEntity: self.journeyList[indexPath.row] as! ProdLineRouteDetail, reuseIdentifier: kReuseIdentifier)
         }
         cell!.textLabel?.text = "\(indexPath.row + 1)"
         return cell!

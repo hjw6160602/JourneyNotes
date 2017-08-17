@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+
+<dict>
+	<key>host</key>
+	<string>https://m.lvmama.com</string>
+	<key>page</key>
+	<string>/route/router/rest.do?</string>
+	<key>method</key>
+	<string>api.com.route.common.product.getRouteDetails</string>
+	<key>version</key>
+	<string>2.0.0</string>
+	<key>params</key>
+	<dict>
+		<key>productDestId</key>
+		<string>9</string>
+		<key>productId</key>
+		<string>216117</string>
+	</dict>
+</dict>
+
+</plist>

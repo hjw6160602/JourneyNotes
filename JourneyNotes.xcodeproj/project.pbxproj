@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67524A9F1F4547BD00B1729B /* CommonClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67524A921F4547BD00B1729B /* CommonClient.swift */; };
+		67524AA01F4547BD00B1729B /* CommonRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67524A931F4547BD00B1729B /* CommonRequest.swift */; };
+		67524AA11F4547BD00B1729B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67524A941F4547BD00B1729B /* NetworkManager.swift */; };
+		67524AA21F4547BD00B1729B /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67524A951F4547BD00B1729B /* NetworkProtocol.swift */; };
+		67524AA31F4547BD00B1729B /* ResponseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67524A961F4547BD00B1729B /* ResponseResult.swift */; };
+		67524AA41F4547BD00B1729B /* AdditionProductBranch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67524A981F4547BD00B1729B /* AdditionProductBranch.swift */; };
+		67524AA51F4547BD00B1729B /* LvmmNetworkPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67524A991F4547BD00B1729B /* LvmmNetworkPort.swift */; };
+		67524AA61F4547BD00B1729B /* AnalyzingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67524A9B1F4547BD00B1729B /* AnalyzingTool.swift */; };
+		67524AA81F4547BD00B1729B /* RequestBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 67524A9E1F4547BD00B1729B /* RequestBundle.bundle */; };
+		67524AAC1F45484400B1729B /* Operator+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67524AA91F45484400B1729B /* Operator+Extension.swift */; };
+		67524AAD1F45484400B1729B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67524AAA1F45484400B1729B /* UIColor+Extension.swift */; };
+		67524AAE1F45484400B1729B /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67524AAB1F45484400B1729B /* UILabel+Extension.swift */; };
 		675A13071F4468FB00985E68 /* Journey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 675A13061F4468FB00985E68 /* Journey.plist */; };
 		67A462651F42DA69003B7298 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4625B1F42DA69003B7298 /* AppDelegate.swift */; };
 		67A462661F42DA69003B7298 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4625E1F42DA69003B7298 /* Dictionary+Extension.swift */; };
@@ -64,6 +76,18 @@
 /* Begin PBXFileReference section */
 		0418D4A591CF62CFC2E69384 /* Pods_JourneyNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JourneyNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CD01288BD0C377FCE98313 /* Pods-JourneyNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JourneyNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JourneyNotes/Pods-JourneyNotes.debug.xcconfig"; sourceTree = "<group>"; };
+		67524A921F4547BD00B1729B /* CommonClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonClient.swift; sourceTree = "<group>"; };
+		67524A931F4547BD00B1729B /* CommonRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonRequest.swift; sourceTree = "<group>"; };
+		67524A941F4547BD00B1729B /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		67524A951F4547BD00B1729B /* NetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		67524A961F4547BD00B1729B /* ResponseResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseResult.swift; sourceTree = "<group>"; };
+		67524A981F4547BD00B1729B /* AdditionProductBranch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionProductBranch.swift; sourceTree = "<group>"; };
+		67524A991F4547BD00B1729B /* LvmmNetworkPort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LvmmNetworkPort.swift; sourceTree = "<group>"; };
+		67524A9B1F4547BD00B1729B /* AnalyzingTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzingTool.swift; sourceTree = "<group>"; };
+		67524A9E1F4547BD00B1729B /* RequestBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RequestBundle.bundle; sourceTree = "<group>"; };
+		67524AA91F45484400B1729B /* Operator+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Operator+Extension.swift"; sourceTree = "<group>"; };
+		67524AAA1F45484400B1729B /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		67524AAB1F45484400B1729B /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		675A13061F4468FB00985E68 /* Journey.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Journey.plist; sourceTree = "<group>"; };
 		677FE91E1F42CF5900C2B1C5 /* JourneyNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JourneyNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		677FE92D1F42CF5900C2B1C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -149,6 +173,54 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		67524A901F4547BD00B1729B /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				67524A911F4547BD00B1729B /* Core */,
+				67524A971F4547BD00B1729B /* Example */,
+				67524A9A1F4547BD00B1729B /* NetworkTools */,
+				67524A9D1F4547BD00B1729B /* RequestResource */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		67524A911F4547BD00B1729B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				67524A921F4547BD00B1729B /* CommonClient.swift */,
+				67524A931F4547BD00B1729B /* CommonRequest.swift */,
+				67524A941F4547BD00B1729B /* NetworkManager.swift */,
+				67524A951F4547BD00B1729B /* NetworkProtocol.swift */,
+				67524A961F4547BD00B1729B /* ResponseResult.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		67524A971F4547BD00B1729B /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				67524A981F4547BD00B1729B /* AdditionProductBranch.swift */,
+				67524A991F4547BD00B1729B /* LvmmNetworkPort.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		67524A9A1F4547BD00B1729B /* NetworkTools */ = {
+			isa = PBXGroup;
+			children = (
+				67524A9B1F4547BD00B1729B /* AnalyzingTool.swift */,
+			);
+			path = NetworkTools;
+			sourceTree = "<group>";
+		};
+		67524A9D1F4547BD00B1729B /* RequestResource */ = {
+			isa = PBXGroup;
+			children = (
+				67524A9E1F4547BD00B1729B /* RequestBundle.bundle */,
+			);
+			path = RequestResource;
+			sourceTree = "<group>";
+		};
 		677FE9151F42CF5900C2B1C5 = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				67A4626D1F42DC98003B7298 /* Const.swift */,
+				67524A901F4547BD00B1729B /* NetworkManager */,
 				67A4625D1F42DA69003B7298 /* Category */,
 				67A462621F42DA69003B7298 /* NavigationController.swift */,
 			);
@@ -199,6 +272,9 @@
 		67A4625D1F42DA69003B7298 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				67524AA91F45484400B1729B /* Operator+Extension.swift */,
+				67524AAA1F45484400B1729B /* UIColor+Extension.swift */,
+				67524AAB1F45484400B1729B /* UILabel+Extension.swift */,
 				67AB106A1F42E9490048B1FE /* UIImage+Extension.swift */,
 				67A4625E1F42DA69003B7298 /* Dictionary+Extension.swift */,
 				67A4625F1F42DA69003B7298 /* String+Extension.swift */,
@@ -377,6 +453,7 @@
 				67BCCF611F44488E00CAF600 /* coupon.xcassets in Resources */,
 				67BCCF5A1F44488E00CAF600 /* base.xcassets in Resources */,
 				67BCCF571F44488E00CAF600 /* Main.storyboard in Resources */,
+				67524AA81F4547BD00B1729B /* RequestBundle.bundle in Resources */,
 				67BCCF641F44488E00CAF600 /* destination.xcassets in Resources */,
 				675A13071F4468FB00985E68 /* Journey.plist in Resources */,
 				67BCCF731F44488E00CAF600 /* Journey.json in Resources */,
@@ -459,25 +536,36 @@
 			files = (
 				67A4626B1F42DA69003B7298 /* ViewController.swift in Sources */,
 				67BCCF1C1F44279C00CAF600 /* JourneyEachDayItemView.swift in Sources */,
+				67524AA21F4547BD00B1729B /* NetworkProtocol.swift in Sources */,
 				67A462651F42DA69003B7298 /* AppDelegate.swift in Sources */,
 				67BCCF181F4424B800CAF600 /* JourneyDetailViewController.swift in Sources */,
 				67A462691F42DA69003B7298 /* UIVIew+Extension.swift in Sources */,
 				67AB106B1F42E9490048B1FE /* UIImage+Extension.swift in Sources */,
 				67BCCF2D1F442E2800CAF600 /* JourenyDetailVehicleEntity.swift in Sources */,
 				67BCCF231F442D5D00CAF600 /* JourenyDetailGroupEntity.swift in Sources */,
+				67524AA31F4547BD00B1729B /* ResponseResult.swift in Sources */,
 				67BCCF201F44293100CAF600 /* JourneySummaryImageView.swift in Sources */,
+				67524AAE1F45484400B1729B /* UILabel+Extension.swift in Sources */,
+				67524AA51F4547BD00B1729B /* LvmmNetworkPort.swift in Sources */,
 				67A4626A1F42DA69003B7298 /* NavigationController.swift in Sources */,
 				67A462681F42DA69003B7298 /* UIView+AutoLayout.swift in Sources */,
+				67524AA41F4547BD00B1729B /* AdditionProductBranch.swift in Sources */,
 				67BCCF291F442E0A00CAF600 /* JourenyDetailShoppingEntity.swift in Sources */,
+				67524AA11F4547BD00B1729B /* NetworkManager.swift in Sources */,
 				67BCCF2B1F442E1900CAF600 /* JourenyDetailMealEntity.swift in Sources */,
+				67524AAC1F45484400B1729B /* Operator+Extension.swift in Sources */,
 				67BCCF1A1F44267600CAF600 /* JourneyDetaiTalbeViewCell.swift in Sources */,
 				67BCCF251F442DC600CAF600 /* JourenyDetailScenicEntity.swift in Sources */,
 				67BCCF2F1F44363300CAF600 /* ProdLineRouteDetail.swift in Sources */,
+				67524AAD1F45484400B1729B /* UIColor+Extension.swift in Sources */,
+				67524AA01F4547BD00B1729B /* CommonRequest.swift in Sources */,
 				67A4626E1F42DC98003B7298 /* Const.swift in Sources */,
 				67A462671F42DA69003B7298 /* String+Extension.swift in Sources */,
 				67BCCF271F442DFB00CAF600 /* JourenyDetailHotelEntity.swift in Sources */,
 				67BCCF1E1F44292000CAF600 /* JourneyOptionItemView.swift in Sources */,
+				67524AA61F4547BD00B1729B /* AnalyzingTool.swift in Sources */,
 				67A462661F42DA69003B7298 /* Dictionary+Extension.swift in Sources */,
+				67524A9F1F4547BD00B1729B /* CommonClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

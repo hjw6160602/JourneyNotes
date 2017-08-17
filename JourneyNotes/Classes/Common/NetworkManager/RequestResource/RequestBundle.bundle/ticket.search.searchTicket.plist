@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>host</key>
+	<string>https://api3g2.lvmama.com</string>
+	<key>page</key>
+	<string>/api/router/rest.do?</string>
+	<key>method</key>
+	<string>api.com.ticket.search.searchTicket</string>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>params</key>
+	<dict>
+		<key>keyword</key>
+		<string></string>
+		<key>pageNum</key>
+		<string></string>
+		<key>page</key>
+		<string></string>
+		<key>pageSize</key>
+		<string></string>
+		<key>windage</key>
+		<string></string>
+		<key>subject</key>
+		<string></string>
+		<key>hasFreenes</key>
+		<string></string>
+		<key>sort</key>
+		<string></string>
+		<key>paymentWay</key>
+		<string></string>
+		<key>ticketStar</key>
+		<string></string>
+		<key>activeFlag</key>
+		<string></string>
+		<key>promotionFlag</key>
+		<string></string>
+		<key>todayTicketFlag</key>
+		<string></string>
+		<key>dest</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>

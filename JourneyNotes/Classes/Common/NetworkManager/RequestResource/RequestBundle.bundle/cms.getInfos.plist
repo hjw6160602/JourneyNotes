@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>host</key>
+	<string>https://m.lvmama.com</string>
+	<key>page</key>
+	<string>/bullet/index.php?s=</string>
+	<key>method</key>
+	<string>/Api/getInfos</string>
+	<key>params</key>
+	<dict>
+		<key>channelCode</key>
+		<string></string>
+		<key>stationCode</key>
+		<string></string>
+		<key>tagCodes</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>

@@ -21,9 +21,10 @@ class JourneyDetaiTalbeViewCell: UITableViewCell {
     /** 用来保存Cell的高度 */
     var cellHeight: CGFloat = 0.0
     
-    convenience init(eachDayEntity: ProdLineRouteDetail, style: UITableViewCellStyle, reuseIdentifier: String) {
-        self.init(style: style, reuseIdentifier: reuseIdentifier)
+    convenience init(eachDayEntity: ProdLineRouteDetail, reuseIdentifier: String) {
+        self.init(style: .default, reuseIdentifier: reuseIdentifier)
         self.eachDayEntity = eachDayEntity
+        initUI()
     }
 
     private func initUI() {

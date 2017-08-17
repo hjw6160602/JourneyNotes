@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>host</key>
+	<string>https://api3g2.lvmama.com</string>
+	<key>page</key>
+	<string>/api/router/rest.do?</string>
+	<key>method</key>
+	<string>api.com.search.searchHotel</string>
+	<key>version</key>
+	<string>2.0.0</string>
+	<key>params</key>
+	<dict>
+		<key>cityId</key>
+		<string></string>
+		<key>cityName</key>
+		<string></string>
+		<key>hotelStar</key>
+		<string></string>
+		<key>hotel_brand</key>
+		<string></string>
+		<key>arrivalDate</key>
+		<string></string>
+		<key>departureDate</key>
+		<string></string>
+		<key>price</key>
+		<string></string>
+		<key>landMarkIds</key>
+		<string></string>
+		<key>sort</key>
+		<string></string>
+		<key>distance</key>
+		<string></string>
+		<key>facilities</key>
+		<string></string>
+		<key>pageIndex</key>
+		<string></string>
+		<key>pageSize</key>
+		<string></string>
+		<key>queryText</key>
+		<string></string>
+	</dict>
+</dict>
+</plist>
