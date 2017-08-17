@@ -35,11 +35,11 @@ struct JourenyDetailGroupEntity: Himotoki.Decodable {
     /** 景点列表 详细 */
     var prodRouteDetailScenicList: [JourenyDetailScenicEntity]?
     /** 酒店列表 详细 */
-//    var prodRouteDetailHotelList: [JourenyDetailHotelEntity]?
+    var prodRouteDetailHotelList: [JourenyDetailHotelEntity]?
     /** 购物点列表 详细 */
-//    var prodRouteDetailShoppingList: [JourenyDetailShoppingEntity]?
+    var prodRouteDetailShoppingList: [JourenyDetailShoppingEntity]?
     /** 用餐模块 详细 */
-//    var prodRouteDetailMealList: [JourenyDetailMealEntity]?
+    var prodRouteDetailMealList: [JourenyDetailMealEntity]?
     /** 交通模块 详细 */
     var prodRouteDetailVehicleList: [JourenyDetailVehicleEntity]?
     
@@ -57,9 +57,9 @@ struct JourenyDetailGroupEntity: Himotoki.Decodable {
             createTime : e <|? "createTime",
             updateTime : e <|? "updateTime",
             prodRouteDetailScenicList : e <||? "prodRouteDetailScenicList",
-//            prodRouteDetailHotelList : e <||? "prodRouteDetailHotelList",
-//            prodRouteDetailShoppingList : e <||? "prodRouteDetailShoppingList",
-//            prodRouteDetailMealList : e <||? "prodRouteDetailMealList",
+            prodRouteDetailHotelList : e <||? "prodRouteDetailHotelList",
+            prodRouteDetailShoppingList : e <||? "prodRouteDetailShoppingList",
+            prodRouteDetailMealList : e <||? "prodRouteDetailMealList",
             prodRouteDetailVehicleList : e <||? "prodRouteDetailVehicleList"
         )
     }

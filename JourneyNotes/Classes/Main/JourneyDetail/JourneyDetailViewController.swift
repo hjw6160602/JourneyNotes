@@ -10,7 +10,8 @@ import UIKit
 
 class JourneyDetailViewController: UIViewController {
     
-    var journeyList:[ProdLineRouteDetail] = []
+    var journeyList: [ProdLineRouteDetail] = []
+    var cellHeights: [Int : CGFloat] = [:]
     
     let tableView = UITableView.init(frame: SCREEN_FRAME, style: .grouped)
     
@@ -47,8 +48,9 @@ extension JourneyDetailViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: kReuseIdentifier)
         if cell == nil {
-//            cell = JourneyDetaiTalbeViewCell.init(style: .default, reuseIdentifier: kReuseIdentifier)
-            cell = JourneyDetaiTalbeViewCell.init(eachDayEntity: self.journeyList[indexPath.row], reuseIdentifier: kReuseIdentifier)
+            let detailCell = JourneyDetaiTalbeViewCell.init(eachDayEntity: self.journeyList[indexPath.row], reuseIdentifier: kReuseIdentifier)
+            cellHeights[indexPath.row] = detailCell.cellHeight
+            cell = detailCell
         }
         cell!.textLabel?.text = "\(indexPath.row + 1)"
         return cell!
@@ -58,7 +60,10 @@ extension JourneyDetailViewController: UITableViewDataSource {
 
 extension JourneyDetailViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100;
+        if let height = cellHeights[indexPath.row] {
+            return height
+        }
+        return 0
     }
 }
 
