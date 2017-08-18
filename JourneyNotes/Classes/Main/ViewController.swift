@@ -22,7 +22,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.contentInset = UIEdgeInsetsMake(-21, 0, 0, 0)
 //        writePlistFromJson()
         jsonList = readArrayFromPlist()
         parseEntityFromJson()
@@ -96,6 +95,14 @@ extension ViewController: UITableViewDelegate {
         let journeyDetailVC = JourneyDetailViewController.init(journeyList: journeyList)
 //        journeyDetailVC.title = "第\(indexPath.section + 1)天  " + contents[indexPath.row]
         navigationController?.pushViewController(journeyDetailVC, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 10
     }
 }
 

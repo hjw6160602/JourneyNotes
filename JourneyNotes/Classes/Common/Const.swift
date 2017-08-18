@@ -24,6 +24,9 @@ func grayColor (_ Value:Int) -> UIColor{
     return rgbColor(Value, Value, Value)
 }
 
+let kGlobalPink = rgbColor(232, 122, 144)
+let kGlobalGray = rgbColor(239, 239, 244)
+
 // MARK: - 全局需要的简写宏
 /** 屏幕宽高 */
 let SCREEN_FRAME  = UIScreen.main.bounds
@@ -38,7 +41,7 @@ let INCH5_5       = (SCREEN_WIDTH == 414) && (SCREEN_HEIGHT == 736)
 let kNaviBarH: CGFloat     = 64
 let kTabBarH : CGFloat     = 49
 let kStatusBarH: CGFloat   = 20
-let MARGIN: CGFloat        = 8
+let MARGIN: CGFloat        = 10
 
 /** 全局单例 [NSUserDefaults standardUserDefaults] */
 let USER_DEFAULT  = UserDefaults.standard

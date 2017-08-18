@@ -7,16 +7,13 @@
 //
 
 import UIKit
+import SnapKit
 
 fileprivate let marginH: CGFloat = 5.0
-fileprivate let LineSpaceMargin: CGFloat = 4
 
 class JourneyDetaiTalbeViewCell: UITableViewCell {
 
     var eachDayEntity: ProdLineRouteDetail = ProdLineRouteDetail()
-    var titleLabelTxt = ""
-    var briefLabelTxt = ""
-    var contentLabelTxt = ""
     
     /** 用来保存Cell的高度 */
     var cellHeight: CGFloat = 0.0
@@ -24,31 +21,27 @@ class JourneyDetaiTalbeViewCell: UITableViewCell {
     convenience init(eachDayEntity: ProdLineRouteDetail, reuseIdentifier: String) {
         self.init(style: .default, reuseIdentifier: reuseIdentifier)
         self.eachDayEntity = eachDayEntity
+        selectionStyle = .none
         initUI()
     }
 
     private func initUI() {
-        contentView.addSubview(titleLabel)
         contentView.addSubview(nDayLabel)
+        contentView.addSubview(seperateView)
+        contentView.addSubview(titleNameLabel)
+        contentView.addSubview(seperatorLine)
+        
+        cellHeight = 90
         for itemEntity: JourenyDetailGroupEntity in self.eachDayEntity.prodRouteDetailGroupList {
             if let moduleTpye = itemEntity.moduleType {
                 let itemStyle = getItemStyle(moduleTpye)
                 addEachDayItemView(withStyle: itemStyle, itemEntity: itemEntity)
             }
         }
-        let seperatorLineH: CGFloat = 0.5
-        cellHeight += marginH
-        let seperatorLineY: CGFloat = cellHeight - seperatorLineH
-
-        let frame = CGRect.init(x: 10, y: seperatorLineY, width: SCREEN_WIDTH, height: seperatorLineH)
-        let seperatorLine = UIView(frame:frame)
-        seperatorLine.backgroundColor = UIColor.lightGray
-        contentView.addSubview(seperatorLine)
         height = cellHeight
     }
     
     /** 根据 moduleType 字段来区分行程项目的类型 */
-    
     private func getItemStyle(_ moduleType: String) -> JourneySummaryItemStyle {
         var style: JourneySummaryItemStyle = .scenic
         if (moduleType == "SCENIC") {
@@ -72,65 +65,74 @@ class JourneyDetaiTalbeViewCell: UITableViewCell {
     private func addEachDayItemView(withStyle style: JourneySummaryItemStyle, itemEntity: JourenyDetailGroupEntity) {
         let frame = CGRect(x: 0, y: cellHeight, width: SCREEN_WIDTH, height: 50)
         let itemView = JourneyEachDayItemView.init(style: style, itemEntity: itemEntity, frame: frame)
-        itemView.backgroundColor = UIColor.cyan
+//        itemView.backgroundColor = UIColor.cyan
         cellHeight += itemView.height
         contentView.addSubview(itemView)
     }
-
-    // MARK: - lazy loads
-    /** 标题Label */
-    lazy var nDayLabel: UILabel = {
-        let label = UILabel(frame: CGRect(x: 10, y: 10, width: 50, height: 30))
-        label.numberOfLines = 0
-        
-        label.text = self.titleLabelTxt
-        label.textColor = UIColor.red
-        label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 16)
-        label.text = "第\(self.eachDayEntity.nDay)天"
-        return label
-    }()
     
-    /** 标题Label */
-    lazy var titleLabel: UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 14)
-        label.text = self.titleLabelTxt
-        label.textColor = UIColor.darkGray
-        return label
-    }()
-    
-    /** 标题Label */
-    lazy var briefLabel: UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 14)
-        label.text = self.titleLabelTxt
-        label.textColor = UIColor.darkGray
-        return label
-    }()
-    
-    
-    lazy var contentLabel: UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 14)
-        label.text = self.titleLabelTxt
-        label.textColor = UIColor.darkGray
-        // 静态显示textView的内容为设置的行间距
-        var paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineSpacing = LineSpaceMargin
-        // 字体的行间距
-        var textViewAttributes: [AnyHashable: Any] = [NSFontAttributeName: UIFont.systemFont(ofSize: 14), NSParagraphStyleAttributeName: paragraphStyle]
-        var attributeContent = NSMutableAttributedString(string: self.contentLabelTxt, attributes: textViewAttributes as? [String : Any] ?? [String : Any]())
-        label.attributedText = attributeContent
-        return label
-    }()
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        seperateView.snp.makeConstraints { (make) in
+            make.top.left.right.equalTo(0)
+            make.height.equalTo(MARGIN)
+        }
+        nDayLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(7)
+            make.size.equalTo(CGSize.init(width: 80, height: 30))
+            make.centerX.equalToSuperview()
+        }
+        titleNameLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(self.nDayLabel.snp.bottom)
+            make.left.equalTo(MARGIN)
+            make.right.equalTo(-MARGIN)
+            make.height.equalTo(60)
+        }
+        seperatorLine.snp.makeConstraints { (make) in
+            make.top.equalTo(self.titleNameLabel.snp.bottom)
+            make.left.equalTo(MARGIN)
+            make.right.equalTo(-MARGIN)
+            make.height.equalTo(1)
+        }
     }
 
+    lazy var seperateView: UIView = {
+        let view = UIView()
+        view.backgroundColor = kGlobalGray
+        return view
+    }()
+    
+    // MARK: - lazy loads
+    /** 第几天 Label */
+    lazy var nDayLabel: UILabel = {
+        let label = UILabel()
+        label.backgroundColor = kGlobalPink
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 17)
+        label.textColor = UIColor.white
+        label.text = "第\(self.eachDayEntity.nDay)天"
+        label.layer.cornerRadius = 4
+        label.layer.masksToBounds = true
+        return label
+    }()
+    
+    /** 标题 Label */
+    lazy var titleNameLabel: UILabel = {
+        let label = UILabel()
+        label.numberOfLines = 0
+        label.textAlignment = .center
+        label.font = UIFont.boldSystemFont(ofSize: 19)
+        label.text = self.eachDayEntity.title
+        label.textColor = UIColor.black
+        return label
+    }()
+    
+    lazy var seperatorLine: UIView = {
+        let seperatorLine = UIView()
+        seperatorLine.backgroundColor = kGlobalGray
+        return seperatorLine
+    }()
+}
+
+extension JourneyDetaiTalbeViewCell {
+    
 }
