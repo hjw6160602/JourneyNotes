@@ -31,7 +31,7 @@ class JourneyDetaiTalbeViewCell: UITableViewCell {
         contentView.addSubview(titleNameLabel)
         contentView.addSubview(seperatorLine)
         
-        cellHeight = 90
+        cellHeight = 100
         for itemEntity: JourenyDetailGroupEntity in self.eachDayEntity.prodRouteDetailGroupList {
             if let moduleTpye = itemEntity.moduleType {
                 let itemStyle = getItemStyle(moduleTpye)

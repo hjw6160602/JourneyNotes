@@ -26,6 +26,7 @@ func grayColor (_ Value:Int) -> UIColor{
 
 let kGlobalPink = rgbColor(232, 122, 144)
 let kGlobalGray = rgbColor(239, 239, 244)
+let kTextBlack = rgbColor(50, 50, 50)
 
 // MARK: - 全局需要的简写宏
 /** 屏幕宽高 */

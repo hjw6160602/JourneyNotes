@@ -19,56 +19,139 @@ enum JourneySummaryItemStyle : String {
     case meal = "MEAL"
     // 购物
     case shopping = "SHOPPING"
+    // default
+    case nothing = ""
 }
 
-fileprivate let LineSpaceMargin: CGFloat = 4
+fileprivate let MARGIN_H: CGFloat = 5
+fileprivate let MIN_HEIGHT: CGFloat = 16
+fileprivate let titleX = MIN_HEIGHT + MARGIN * 2
 
 class JourneyEachDayItemView: UIView {
-    
-    var briefLabelTxt = ""
-    var contentLabelTxt = ""
-    
-    /** 某一项具体活动的数据Entity */
-    var itemEntity: JourenyDetailGroupEntity = JourenyDetailGroupEntity()
-    
+
+    var iconImageName = "book_info_19x19_"
+    var titleLabelTxt = "景点：大英博物馆"
+    var style: JourneySummaryItemStyle = .nothing
+
     convenience init(style: JourneySummaryItemStyle, itemEntity: JourenyDetailGroupEntity, frame: CGRect) {
         self.init(frame:frame)
         self.itemEntity = itemEntity;
         initUI()
+        layoutSubviewsGetHeight()
     }
     
     private func initUI() {
-        
+        addSubview(iconImageView)
+        addSubview(titleLabel)
     }
     
-    /** 标题Label */
-    lazy var briefLabel: UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 14)
-        label.text = self.briefLabelTxt
-        label.textColor = UIColor.darkGray
-        return label
+    private func layoutSubviewsGetHeight (){
+        var currentHeight: CGFloat = 0
+        let titleW: CGFloat = SCREEN_WIDTH - titleX - MARGIN
+        if titleLabelTxt.characters.count > 0 {
+            let titleH: CGFloat = 20
+            let titleY: CGFloat = currentHeight + MARGIN
+            titleLabel.frame = CGRect(x: titleX, y: titleY, width: titleW, height: titleH)
+            currentHeight += titleH + MARGIN_H
+        }
+
+    }
+    
+    /** 某一项具体活动的数据Entity */
+    var itemEntity: JourenyDetailGroupEntity = JourenyDetailGroupEntity() {
+        didSet {
+            switch style {
+            case .scenic:
+                if let entities = itemEntity.prodRouteDetailScenicList {
+                    if entities.count > 0 {
+                        iconImageName = "book_info_19x19_"
+                        titleLabelTxt = "景点"
+                        deal(with: .scenic, entities: entities)
+                    }
+                }
+            case .hotel:
+                if let entities = itemEntity.prodRouteDetailHotelList {
+                    if entities.count > 0 {
+                        iconImageName = "book_info_19x19_"
+                        titleLabelTxt = "住宿"
+                        deal(with: .hotel, entities: entities)
+                    }
+                }
+            case .vehicle:
+                if let entities = itemEntity.prodRouteDetailVehicleList {
+                    if entities.count > 0 {
+                        iconImageName = "book_info_19x19_"
+                        let vehicleEntity: JourenyDetailVehicleEntity? = entities.first
+                        var text = "交通："
+                        if let vehicleName = vehicleEntity?.vehicleName {
+                            text += vehicleName
+                        }
+                        titleLabelTxt = text
+                        deal(with: .vehicle, entities: entities)
+                    }
+                }
+            case .meal:
+                if let entities = itemEntity.prodRouteDetailMealList {
+                    if entities.count > 0 {
+                        iconImageName = "book_info_19x19_"
+                        titleLabelTxt = "餐饮"
+                        deal(with: .meal, entities: entities)
+                    }
+                }
+            case .shopping:
+                if let entities = itemEntity.prodRouteDetailShoppingList {
+                    if entities.count > 0 {
+                        iconImageName = "book_info_19x19_"
+                        titleLabelTxt = "购物"
+                        deal(with: .shopping, entities: entities)
+                    }
+                }
+            default: break
+            }
+        }
+    }
+    
+    /**
+     * @func   dealWithStyle : 处理行程项目数组中的数据
+     * @param  style    行程项目的类型
+     *         entities 行程项目中的某一项有多个可选项的可选数组
+     */
+    func deal(with style: JourneySummaryItemStyle, entities: [Any]) {
+        var currentHeight: CGFloat = titleLabel.height
+        //一上来是可选项的第一项
+        var isFirst: Bool = true
+        for entity: Any in entities {
+            let itemView = JourneyOptionItemView(style: style, optionalItem: entity, isFirst: isFirst)
+            //之后都不是第一项
+            isFirst = false
+            itemView.y = currentHeight
+            addSubview(itemView)
+            
+            itemView.height = 10
+            itemView.backgroundColor = UIColor.blue
+            
+            //算出当前的高度
+            currentHeight += itemView.height
+        }
+        self.height = currentHeight
+    }
+    
+    // MARK: - lazy loads
+    lazy var iconImageView: UIImageView = {
+        let imageView = UIImageView(image: UIImage(named: self.iconImageName))
+        imageView.frame = CGRect.init(x: MARGIN, y: MARGIN, width: MIN_HEIGHT, height: MIN_HEIGHT)
+        return imageView
     }()
     
-    
-    lazy var contentLabel: UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 14)
-        label.text = self.contentLabelTxt
-        label.textColor = UIColor.darkGray
-        // 静态显示textView的内容为设置的行间距
-        var paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineSpacing = LineSpaceMargin
-        // 字体的行间距
-        var textViewAttributes: [AnyHashable: Any] = [NSFontAttributeName: UIFont.systemFont(ofSize: 14), NSParagraphStyleAttributeName: paragraphStyle]
-        var attributeContent = NSMutableAttributedString(string: self.contentLabelTxt, attributes: textViewAttributes as? [String : Any] ?? [String : Any]())
-        label.attributedText = attributeContent
-        return label
+    lazy var titleLabel:UILabel = {
+        let titleLabel = UILabel()
+        titleLabel.numberOfLines = 0
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 16)
+        titleLabel.text = self.titleLabelTxt
+        titleLabel.textColor = kGlobalPink
+        return titleLabel
     }()
 }
-
 
 extension JourneyEachDayItemView {
     
