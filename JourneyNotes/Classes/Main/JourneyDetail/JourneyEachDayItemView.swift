@@ -23,13 +23,13 @@ enum JourneySummaryItemStyle : String {
     case nothing = ""
 }
 
-fileprivate let MARGIN_H: CGFloat = 5
-fileprivate let MIN_HEIGHT: CGFloat = 16
-fileprivate let titleX = MIN_HEIGHT + MARGIN * 2
+
+fileprivate let kIconWH: CGFloat = 16
+let titleX = kIconWH + MARGIN * 2
 
 class JourneyEachDayItemView: UIView {
 
-    var iconImageName = "book_info_19x19_"
+    var iconImageName = ""
     var titleLabelTxt = ""
     var itemStyle: JourneySummaryItemStyle = .nothing
     var itemEntity: JourenyDetailGroupEntity?
@@ -40,23 +40,11 @@ class JourneyEachDayItemView: UIView {
         itemEntity = entity;
         initData()
         initUI()
-        layoutSubviewsGetHeight()
     }
     
     private func initUI() {
         addSubview(iconImageView)
         addSubview(titleLabel)
-    }
-    
-    private func layoutSubviewsGetHeight (){
-        var currentHeight: CGFloat = 0
-        let titleW: CGFloat = SCREEN_WIDTH - titleX - MARGIN
-        if titleLabelTxt.characters.count > 0 {
-            let titleH: CGFloat = 20
-            let titleY: CGFloat = currentHeight + MARGIN
-            titleLabel.frame = CGRect(x: titleX, y: titleY, width: titleW, height: titleH)
-            currentHeight += titleH + MARGIN_H
-        }
     }
     
     /** 某一项具体活动的数据Entity */
@@ -66,7 +54,7 @@ class JourneyEachDayItemView: UIView {
             if let entities = itemEntity?.prodRouteDetailScenicList {
                 if entities.count > 0 {
                     iconImageName = "book_info_19x19_"
-                    titleLabelTxt = "景点"
+                    titleLabelTxt = "景点："
                     deal(with: .scenic, entities: entities)
                 }
             }
@@ -74,7 +62,7 @@ class JourneyEachDayItemView: UIView {
             if let entities = itemEntity?.prodRouteDetailHotelList {
                 if entities.count > 0 {
                     iconImageName = "book_info_19x19_"
-                    titleLabelTxt = "住宿"
+                    titleLabelTxt = "住宿："
                     deal(with: .hotel, entities: entities)
                 }
             }
@@ -82,31 +70,19 @@ class JourneyEachDayItemView: UIView {
             if let entities = itemEntity?.prodRouteDetailVehicleList {
                 if entities.count > 0 {
                     iconImageName = "book_info_19x19_"
-                    let vehicleEntity: JourenyDetailVehicleEntity? = entities.first
-                    var text = "交通："
-                    if let vehicleName = vehicleEntity?.vehicleName {
-                        text += vehicleName
-                    }
+                    let text = "交通："
                     titleLabelTxt = text
                     deal(with: .vehicle, entities: entities)
                 }
             }
-        case .meal:
-            if let entities = itemEntity?.prodRouteDetailMealList {
-                if entities.count > 0 {
-                    iconImageName = "book_info_19x19_"
-                    titleLabelTxt = "餐饮"
-                    deal(with: .meal, entities: entities)
-                }
-            }
-        case .shopping:
-            if let entities = itemEntity?.prodRouteDetailShoppingList {
-                if entities.count > 0 {
-                    iconImageName = "book_info_19x19_"
-                    titleLabelTxt = "购物"
-                    deal(with: .shopping, entities: entities)
-                }
-            }
+//        case .meal:
+//            if let entities = itemEntity?.prodRouteDetailMealList {
+//                if entities.count > 0 {
+//                    iconImageName = "book_info_19x19_"
+//                    titleLabelTxt = "餐饮："
+//                    deal(with: .meal, entities: entities)
+//                }
+//            }
         default: break
         }
     }
@@ -117,7 +93,7 @@ class JourneyEachDayItemView: UIView {
      *         entities 行程项目中的某一项有多个可选项的可选数组
      */
     func deal(with style: JourneySummaryItemStyle, entities: [Any]) {
-        var currentHeight: CGFloat = titleLabel.height
+        var currentHeight: CGFloat = 0
         //一上来是可选项的第一项
         var isFirst: Bool = true
         for entity: Any in entities {
@@ -126,9 +102,6 @@ class JourneyEachDayItemView: UIView {
             isFirst = false
             itemView.y = currentHeight
             addSubview(itemView)
-            
-            itemView.height = 50
-            itemView.backgroundColor = UIColor.blue
             
             //算出当前的高度
             currentHeight += itemView.height
@@ -139,16 +112,20 @@ class JourneyEachDayItemView: UIView {
     // MARK: - lazy loads
     lazy var iconImageView: UIImageView = {
         let imageView = UIImageView(image: UIImage(named: self.iconImageName))
-        imageView.frame = CGRect.init(x: MARGIN, y: MARGIN, width: MIN_HEIGHT, height: MIN_HEIGHT)
+        imageView.frame = CGRect.init(x: MARGIN, y: MARGIN, width: kIconWH, height: kIconWH)
         return imageView
     }()
     
     lazy var titleLabel:UILabel = {
         let titleLabel = UILabel()
+        let titleW: CGFloat = SCREEN_WIDTH - titleX - MARGIN
+        if self.titleLabelTxt.characters.count > 0 {
+            titleLabel.frame = CGRect(x: titleX, y: MARGIN, width: titleW, height: 20)
+        }
         titleLabel.numberOfLines = 0
         titleLabel.font = UIFont.boldSystemFont(ofSize: 16)
         titleLabel.text = self.titleLabelTxt
-        titleLabel.textColor = kGlobalPink
+        titleLabel.textColor = kTextBlack
         return titleLabel
     }()
 }

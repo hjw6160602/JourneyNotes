@@ -4,7 +4,7 @@
 //
 //  Created by SaiDicaprio on 2017/8/16.
 //  Copyright © 2017年 SaiDicaprio. All rights reserved.
-//
+//  每一个Cell代表一天
 
 import UIKit
 import SnapKit
@@ -35,15 +35,19 @@ class JourneyDetaiTalbeViewCell: UITableViewCell {
         for itemEntity: JourenyDetailGroupEntity in self.eachDayEntity.prodRouteDetailGroupList {
             if let moduleTpye = itemEntity.moduleType {
                 let itemStyle = getItemStyle(moduleTpye)
-                addEachDayItemView(withStyle: itemStyle, itemEntity: itemEntity)
+                // 如果能够拿到项目类型
+                if itemStyle != .nothing {
+                    // 那么将其添加上来
+                    addEachDayItemView(withStyle: itemStyle, itemEntity: itemEntity)
+                }
             }
         }
-        height = cellHeight
+        height = cellHeight + MARGIN
     }
     
     /** 根据 moduleType 字段来区分行程项目的类型 */
     private func getItemStyle(_ moduleType: String) -> JourneySummaryItemStyle {
-        var style: JourneySummaryItemStyle = .scenic
+        var style: JourneySummaryItemStyle = .nothing
         if (moduleType == "SCENIC") {
             style = .scenic
         }
@@ -53,19 +57,19 @@ class JourneyDetaiTalbeViewCell: UITableViewCell {
         else if (moduleType == "VEHICLE") {
             style = .vehicle
         }
-        else if (moduleType == "MEAL") {
-            style = .meal
-        }
-        else if (moduleType == "SHOPPING") {
-            style = .shopping
-        }
+        // 暂不设置餐饮和购物字段
+//        else if (moduleType == "MEAL") {
+//            style = .meal
+//        }
+//        else if (moduleType == "SHOPPING") {
+//            style = .shopping
+//        }
         return style
     }
     
     private func addEachDayItemView(withStyle style: JourneySummaryItemStyle, itemEntity: JourenyDetailGroupEntity) {
         let frame = CGRect(x: 0, y: cellHeight, width: SCREEN_WIDTH, height: 50)
         let itemView = JourneyEachDayItemView.init(style: style, entity: itemEntity, frame: frame)
-//        itemView.backgroundColor = UIColor.cyan
         cellHeight += itemView.height
         contentView.addSubview(itemView)
     }
