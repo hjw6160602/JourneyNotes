@@ -30,12 +30,15 @@ fileprivate let titleX = MIN_HEIGHT + MARGIN * 2
 class JourneyEachDayItemView: UIView {
 
     var iconImageName = "book_info_19x19_"
-    var titleLabelTxt = "景点：大英博物馆"
-    var style: JourneySummaryItemStyle = .nothing
-
-    convenience init(style: JourneySummaryItemStyle, itemEntity: JourenyDetailGroupEntity, frame: CGRect) {
+    var titleLabelTxt = ""
+    var itemStyle: JourneySummaryItemStyle = .nothing
+    var itemEntity: JourenyDetailGroupEntity?
+    
+    convenience init(style: JourneySummaryItemStyle, entity: JourenyDetailGroupEntity, frame: CGRect) {
         self.init(frame:frame)
-        self.itemEntity = itemEntity;
+        itemStyle = style
+        itemEntity = entity;
+        initData()
         initUI()
         layoutSubviewsGetHeight()
     }
@@ -54,60 +57,57 @@ class JourneyEachDayItemView: UIView {
             titleLabel.frame = CGRect(x: titleX, y: titleY, width: titleW, height: titleH)
             currentHeight += titleH + MARGIN_H
         }
-
     }
     
     /** 某一项具体活动的数据Entity */
-    var itemEntity: JourenyDetailGroupEntity = JourenyDetailGroupEntity() {
-        didSet {
-            switch style {
-            case .scenic:
-                if let entities = itemEntity.prodRouteDetailScenicList {
-                    if entities.count > 0 {
-                        iconImageName = "book_info_19x19_"
-                        titleLabelTxt = "景点"
-                        deal(with: .scenic, entities: entities)
-                    }
+    private func initData() {
+        switch itemStyle {
+        case .scenic:
+            if let entities = itemEntity?.prodRouteDetailScenicList {
+                if entities.count > 0 {
+                    iconImageName = "book_info_19x19_"
+                    titleLabelTxt = "景点"
+                    deal(with: .scenic, entities: entities)
                 }
-            case .hotel:
-                if let entities = itemEntity.prodRouteDetailHotelList {
-                    if entities.count > 0 {
-                        iconImageName = "book_info_19x19_"
-                        titleLabelTxt = "住宿"
-                        deal(with: .hotel, entities: entities)
-                    }
-                }
-            case .vehicle:
-                if let entities = itemEntity.prodRouteDetailVehicleList {
-                    if entities.count > 0 {
-                        iconImageName = "book_info_19x19_"
-                        let vehicleEntity: JourenyDetailVehicleEntity? = entities.first
-                        var text = "交通："
-                        if let vehicleName = vehicleEntity?.vehicleName {
-                            text += vehicleName
-                        }
-                        titleLabelTxt = text
-                        deal(with: .vehicle, entities: entities)
-                    }
-                }
-            case .meal:
-                if let entities = itemEntity.prodRouteDetailMealList {
-                    if entities.count > 0 {
-                        iconImageName = "book_info_19x19_"
-                        titleLabelTxt = "餐饮"
-                        deal(with: .meal, entities: entities)
-                    }
-                }
-            case .shopping:
-                if let entities = itemEntity.prodRouteDetailShoppingList {
-                    if entities.count > 0 {
-                        iconImageName = "book_info_19x19_"
-                        titleLabelTxt = "购物"
-                        deal(with: .shopping, entities: entities)
-                    }
-                }
-            default: break
             }
+        case .hotel:
+            if let entities = itemEntity?.prodRouteDetailHotelList {
+                if entities.count > 0 {
+                    iconImageName = "book_info_19x19_"
+                    titleLabelTxt = "住宿"
+                    deal(with: .hotel, entities: entities)
+                }
+            }
+        case .vehicle:
+            if let entities = itemEntity?.prodRouteDetailVehicleList {
+                if entities.count > 0 {
+                    iconImageName = "book_info_19x19_"
+                    let vehicleEntity: JourenyDetailVehicleEntity? = entities.first
+                    var text = "交通："
+                    if let vehicleName = vehicleEntity?.vehicleName {
+                        text += vehicleName
+                    }
+                    titleLabelTxt = text
+                    deal(with: .vehicle, entities: entities)
+                }
+            }
+        case .meal:
+            if let entities = itemEntity?.prodRouteDetailMealList {
+                if entities.count > 0 {
+                    iconImageName = "book_info_19x19_"
+                    titleLabelTxt = "餐饮"
+                    deal(with: .meal, entities: entities)
+                }
+            }
+        case .shopping:
+            if let entities = itemEntity?.prodRouteDetailShoppingList {
+                if entities.count > 0 {
+                    iconImageName = "book_info_19x19_"
+                    titleLabelTxt = "购物"
+                    deal(with: .shopping, entities: entities)
+                }
+            }
+        default: break
         }
     }
     
@@ -127,7 +127,7 @@ class JourneyEachDayItemView: UIView {
             itemView.y = currentHeight
             addSubview(itemView)
             
-            itemView.height = 10
+            itemView.height = 50
             itemView.backgroundColor = UIColor.blue
             
             //算出当前的高度

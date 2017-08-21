@@ -64,7 +64,7 @@ class JourneyDetaiTalbeViewCell: UITableViewCell {
     
     private func addEachDayItemView(withStyle style: JourneySummaryItemStyle, itemEntity: JourenyDetailGroupEntity) {
         let frame = CGRect(x: 0, y: cellHeight, width: SCREEN_WIDTH, height: 50)
-        let itemView = JourneyEachDayItemView.init(style: style, itemEntity: itemEntity, frame: frame)
+        let itemView = JourneyEachDayItemView.init(style: style, entity: itemEntity, frame: frame)
 //        itemView.backgroundColor = UIColor.cyan
         cellHeight += itemView.height
         contentView.addSubview(itemView)
