@@ -30,10 +30,6 @@
 		67A4626E1F42DC98003B7298 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4626D1F42DC98003B7298 /* Const.swift */; };
 		67AB106B1F42E9490048B1FE /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AB106A1F42E9490048B1FE /* UIImage+Extension.swift */; };
 		67BCCF181F4424B800CAF600 /* JourneyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF171F4424B800CAF600 /* JourneyDetailViewController.swift */; };
-		67BCCF1A1F44267600CAF600 /* JourneyDetaiTalbeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF191F44267600CAF600 /* JourneyDetaiTalbeViewCell.swift */; };
-		67BCCF1C1F44279C00CAF600 /* JourneyEachDayItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF1B1F44279C00CAF600 /* JourneyEachDayItemView.swift */; };
-		67BCCF1E1F44292000CAF600 /* JourneyOptionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF1D1F44292000CAF600 /* JourneyOptionItemView.swift */; };
-		67BCCF201F44293100CAF600 /* JourneySummaryImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF1F1F44293100CAF600 /* JourneySummaryImageView.swift */; };
 		67BCCF231F442D5D00CAF600 /* JourenyDetailGroupEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF221F442D5D00CAF600 /* JourenyDetailGroupEntity.swift */; };
 		67BCCF251F442DC600CAF600 /* JourenyDetailScenicEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF241F442DC600CAF600 /* JourenyDetailScenicEntity.swift */; };
 		67BCCF271F442DFB00CAF600 /* JourenyDetailHotelEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BCCF261F442DFB00CAF600 /* JourenyDetailHotelEntity.swift */; };
@@ -70,6 +66,13 @@
 		67BCCF711F44488E00CAF600 /* train.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67BCCF531F44488E00CAF600 /* train.xcassets */; };
 		67BCCF721F44488E00CAF600 /* user.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67BCCF541F44488E00CAF600 /* user.xcassets */; };
 		67BCCF731F44488E00CAF600 /* Journey.json in Resources */ = {isa = PBXBuildFile; fileRef = 67BCCF561F44488E00CAF600 /* Journey.json */; };
+		67F500051F4C4979001729A5 /* JourneyDetaiTalbeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F500011F4C4979001729A5 /* JourneyDetaiTalbeViewCell.swift */; };
+		67F500061F4C4979001729A5 /* JourneyEachDayItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F500021F4C4979001729A5 /* JourneyEachDayItemView.swift */; };
+		67F500071F4C4979001729A5 /* JourneyOptionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F500031F4C4979001729A5 /* JourneyOptionItemView.swift */; };
+		67F500081F4C4979001729A5 /* JourneySummaryImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F500041F4C4979001729A5 /* JourneySummaryImageView.swift */; };
+		67F5000B1F4C49A7001729A5 /* JourneySummaryNavigationTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F5000A1F4C49A7001729A5 /* JourneySummaryNavigationTableView.swift */; };
+		67F5000D1F4C4BC8001729A5 /* JourneySummaryNavigationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F5000C1F4C4BC8001729A5 /* JourneySummaryNavigationCell.swift */; };
+		67F500111F4C4BEF001729A5 /* JourneySummaryNavigationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F500101F4C4BEF001729A5 /* JourneySummaryNavigationCell.xib */; };
 		718F38837847D8B0183910B5 /* Pods_JourneyNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0418D4A591CF62CFC2E69384 /* Pods_JourneyNotes.framework */; };
 /* End PBXBuildFile section */
 
@@ -101,10 +104,6 @@
 		67A4626D1F42DC98003B7298 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		67AB106A1F42E9490048B1FE /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		67BCCF171F4424B800CAF600 /* JourneyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyDetailViewController.swift; sourceTree = "<group>"; };
-		67BCCF191F44267600CAF600 /* JourneyDetaiTalbeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyDetaiTalbeViewCell.swift; sourceTree = "<group>"; };
-		67BCCF1B1F44279C00CAF600 /* JourneyEachDayItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyEachDayItemView.swift; sourceTree = "<group>"; };
-		67BCCF1D1F44292000CAF600 /* JourneyOptionItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyOptionItemView.swift; sourceTree = "<group>"; };
-		67BCCF1F1F44293100CAF600 /* JourneySummaryImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneySummaryImageView.swift; sourceTree = "<group>"; };
 		67BCCF221F442D5D00CAF600 /* JourenyDetailGroupEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourenyDetailGroupEntity.swift; sourceTree = "<group>"; };
 		67BCCF241F442DC600CAF600 /* JourenyDetailScenicEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourenyDetailScenicEntity.swift; sourceTree = "<group>"; };
 		67BCCF261F442DFB00CAF600 /* JourenyDetailHotelEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourenyDetailHotelEntity.swift; sourceTree = "<group>"; };
@@ -141,6 +140,13 @@
 		67BCCF531F44488E00CAF600 /* train.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = train.xcassets; sourceTree = "<group>"; };
 		67BCCF541F44488E00CAF600 /* user.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = user.xcassets; sourceTree = "<group>"; };
 		67BCCF561F44488E00CAF600 /* Journey.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Journey.json; sourceTree = "<group>"; };
+		67F500011F4C4979001729A5 /* JourneyDetaiTalbeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyDetaiTalbeViewCell.swift; sourceTree = "<group>"; };
+		67F500021F4C4979001729A5 /* JourneyEachDayItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyEachDayItemView.swift; sourceTree = "<group>"; };
+		67F500031F4C4979001729A5 /* JourneyOptionItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyOptionItemView.swift; sourceTree = "<group>"; };
+		67F500041F4C4979001729A5 /* JourneySummaryImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneySummaryImageView.swift; sourceTree = "<group>"; };
+		67F5000A1F4C49A7001729A5 /* JourneySummaryNavigationTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneySummaryNavigationTableView.swift; sourceTree = "<group>"; };
+		67F5000C1F4C4BC8001729A5 /* JourneySummaryNavigationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneySummaryNavigationCell.swift; sourceTree = "<group>"; };
+		67F500101F4C4BEF001729A5 /* JourneySummaryNavigationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JourneySummaryNavigationCell.xib; sourceTree = "<group>"; };
 		D1ABE4A5171AEC23FF466FF8 /* Pods-JourneyNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JourneyNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-JourneyNotes/Pods-JourneyNotes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -305,12 +311,10 @@
 		67BCCF161F4424B800CAF600 /* JourneyDetail */ = {
 			isa = PBXGroup;
 			children = (
-				67BCCF211F442D1300CAF600 /* Entity */,
 				67BCCF171F4424B800CAF600 /* JourneyDetailViewController.swift */,
-				67BCCF191F44267600CAF600 /* JourneyDetaiTalbeViewCell.swift */,
-				67BCCF1B1F44279C00CAF600 /* JourneyEachDayItemView.swift */,
-				67BCCF1D1F44292000CAF600 /* JourneyOptionItemView.swift */,
-				67BCCF1F1F44293100CAF600 /* JourneySummaryImageView.swift */,
+				67BCCF211F442D1300CAF600 /* Entity */,
+				67F500091F4C498D001729A5 /* Navigation */,
+				67F500001F4C4979001729A5 /* EachDay */,
 			);
 			path = JourneyDetail;
 			sourceTree = "<group>";
@@ -380,6 +384,27 @@
 				67BCCF561F44488E00CAF600 /* Journey.json */,
 			);
 			path = json;
+			sourceTree = "<group>";
+		};
+		67F500001F4C4979001729A5 /* EachDay */ = {
+			isa = PBXGroup;
+			children = (
+				67F500011F4C4979001729A5 /* JourneyDetaiTalbeViewCell.swift */,
+				67F500021F4C4979001729A5 /* JourneyEachDayItemView.swift */,
+				67F500031F4C4979001729A5 /* JourneyOptionItemView.swift */,
+				67F500041F4C4979001729A5 /* JourneySummaryImageView.swift */,
+			);
+			path = EachDay;
+			sourceTree = "<group>";
+		};
+		67F500091F4C498D001729A5 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				67F5000A1F4C49A7001729A5 /* JourneySummaryNavigationTableView.swift */,
+				67F5000C1F4C4BC8001729A5 /* JourneySummaryNavigationCell.swift */,
+				67F500101F4C4BEF001729A5 /* JourneySummaryNavigationCell.xib */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -476,6 +501,7 @@
 				67BCCF6D1F44488E00CAF600 /* package.xcassets in Resources */,
 				67BCCF701F44488E00CAF600 /* tnwifi.xcassets in Resources */,
 				67BCCF6F1F44488E00CAF600 /* super.xcassets in Resources */,
+				67F500111F4C4BEF001729A5 /* JourneySummaryNavigationCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,17 +560,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67F5000B1F4C49A7001729A5 /* JourneySummaryNavigationTableView.swift in Sources */,
 				67A4626B1F42DA69003B7298 /* ViewController.swift in Sources */,
-				67BCCF1C1F44279C00CAF600 /* JourneyEachDayItemView.swift in Sources */,
 				67524AA21F4547BD00B1729B /* NetworkProtocol.swift in Sources */,
 				67A462651F42DA69003B7298 /* AppDelegate.swift in Sources */,
 				67BCCF181F4424B800CAF600 /* JourneyDetailViewController.swift in Sources */,
 				67A462691F42DA69003B7298 /* UIVIew+Extension.swift in Sources */,
 				67AB106B1F42E9490048B1FE /* UIImage+Extension.swift in Sources */,
 				67BCCF2D1F442E2800CAF600 /* JourenyDetailVehicleEntity.swift in Sources */,
+				67F500081F4C4979001729A5 /* JourneySummaryImageView.swift in Sources */,
 				67BCCF231F442D5D00CAF600 /* JourenyDetailGroupEntity.swift in Sources */,
 				67524AA31F4547BD00B1729B /* ResponseResult.swift in Sources */,
-				67BCCF201F44293100CAF600 /* JourneySummaryImageView.swift in Sources */,
+				67F5000D1F4C4BC8001729A5 /* JourneySummaryNavigationCell.swift in Sources */,
 				67524AAE1F45484400B1729B /* UILabel+Extension.swift in Sources */,
 				67524AA51F4547BD00B1729B /* LvmmNetworkPort.swift in Sources */,
 				67A4626A1F42DA69003B7298 /* NavigationController.swift in Sources */,
@@ -554,7 +581,8 @@
 				67524AA11F4547BD00B1729B /* NetworkManager.swift in Sources */,
 				67BCCF2B1F442E1900CAF600 /* JourenyDetailMealEntity.swift in Sources */,
 				67524AAC1F45484400B1729B /* Operator+Extension.swift in Sources */,
-				67BCCF1A1F44267600CAF600 /* JourneyDetaiTalbeViewCell.swift in Sources */,
+				67F500061F4C4979001729A5 /* JourneyEachDayItemView.swift in Sources */,
+				67F500051F4C4979001729A5 /* JourneyDetaiTalbeViewCell.swift in Sources */,
 				67BCCF251F442DC600CAF600 /* JourenyDetailScenicEntity.swift in Sources */,
 				67BCCF2F1F44363300CAF600 /* ProdLineRouteDetail.swift in Sources */,
 				67524AAD1F45484400B1729B /* UIColor+Extension.swift in Sources */,
@@ -562,9 +590,9 @@
 				67A4626E1F42DC98003B7298 /* Const.swift in Sources */,
 				67A462671F42DA69003B7298 /* String+Extension.swift in Sources */,
 				67BCCF271F442DFB00CAF600 /* JourenyDetailHotelEntity.swift in Sources */,
-				67BCCF1E1F44292000CAF600 /* JourneyOptionItemView.swift in Sources */,
 				67524AA61F4547BD00B1729B /* AnalyzingTool.swift in Sources */,
 				67A462661F42DA69003B7298 /* Dictionary+Extension.swift in Sources */,
+				67F500071F4C4979001729A5 /* JourneyOptionItemView.swift in Sources */,
 				67524A9F1F4547BD00B1729B /* CommonClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

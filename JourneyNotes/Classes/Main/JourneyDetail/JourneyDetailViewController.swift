@@ -31,7 +31,7 @@ class JourneyDetailViewController: UIViewController {
         view.backgroundColor = UIColor.white
         view.addSubview(tableView)
         view.addSubview(backTopBtn)
-
+        view.addSubview(navigationBtn)
         automaticallyAdjustsScrollViewInsets = false
     }
     
@@ -58,6 +58,16 @@ class JourneyDetailViewController: UIViewController {
         button.setImage(UIImage(named: "super_icon_toTop_50x50_"), for: .normal)
         _ = button.rx.tap.subscribe {[weak self] (event) in
             self?.tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+        }
+        return button
+    }()
+    
+    lazy var navigationBtn: UIButton = {
+        let button = UIButton(frame: CGRect(x: SCREEN_WIDTH - 60, y: SCREEN_HEIGHT * 0.6, width: 50, height: 50))
+        button.setImage(UIImage(named: "package_bg_routeList_50x50_"), for: .normal)
+        _ = button.rx.tap.subscribe {[weak self] (event) in
+            print("搞事情")
+            
         }
         return button
     }()
