@@ -30,6 +30,8 @@ class JourneyDetailViewController: UIViewController {
         title = "详细行程"
         view.backgroundColor = UIColor.white
         view.addSubview(tableView)
+        view.addSubview(backTopBtn)
+
         automaticallyAdjustsScrollViewInsets = false
     }
     
@@ -49,6 +51,15 @@ class JourneyDetailViewController: UIViewController {
         tableView.dataSource = self
         tableView.separatorStyle = .none
         return tableView
+    }()
+    
+    lazy var backTopBtn: UIButton = {
+        let button = UIButton(frame: CGRect(x: SCREEN_WIDTH - 60, y: SCREEN_HEIGHT * 0.7, width: 50, height: 50))
+        button.setImage(UIImage(named: "super_icon_toTop_50x50_"), for: .normal)
+        _ = button.rx.tap.subscribe {[weak self] (event) in
+            self?.tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+        }
+        return button
     }()
 }
 

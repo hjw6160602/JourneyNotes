@@ -39,6 +39,7 @@ class JourneyEachDayItemView: UIView {
         itemStyle = style
         itemEntity = entity;
         initData()
+        drawDashLine()
         initUI()
     }
     
@@ -87,6 +88,8 @@ class JourneyEachDayItemView: UIView {
         }
     }
     
+    
+    // MARK : - private funcs
     /**
      * @func   dealWithStyle : 处理行程项目数组中的数据
      * @param  style    行程项目的类型
@@ -109,6 +112,35 @@ class JourneyEachDayItemView: UIView {
         self.height = currentHeight
     }
     
+    /** 画虚线 */
+    private func drawDashLine (){
+        let lineView: UIView = UIView(frame: CGRect(x: MARGIN, y: MARGIN, width: kIconWH, height: self.height))
+        self.addSubview(lineView)
+        let shapeLayer:CAShapeLayer = CAShapeLayer()
+        shapeLayer.bounds = lineView.bounds
+        
+        shapeLayer.position = CGPoint(x: lineView.width / 2, y: lineView.height / 2)
+        
+        shapeLayer.fillColor = UIColor.clear.cgColor
+        // 设置虚线颜色为
+        shapeLayer.strokeColor = grayColor(220).cgColor
+        // 设置虚线宽度
+        shapeLayer.lineWidth = 1
+        shapeLayer.lineJoin = kCALineJoinRound
+        shapeLayer.lineDashPhase = 0
+        // 设置线宽，线间距
+        shapeLayer.lineDashPattern = [NSNumber(value: 4), NSNumber(value: 2)]
+        // 设置路径
+        let path:CGMutablePath = CGMutablePath()
+        // 设置起点
+        path.move(to: CGPoint(x: kIconWH * 0.5, y: 0))
+        // 设置终点
+        path.addLine(to: CGPoint(x: kIconWH * 0.5, y: lineView.height ))
+        shapeLayer.path = path
+        // 把绘制好的虚线添加上来
+        lineView.layer.addSublayer(shapeLayer)
+    }
+    
     // MARK: - lazy loads
     lazy var iconImageView: UIImageView = {
         let imageView = UIImageView(image: UIImage(named: self.iconImageName))
@@ -116,7 +148,7 @@ class JourneyEachDayItemView: UIView {
         return imageView
     }()
     
-    lazy var titleLabel:UILabel = {
+    lazy var titleLabel: UILabel = {
         let titleLabel = UILabel()
         let titleW: CGFloat = SCREEN_WIDTH - titleX - MARGIN
         if self.titleLabelTxt.characters.count > 0 {

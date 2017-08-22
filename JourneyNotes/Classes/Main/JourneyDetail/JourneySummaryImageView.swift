@@ -53,6 +53,10 @@ class JourneySummaryImageView: UIView {
             let tapGesture = UITapGestureRecognizer()
             view.addGestureRecognizer(tapGesture)
             
+            _ = tapGesture.rx.event.subscribe({ (event) in
+                print("点击了图片")
+            })
+            
             // 2.创建图片ImageView
             let imgView = UIImageView(frame: view.bounds)
             if let urls = imageUrls {
@@ -83,7 +87,7 @@ class JourneySummaryImageView: UIView {
     /** 生成所有图片的frame */
     private func generateImageFrame() -> [NSValue] {
         var frameArr: [NSValue] = []
-        let bigImageW: CGFloat = SCREEN_WIDTH - 41
+        let bigImageW: CGFloat = SCREEN_WIDTH - 43
         let bigImageH: CGFloat = bigImageW / AspectRatio
         let smallImageW: CGFloat = (bigImageW - MARGIN) / 2
         let smallImageH: CGFloat = smallImageW / AspectRatio
