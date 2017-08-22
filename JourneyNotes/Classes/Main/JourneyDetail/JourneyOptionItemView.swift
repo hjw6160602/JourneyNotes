@@ -74,7 +74,6 @@ class JourneyOptionItemView: UIView {
             contentLabelTxt = content
         }
         if let urls = scenicVo.imageUrl {
-            print("666")
             summayImageView = JourneySummaryImageView(urls: urls, name: titleLabelTxt)
         }
     }
@@ -90,7 +89,6 @@ class JourneyOptionItemView: UIView {
             contentLabelTxt = content
         }
         if let urls = hotelVo.imageUrl {
-            print("666")
             summayImageView = JourneySummaryImageView(urls: urls, name: titleLabelTxt)
         }
     }
@@ -106,7 +104,6 @@ class JourneyOptionItemView: UIView {
             contentLabelTxt = content
         }
         if let urls = vehicleVo.imageUrl {
-            print("666")
             summayImageView = JourneySummaryImageView(urls: urls, name: titleLabelTxt)
         }
     }
@@ -145,6 +142,12 @@ class JourneyOptionItemView: UIView {
             let contentY: CGFloat = currentHeight + MARGIN
             contentLabel.frame = CGRect(x: titleX, y: contentY, width: titleW, height: labelH)
             currentHeight += labelH + MARGIN_H
+        }
+        if let summayImageView = summayImageView {
+            //如果有图片，那么再加上图片的高度
+            //算出图片应该摆在什么位置
+            summayImageView.origin = CGPoint(x: titleX, y: currentHeight + MARGIN)
+            currentHeight += summayImageView.height + MARGIN_H
         }
         frame = CGRect(x: 0, y: 0, width: titleW, height: currentHeight + MARGIN_H)
     }

@@ -18,6 +18,7 @@ class NavigationController: UINavigationController {
         navigationBar.setBackgroundImage(image, for: .default)
         navigationBar.isTranslucent = false
         navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName:UIFont.boldSystemFont(ofSize: 18)]
+        interactivePopGestureRecognizer?.isEnabled = true
     }
     
     /**

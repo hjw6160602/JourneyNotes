@@ -48,15 +48,18 @@ class JourneyDetailViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
-//        tableView.contentInset = UIEdgeInsetsMake(-25, 0, 0, 0)
         return tableView
     }()
 }
 
 extension JourneyDetailViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         let count = journeyList.count
         print(count)
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return journeyList.count
     }
     

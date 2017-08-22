@@ -24,7 +24,7 @@ enum JourneySummaryItemStyle : String {
 }
 
 
-fileprivate let kIconWH: CGFloat = 16
+fileprivate let kIconWH: CGFloat = 18
 let titleX = kIconWH + MARGIN * 2
 
 class JourneyEachDayItemView: UIView {
@@ -53,7 +53,7 @@ class JourneyEachDayItemView: UIView {
         case .scenic:
             if let entities = itemEntity?.prodRouteDetailScenicList {
                 if entities.count > 0 {
-                    iconImageName = "book_info_19x19_"
+                    iconImageName = "journey_icon_scenic_18x18_"
                     titleLabelTxt = "景点："
                     deal(with: .scenic, entities: entities)
                 }
@@ -61,7 +61,7 @@ class JourneyEachDayItemView: UIView {
         case .hotel:
             if let entities = itemEntity?.prodRouteDetailHotelList {
                 if entities.count > 0 {
-                    iconImageName = "book_info_19x19_"
+                    iconImageName = "boss3_diy_hotel_18x18_"
                     titleLabelTxt = "住宿："
                     deal(with: .hotel, entities: entities)
                 }
@@ -69,7 +69,7 @@ class JourneyEachDayItemView: UIView {
         case .vehicle:
             if let entities = itemEntity?.prodRouteDetailVehicleList {
                 if entities.count > 0 {
-                    iconImageName = "book_info_19x19_"
+                    iconImageName = "icon_playDetail_bus_18x18_"
                     let text = "交通："
                     titleLabelTxt = text
                     deal(with: .vehicle, entities: entities)

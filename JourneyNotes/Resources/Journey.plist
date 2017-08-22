@@ -69,11 +69,6 @@
 		<key>prodRouteDetailGroupList</key>
 		<array>
 			<dict>
-				<key>imageUrl</key>
-				<array>
-					<string>http://m.tuniucdn.com/fb2/t1/G2/M00/46/D6/Cii-T1e7vP6IWL5eABkuwoOa_tEAABnIgJvUKAAGS7a885_w640_h480_c1_t0.jpg</string>
-					<string>http://m.tuniucdn.com/fb2/t1/G2/M00/93/78/Cii-TFhl1fGIESsIAAdgVOZ4PqMAAGLXgA2ztIAB2Bs96_w640_h480_c1_t0.jpeg</string>
-				</array>
 				<key>detailId</key>
 				<integer>3641045</integer>
 				<key>groupId</key>
@@ -103,6 +98,11 @@
 						<string>16:0</string>
 						<key>vehicleType</key>
 						<string>PLANE</string>
+						<key>imageUrl</key>
+						<array>
+							<string>http://m.tuniucdn.com/fb2/t1/G2/M00/46/D6/Cii-T1e7vP6IWL5eABkuwoOa_tEAABnIgJvUKAAGS7a885_w640_h480_c1_t0.jpg</string>
+							<string>http://m.tuniucdn.com/fb2/t1/G2/M00/93/78/Cii-TFhl1fGIESsIAAdgVOZ4PqMAAGLXgA2ztIAB2Bs96_w640_h480_c1_t0.jpeg</string>
+						</array>
 					</dict>
 				</array>
 				<key>routeId</key>
@@ -113,11 +113,6 @@
 				<string>全天</string>
 			</dict>
 			<dict>
-				<key>imageUrl</key>
-				<array>
-					<string>http://m.tuniucdn.com/fb2/t1/G2/M00/46/D6/Cii-T1e7vP6IWL5eABkuwoOa_tEAABnIgJvUKAAGS7a885_w640_h480_c1_t0.jpg</string>
-					<string>http://m.tuniucdn.com/fb2/t1/G2/M00/93/78/Cii-TFhl1fGIESsIAAdgVOZ4PqMAAGLXgA2ztIAB2Bs96_w640_h480_c1_t0.jpeg</string>
-				</array>
 				<key>detailId</key>
 				<integer>3641045</integer>
 				<key>groupId</key>
@@ -131,6 +126,10 @@
 				<key>prodRouteDetailHotelList</key>
 				<array>
 					<dict>
+						<key>imageUrl</key>
+						<array>
+							<string>http://pic.lvmama.com//uploads/pc/place_vst/hotels/0/0/gp1_M00_05_97_pIYBAFIszbmAGVA0AAGL1lLL0U8892.jpg</string>
+						</array>
 						<key>belongToPlace</key>
 						<string>伦敦</string>
 						<key>groupId</key>
@@ -153,81 +152,6 @@
 				<integer>330363</integer>
 				<key>sortValue</key>
 				<integer>3</integer>
-				<key>startTime</key>
-				<string>全天</string>
-			</dict>
-			<dict>
-				<key>imageUrl</key>
-				<array>
-					<string>http://m.tuniucdn.com/fb2/t1/G2/M00/46/D6/Cii-T1e7vP6IWL5eABkuwoOa_tEAABnIgJvUKAAGS7a885_w640_h480_c1_t0.jpg</string>
-					<string>http://m.tuniucdn.com/fb2/t1/G2/M00/93/78/Cii-TFhl1fGIESsIAAdgVOZ4PqMAAGLXgA2ztIAB2Bs96_w640_h480_c1_t0.jpeg</string>
-				</array>
-				<key>detailId</key>
-				<integer>3641045</integer>
-				<key>groupId</key>
-				<integer>8639928</integer>
-				<key>localTimeFlag</key>
-				<string>N</string>
-				<key>moduleType</key>
-				<string>MEAL</string>
-				<key>prodRouteDetailMealList</key>
-				<array>
-					<dict>
-						<key>groupId</key>
-						<integer>8639928</integer>
-						<key>mealId</key>
-						<integer>3603466</integer>
-						<key>mealName</key>
-						<string>SELF_BREAKFAST|SELF_LUNCH|SELF_DINNER</string>
-						<key>mealTime</key>
-						<string></string>
-						<key>mealType</key>
-						<string>SELF_BREAKFAST|SELF_LUNCH|SELF_DINNER</string>
-						<key>meals</key>
-						<array>
-							<dict>
-								<key>mealCurrency</key>
-								<string>人民币</string>
-								<key>mealName</key>
-								<string>早餐自理</string>
-								<key>mealPrice</key>
-								<integer>0</integer>
-								<key>mealTime</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>mealCurrency</key>
-								<string>人民币</string>
-								<key>mealName</key>
-								<string>中餐自理</string>
-								<key>mealPrice</key>
-								<integer>0</integer>
-								<key>mealTime</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>mealCurrency</key>
-								<string>人民币</string>
-								<key>mealName</key>
-								<string>晚餐自理</string>
-								<key>mealPrice</key>
-								<integer>0</integer>
-								<key>mealTime</key>
-								<string></string>
-							</dict>
-						</array>
-						<key>templateCode</key>
-						<string>CODE_DEFAULT</string>
-						<key>templateText</key>
-						<string>享用【早餐自理】【中餐自理】【晚餐自理】， 餐费敬请自理，</string>
-						<key>useTemplateFlag</key>
-						<string>Y</string>
-					</dict>
-				</array>
-				<key>routeId</key>
-				<integer>330363</integer>
-				<key>sortValue</key>
-				<integer>2</integer>
 				<key>startTime</key>
 				<string>全天</string>
 			</dict>
