@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let contents = ["住宿", "餐饮", "交通", "景点", "购物", "玩乐"]
+    let contents = ["住宿", "交通", "景点"]
     /** 原始数据 */
     var jsonList: NSArray = []
     /** 解析过后的数据 */
@@ -102,7 +102,7 @@ extension ViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 10
+        return 1
     }
 }
 

@@ -54,7 +54,8 @@ struct JourenyDetailHotelEntity: Himotoki.Decodable {
     var starLevelName: String?
     /** 大于三星级显示 */
     var starBigThree: String?
-    
+    /** 景点图片url的List */
+    var imageUrl: [String]?
     
     static func decode(_ e: Extractor) throws -> JourenyDetailHotelEntity {
         return try JourenyDetailHotelEntity (
@@ -78,7 +79,8 @@ struct JourenyDetailHotelEntity: Himotoki.Decodable {
             starLevel : e <|? "starLevel",
             hotelDesc : e <|? "hotelDesc",
             starLevelName : e <|? "starLevelName",
-            starBigThree : e <|? "starBigThree"
+            starBigThree : e <|? "starBigThree",
+            imageUrl : e <||? "imageUrl"
         )
     }
 

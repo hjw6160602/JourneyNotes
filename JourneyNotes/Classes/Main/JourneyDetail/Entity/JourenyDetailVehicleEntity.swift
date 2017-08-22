@@ -47,7 +47,8 @@ struct JourenyDetailVehicleEntity: Himotoki.Decodable {
     var pickUpDesc: String?
     /** 交通描述 */
     var vehicleDesc: String?
-    
+    /** 景点图片url的List */
+    var imageUrl: [String]?
     
     static func decode(_ e: Extractor) throws -> JourenyDetailVehicleEntity {
         return try JourenyDetailVehicleEntity (
@@ -66,7 +67,8 @@ struct JourenyDetailVehicleEntity: Himotoki.Decodable {
             pickUpFlag : e <|? "pickUpFlag",
             pickUpDay : e <|? "pickUpDay",
             pickUpDesc : e <|? "pickUpDesc",
-            vehicleDesc : e <|? "vehicleDesc"
+            vehicleDesc : e <|? "vehicleDesc",
+            imageUrl : e <||? "imageUrl"
         )
     }
 

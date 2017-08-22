@@ -32,6 +32,8 @@ class JourneyOptionItemView: UIView {
     var shoppingEntity: JourenyDetailShoppingEntity?
     /** 某一项具体活动的活动类型 */
     var style: JourneySummaryItemStyle = .nothing
+    /** 详情图片展示View */
+    var summayImageView: JourneySummaryImageView?
     
     // MARK: - 便捷构造方法
     convenience init(style: JourneySummaryItemStyle, optionalItem: Any,  isFirst: Bool) {
@@ -71,6 +73,10 @@ class JourneyOptionItemView: UIView {
         if let content = scenicEntity?.scenicDesc {
             contentLabelTxt = content
         }
+        if let urls = scenicVo.imageUrl {
+            print("666")
+            summayImageView = JourneySummaryImageView(urls: urls, name: titleLabelTxt)
+        }
     }
     
     /** 酒店 */
@@ -83,6 +89,10 @@ class JourneyOptionItemView: UIView {
         if let content = hotelEntity?.hotelDesc {
             contentLabelTxt = content
         }
+        if let urls = hotelVo.imageUrl {
+            print("666")
+            summayImageView = JourneySummaryImageView(urls: urls, name: titleLabelTxt)
+        }
     }
     
     /** 交通 */
@@ -94,6 +104,10 @@ class JourneyOptionItemView: UIView {
         //详细描述
         if let content = vehicleEntity?.vehicleDesc {
             contentLabelTxt = content
+        }
+        if let urls = vehicleVo.imageUrl {
+            print("666")
+            summayImageView = JourneySummaryImageView(urls: urls, name: titleLabelTxt)
         }
     }
     
@@ -108,9 +122,9 @@ class JourneyOptionItemView: UIView {
         if contentLabelTxt.characters.count > 0 {
             addSubview(contentLabel)
         }
-//        if summayImageView {
-//            addSubview(summayImageView)
-//        }
+        if let imageView = summayImageView {
+            addSubview(imageView)
+        }
     }
     
     private func layoutSubviewsGetHeight() {

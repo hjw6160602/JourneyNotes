@@ -42,7 +42,8 @@ class JourneyDetaiTalbeViewCell: UITableViewCell {
                 }
             }
         }
-        height = cellHeight + MARGIN
+        // 给出 cell 的高度
+        height = cellHeight + MARGIN * 2
     }
     
     /** 根据 moduleType 字段来区分行程项目的类型 */

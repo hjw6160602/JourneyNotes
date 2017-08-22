@@ -55,8 +55,6 @@ struct JourenyDetailShoppingEntity: Himotoki.Decodable {
     /** 大于三星级显示 */
     var starBigThree: String?
     
-    
-    
     static func decode(_ e: Extractor) throws -> JourenyDetailShoppingEntity {
         return try JourenyDetailShoppingEntity (
             groupId : e <|? "groupId",
