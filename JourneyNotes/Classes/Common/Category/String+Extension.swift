@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension String {
     /** 字符串转字典 */
@@ -39,29 +40,35 @@ extension String {
 //        return String(format: hash as String)
 //    }
     
-
-    /**
-     将当前字符串拼接到cache目录后面
-     */
+    /** 将当前字符串拼接到cache目录后面 */
     func cacheDir() -> String{
         let path = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.cachesDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).last!  as NSString
         return path.appendingPathComponent((self as NSString).lastPathComponent)
     }
-    /**
-     将当前字符串拼接到doc目录后面
-     */
+    
+    /** 将当前字符串拼接到doc目录后面  */
     func docDir() -> String
     {
         let path = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).last!  as NSString
         return path.appendingPathComponent((self as NSString).lastPathComponent)
     }
-    /**
-     将当前字符串拼接到tmp目录后面
-     */
+    
+    /** 将当前字符串拼接到tmp目录后面  */
     func tmpDir() -> String
     {
         let path = NSTemporaryDirectory() as NSString
         return path.appendingPathComponent((self as NSString).lastPathComponent)
     }
     
+    /** 根据字体大小和 最大宽度算出 高度 */
+    func height(with font: UIFont, maxW: CGFloat) -> CGFloat {
+        var attrs = [String: Any]()
+        attrs[NSFontAttributeName] = font
+        
+        let maxSize = CGSize(width: maxW, height: CGFloat(MAXFLOAT))
+        let nsString: NSString = self as NSString
+        let height = nsString.boundingRect(with: maxSize, options: .usesLineFragmentOrigin, attributes: attrs, context: nil).size.height
+        return height
+    }
+
 }

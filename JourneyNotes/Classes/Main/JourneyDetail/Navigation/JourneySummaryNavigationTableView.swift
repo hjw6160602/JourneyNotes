@@ -24,11 +24,6 @@ class JourneySummaryNavigationTableView: UITableView {
         backgroundColor = UIColor.clear
         bounces = false
         showsVerticalScrollIndicator = false
-
-        let any = Bundle.main.loadNibNamed(kCellReuseID, owner: nil, options: nil)
-        
-        register(Bundle.main.loadNibNamed(kCellReuseID, owner: nil, options: nil)?.first as? UINib, forCellReuseIdentifier: kCellReuseID)
-        
     }
 
 }
@@ -36,11 +31,20 @@ class JourneySummaryNavigationTableView: UITableView {
 extension JourneySummaryNavigationTableView: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(lineRouteDetailArr.count)
         return lineRouteDetailArr.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: kCellReuseID)
+        var cell = tableView.dequeueReusableCell(withIdentifier: kCellReuseID) as? JourneySummaryNavigationCell
+        if cell == nil {
+            cell = Bundle.main.loadNibNamed(kCellReuseID, owner: nil, options: nil)?.first as? JourneySummaryNavigationCell
+        }
+        cell?.setup(row: indexPath.row, eachDayEntity: self.lineRouteDetailArr[indexPath.row])
+        cell?.isLastRow = (indexPath.row == (self.lineRouteDetailArr.count - 1));
+        if self.cellHeights[indexPath.row] == nil {
+            self.cellHeights[indexPath.row] = cell?.cellHeight;
+        }
         return cell!
     }
 }

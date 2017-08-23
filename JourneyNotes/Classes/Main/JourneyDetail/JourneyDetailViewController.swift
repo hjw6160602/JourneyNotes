@@ -32,6 +32,7 @@ class JourneyDetailViewController: UIViewController {
         view.addSubview(tableView)
         view.addSubview(backTopBtn)
         view.addSubview(navigationBtn)
+        view.addSubview(navigationView)
         automaticallyAdjustsScrollViewInsets = false
     }
     
@@ -66,11 +67,38 @@ class JourneyDetailViewController: UIViewController {
         let button = UIButton(frame: CGRect(x: SCREEN_WIDTH - 60, y: SCREEN_HEIGHT * 0.6, width: 50, height: 50))
         button.setImage(UIImage(named: "package_bg_routeList_50x50_"), for: .normal)
         _ = button.rx.tap.subscribe {[weak self] (event) in
-            print("搞事情")
-            
+            UIView.animate(withDuration: 0.3, animations: {
+                self?.navigationView.x = 0
+            })
         }
         return button
     }()
+    
+    /** 行程导航 */
+    lazy var navigationView: UIView = {
+        let view = UIView(frame: self.view.bounds)
+        view.x = SCREEN_WIDTH
+        
+        view.backgroundColor = UIColor.clear
+        let tap = UITapGestureRecognizer()
+        view.addGestureRecognizer(tap)
+        _ = tap.rx.event.subscribe { (event) in
+            UIView.animate(withDuration: 0.3, animations: {
+                view.x = SCREEN_WIDTH
+            })
+        }
+        
+        let frame = CGRect(x: 55, y: 0, width: SCREEN_WIDTH - 55, height: SCREEN_HEIGHT)
+        var cover = UIView(frame: frame)
+        cover.backgroundColor = rgbColor(0, 15, 34)
+        cover.alpha = 0.9
+        let naviTableView = JourneySummaryNavigationTableView(frame: frame, lineRouteDetailArr: self.journeyList)
+        
+        view.addSubview(cover)
+        view.addSubview(naviTableView)
+        return view
+    }()
+    
 }
 
 extension JourneyDetailViewController: UITableViewDataSource {

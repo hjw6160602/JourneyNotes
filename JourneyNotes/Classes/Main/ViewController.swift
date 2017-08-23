@@ -122,7 +122,7 @@ extension ViewController: UITableViewDataSource {
             if indexPath.row == 0 {
                 cell.textLabel?.textColor = kGlobalPink
                 cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 20)
-                cell.accessoryType = .checkmark
+                cell.accessoryType = .none
                 cell.selectionStyle = .none
             } else if indexPath.row < 4 {
                 cell.textLabel?.font = UIFont.systemFont(ofSize: 17)

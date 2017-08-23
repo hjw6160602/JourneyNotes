@@ -37,6 +37,7 @@ class JourneySummaryNavigationCell: UITableViewCell {
         titleLabel?.text = ""
         contentLabel?.text = ""
         self.eachDayEntity = eachDayEntity
+        setupData()
         //这里置为NO防止复用时，不显示了
         isLastRow = false
     }
@@ -44,6 +45,9 @@ class JourneySummaryNavigationCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         backgroundColor = UIColor.clear
+        dayNumLabel.layer.cornerRadius = 15
+        dayNumLabel.layer.borderColor = UIColor.white.cgColor
+        dayNumLabel.layer.borderWidth = 1
         cover.isHidden = true
     }
     
@@ -106,8 +110,6 @@ class JourneySummaryNavigationCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }

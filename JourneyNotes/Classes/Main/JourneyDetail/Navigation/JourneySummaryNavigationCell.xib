@@ -95,13 +95,13 @@
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
-                <outlet property="contentLabel" destination="ViL-kI-k71" id="cGc-cb-o0G"/>
-                <outlet property="contentLabelHeightCons" destination="9HQ-UO-SOV" id="UMc-en-0cp"/>
-                <outlet property="cover" destination="evK-dx-yTy" id="c7G-I4-7zB"/>
-                <outlet property="dayNumLabel" destination="yfY-eI-H79" id="0Fj-4h-fdY"/>
-                <outlet property="lineView" destination="K6T-Yk-c5h" id="4xz-sQ-yNh"/>
-                <outlet property="titleLabel" destination="8ij-GE-c7E" id="nQD-Jm-YZx"/>
-                <outlet property="titleLabelHeightCons" destination="vMp-59-cLF" id="ner-OO-Mbm"/>
+                <outlet property="contentLabel" destination="ViL-kI-k71" id="lhP-Wy-r5L"/>
+                <outlet property="contentLabelHeightCons" destination="9HQ-UO-SOV" id="U6W-W5-lLc"/>
+                <outlet property="cover" destination="evK-dx-yTy" id="w3q-Iq-lDw"/>
+                <outlet property="dayNumLabel" destination="yfY-eI-H79" id="CuK-Cp-JWc"/>
+                <outlet property="lineView" destination="K6T-Yk-c5h" id="JI5-KG-Eu4"/>
+                <outlet property="titleLabel" destination="8ij-GE-c7E" id="VpI-ZX-4Ou"/>
+                <outlet property="titleLabelHeightCons" destination="vMp-59-cLF" id="zkZ-FH-DY6"/>
             </connections>
             <point key="canvasLocation" x="-326" y="119"/>
         </tableViewCell>
