@@ -16,7 +16,6 @@ class JourneySummaryNavigationTableView: UITableView {
 
     convenience init(frame: CGRect, lineRouteDetailArr: [ProdLineRouteDetail]) {
         self.init(frame: frame, style: .grouped)
-        
         self.lineRouteDetailArr = lineRouteDetailArr
         dataSource = self
         delegate = self
@@ -31,7 +30,6 @@ class JourneySummaryNavigationTableView: UITableView {
 extension JourneySummaryNavigationTableView: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(lineRouteDetailArr.count)
         return lineRouteDetailArr.count
     }
     

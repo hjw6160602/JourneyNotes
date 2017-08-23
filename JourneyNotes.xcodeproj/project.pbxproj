@@ -20,6 +20,11 @@
 		67524AAD1F45484400B1729B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67524AAA1F45484400B1729B /* UIColor+Extension.swift */; };
 		67524AAE1F45484400B1729B /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67524AAB1F45484400B1729B /* UILabel+Extension.swift */; };
 		675A13071F4468FB00985E68 /* Journey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 675A13061F4468FB00985E68 /* Journey.plist */; };
+		6791A5D51F4D66F7004C6729 /* IMG_2377.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6791A5D01F4D66F7004C6729 /* IMG_2377.JPG */; };
+		6791A5D61F4D66F7004C6729 /* IMG_2378.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6791A5D11F4D66F7004C6729 /* IMG_2378.JPG */; };
+		6791A5D71F4D66F7004C6729 /* IMG_2379.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6791A5D21F4D66F7004C6729 /* IMG_2379.JPG */; };
+		6791A5D81F4D66F7004C6729 /* IMG_2380.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6791A5D31F4D66F7004C6729 /* IMG_2380.JPG */; };
+		6791A5D91F4D66F7004C6729 /* IMG_2381.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6791A5D41F4D66F7004C6729 /* IMG_2381.JPG */; };
 		67A462651F42DA69003B7298 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4625B1F42DA69003B7298 /* AppDelegate.swift */; };
 		67A462661F42DA69003B7298 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4625E1F42DA69003B7298 /* Dictionary+Extension.swift */; };
 		67A462671F42DA69003B7298 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4625F1F42DA69003B7298 /* String+Extension.swift */; };
@@ -94,6 +99,11 @@
 		675A13061F4468FB00985E68 /* Journey.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Journey.plist; sourceTree = "<group>"; };
 		677FE91E1F42CF5900C2B1C5 /* JourneyNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JourneyNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		677FE92D1F42CF5900C2B1C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6791A5D01F4D66F7004C6729 /* IMG_2377.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2377.JPG; sourceTree = "<group>"; };
+		6791A5D11F4D66F7004C6729 /* IMG_2378.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2378.JPG; sourceTree = "<group>"; };
+		6791A5D21F4D66F7004C6729 /* IMG_2379.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2379.JPG; sourceTree = "<group>"; };
+		6791A5D31F4D66F7004C6729 /* IMG_2380.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2380.JPG; sourceTree = "<group>"; };
+		6791A5D41F4D66F7004C6729 /* IMG_2381.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2381.JPG; sourceTree = "<group>"; };
 		67A4625B1F42DA69003B7298 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67A4625E1F42DA69003B7298 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
 		67A4625F1F42DA69003B7298 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -254,6 +264,26 @@
 			path = JourneyNotes;
 			sourceTree = "<group>";
 		};
+		6791A5CE1F4D6698004C6729 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6791A5CF1F4D66F7004C6729 /* LaunchImageRabbit */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		6791A5CF1F4D66F7004C6729 /* LaunchImageRabbit */ = {
+			isa = PBXGroup;
+			children = (
+				6791A5D01F4D66F7004C6729 /* IMG_2377.JPG */,
+				6791A5D11F4D66F7004C6729 /* IMG_2378.JPG */,
+				6791A5D21F4D66F7004C6729 /* IMG_2379.JPG */,
+				6791A5D31F4D66F7004C6729 /* IMG_2380.JPG */,
+				6791A5D41F4D66F7004C6729 /* IMG_2381.JPG */,
+			);
+			path = LaunchImageRabbit;
+			sourceTree = "<group>";
+		};
 		67A4625A1F42DA69003B7298 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -336,6 +366,7 @@
 		67BCCF361F44488E00CAF600 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6791A5CE1F4D6698004C6729 /* Images */,
 				675A13061F4468FB00985E68 /* Journey.plist */,
 				67BCCF371F44488E00CAF600 /* Main.storyboard */,
 				67BCCF391F44488E00CAF600 /* imageAsssets */,
@@ -470,8 +501,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6791A5D91F4D66F7004C6729 /* IMG_2381.JPG in Resources */,
 				67BCCF5D1F44488E00CAF600 /* car.xcassets in Resources */,
 				67BCCF691F44488E00CAF600 /* hotel.xcassets in Resources */,
+				6791A5D51F4D66F7004C6729 /* IMG_2377.JPG in Resources */,
 				67BCCF711F44488E00CAF600 /* train.xcassets in Resources */,
 				67BCCF6B1F44488E00CAF600 /* journey.xcassets in Resources */,
 				67BCCF721F44488E00CAF600 /* user.xcassets in Resources */,
@@ -486,14 +519,17 @@
 				67BCCF6C1F44488E00CAF600 /* p_topBar.xcassets in Resources */,
 				67BCCF6E1F44488E00CAF600 /* search.xcassets in Resources */,
 				67BCCF5F1F44488E00CAF600 /* common.xcassets in Resources */,
+				6791A5D71F4D66F7004C6729 /* IMG_2379.JPG in Resources */,
 				67BCCF591F44488E00CAF600 /* Assets.xcassets in Resources */,
 				67BCCF651F44488E00CAF600 /* diy.xcassets in Resources */,
+				6791A5D81F4D66F7004C6729 /* IMG_2380.JPG in Resources */,
 				67BCCF6A1F44488E00CAF600 /* icon.xcassets in Resources */,
 				67BCCF601F44488E00CAF600 /* community.xcassets in Resources */,
 				67BCCF681F44488E00CAF600 /* home.xcassets in Resources */,
 				67BCCF581F44488E00CAF600 /* aireplane.xcassets in Resources */,
 				67BCCF5E1F44488E00CAF600 /* cicerone.xcassets in Resources */,
 				67BCCF5C1F44488E00CAF600 /* bus.xcassets in Resources */,
+				6791A5D61F4D66F7004C6729 /* IMG_2378.JPG in Resources */,
 				67BCCF621F44488E00CAF600 /* criuse_ship.xcassets in Resources */,
 				67BCCF661F44488E00CAF600 /* ghotel.xcassets in Resources */,
 				67BCCF5B1F44488E00CAF600 /* boss.xcassets in Resources */,
