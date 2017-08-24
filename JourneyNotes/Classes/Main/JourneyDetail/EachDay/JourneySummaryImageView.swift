@@ -50,13 +50,7 @@ class JourneySummaryImageView: UIView {
             // 1.创建大的容器view
             let frame: CGRect = frameArr[index].cgRectValue
             let view = UIView(frame: frame)
-            let tapGesture = UITapGestureRecognizer()
-            view.addGestureRecognizer(tapGesture)
-            
-            _ = tapGesture.rx.event.subscribe({ (event) in
-                print("点击了图片")
-            })
-            
+
             // 2.创建图片ImageView
             let imgView = UIImageView(frame: view.bounds)
             if let urls = imageUrls {
@@ -64,6 +58,18 @@ class JourneySummaryImageView: UIView {
                 let url = URL(string: urlPath)
                 imgView.kf.setImage(with: url)
             }
+            
+            // 添加手势
+            let tapGesture = UITapGestureRecognizer()
+            view.addGestureRecognizer(tapGesture)
+            _ = tapGesture.rx.event.subscribe({ (event) in
+                let zoomViewController = ImageZoomViewController()
+                zoomViewController.image = imgView.image
+                let navigationController = UIApplication.shared.delegate?.window??.rootViewController as! UINavigationController
+                
+                navigationController.pushViewController(zoomViewController, animated: true)
+            })
+            
             let cover = UIView(frame: CGRect(x: 0, y: view.height - 25, width: view.width, height: 25))
             cover.backgroundColor = grayColor(50)
             cover.alpha = 0.7

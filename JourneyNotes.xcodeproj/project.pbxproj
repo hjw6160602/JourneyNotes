@@ -25,6 +25,13 @@
 		6791A5D71F4D66F7004C6729 /* IMG_2379.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6791A5D21F4D66F7004C6729 /* IMG_2379.JPG */; };
 		6791A5D81F4D66F7004C6729 /* IMG_2380.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6791A5D31F4D66F7004C6729 /* IMG_2380.JPG */; };
 		6791A5D91F4D66F7004C6729 /* IMG_2381.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6791A5D41F4D66F7004C6729 /* IMG_2381.JPG */; };
+		6791A5E01F4D6875004C6729 /* Tokyo1.1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6791A5DB1F4D6875004C6729 /* Tokyo1.1.jpg */; };
+		6791A5E11F4D6875004C6729 /* Tokyo1.2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6791A5DC1F4D6875004C6729 /* Tokyo1.2.jpg */; };
+		6791A5E21F4D6875004C6729 /* Tokyo1.3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6791A5DD1F4D6875004C6729 /* Tokyo1.3.jpg */; };
+		6791A5E31F4D6875004C6729 /* Tokyo1.4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6791A5DE1F4D6875004C6729 /* Tokyo1.4.jpg */; };
+		6791A5E41F4D6875004C6729 /* Tokyo_Journey1.1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6791A5DF1F4D6875004C6729 /* Tokyo_Journey1.1.jpg */; };
+		6791A5E71F4D6A9B004C6729 /* YSZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6791A5E61F4D6A9B004C6729 /* YSZoomView.swift */; };
+		6791A5E91F4D6CA5004C6729 /* ImageZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6791A5E81F4D6CA5004C6729 /* ImageZoomViewController.swift */; };
 		67A462651F42DA69003B7298 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4625B1F42DA69003B7298 /* AppDelegate.swift */; };
 		67A462661F42DA69003B7298 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4625E1F42DA69003B7298 /* Dictionary+Extension.swift */; };
 		67A462671F42DA69003B7298 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4625F1F42DA69003B7298 /* String+Extension.swift */; };
@@ -104,6 +111,13 @@
 		6791A5D21F4D66F7004C6729 /* IMG_2379.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2379.JPG; sourceTree = "<group>"; };
 		6791A5D31F4D66F7004C6729 /* IMG_2380.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2380.JPG; sourceTree = "<group>"; };
 		6791A5D41F4D66F7004C6729 /* IMG_2381.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2381.JPG; sourceTree = "<group>"; };
+		6791A5DB1F4D6875004C6729 /* Tokyo1.1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tokyo1.1.jpg; sourceTree = "<group>"; };
+		6791A5DC1F4D6875004C6729 /* Tokyo1.2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tokyo1.2.jpg; sourceTree = "<group>"; };
+		6791A5DD1F4D6875004C6729 /* Tokyo1.3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tokyo1.3.jpg; sourceTree = "<group>"; };
+		6791A5DE1F4D6875004C6729 /* Tokyo1.4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tokyo1.4.jpg; sourceTree = "<group>"; };
+		6791A5DF1F4D6875004C6729 /* Tokyo_Journey1.1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tokyo_Journey1.1.jpg; sourceTree = "<group>"; };
+		6791A5E61F4D6A9B004C6729 /* YSZoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSZoomView.swift; sourceTree = "<group>"; };
+		6791A5E81F4D6CA5004C6729 /* ImageZoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageZoomViewController.swift; sourceTree = "<group>"; };
 		67A4625B1F42DA69003B7298 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67A4625E1F42DA69003B7298 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
 		67A4625F1F42DA69003B7298 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -267,6 +281,7 @@
 		6791A5CE1F4D6698004C6729 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6791A5DA1F4D6875004C6729 /* Day1 Tokyo */,
 				6791A5CF1F4D66F7004C6729 /* LaunchImageRabbit */,
 			);
 			path = Images;
@@ -284,6 +299,26 @@
 			path = LaunchImageRabbit;
 			sourceTree = "<group>";
 		};
+		6791A5DA1F4D6875004C6729 /* Day1 Tokyo */ = {
+			isa = PBXGroup;
+			children = (
+				6791A5DB1F4D6875004C6729 /* Tokyo1.1.jpg */,
+				6791A5DC1F4D6875004C6729 /* Tokyo1.2.jpg */,
+				6791A5DD1F4D6875004C6729 /* Tokyo1.3.jpg */,
+				6791A5DE1F4D6875004C6729 /* Tokyo1.4.jpg */,
+				6791A5DF1F4D6875004C6729 /* Tokyo_Journey1.1.jpg */,
+			);
+			path = "Day1 Tokyo";
+			sourceTree = "<group>";
+		};
+		6791A5E51F4D6A9B004C6729 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6791A5E61F4D6A9B004C6729 /* YSZoomView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		67A4625A1F42DA69003B7298 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				67A4626D1F42DC98003B7298 /* Const.swift */,
+				6791A5E51F4D6A9B004C6729 /* View */,
 				67524A901F4547BD00B1729B /* NetworkManager */,
 				67A4625D1F42DA69003B7298 /* Category */,
 				67A462621F42DA69003B7298 /* NavigationController.swift */,
@@ -342,6 +378,7 @@
 			isa = PBXGroup;
 			children = (
 				67BCCF171F4424B800CAF600 /* JourneyDetailViewController.swift */,
+				6791A5E81F4D6CA5004C6729 /* ImageZoomViewController.swift */,
 				67BCCF211F442D1300CAF600 /* Entity */,
 				67F500091F4C498D001729A5 /* Navigation */,
 				67F500001F4C4979001729A5 /* EachDay */,
@@ -512,6 +549,7 @@
 				67BCCF5A1F44488E00CAF600 /* base.xcassets in Resources */,
 				67BCCF571F44488E00CAF600 /* Main.storyboard in Resources */,
 				67524AA81F4547BD00B1729B /* RequestBundle.bundle in Resources */,
+				6791A5E31F4D6875004C6729 /* Tokyo1.4.jpg in Resources */,
 				67BCCF641F44488E00CAF600 /* destination.xcassets in Resources */,
 				675A13071F4468FB00985E68 /* Journey.plist in Resources */,
 				67BCCF731F44488E00CAF600 /* Journey.json in Resources */,
@@ -520,6 +558,7 @@
 				67BCCF6E1F44488E00CAF600 /* search.xcassets in Resources */,
 				67BCCF5F1F44488E00CAF600 /* common.xcassets in Resources */,
 				6791A5D71F4D66F7004C6729 /* IMG_2379.JPG in Resources */,
+				6791A5E01F4D6875004C6729 /* Tokyo1.1.jpg in Resources */,
 				67BCCF591F44488E00CAF600 /* Assets.xcassets in Resources */,
 				67BCCF651F44488E00CAF600 /* diy.xcassets in Resources */,
 				6791A5D81F4D66F7004C6729 /* IMG_2380.JPG in Resources */,
@@ -527,12 +566,15 @@
 				67BCCF601F44488E00CAF600 /* community.xcassets in Resources */,
 				67BCCF681F44488E00CAF600 /* home.xcassets in Resources */,
 				67BCCF581F44488E00CAF600 /* aireplane.xcassets in Resources */,
+				6791A5E21F4D6875004C6729 /* Tokyo1.3.jpg in Resources */,
 				67BCCF5E1F44488E00CAF600 /* cicerone.xcassets in Resources */,
 				67BCCF5C1F44488E00CAF600 /* bus.xcassets in Resources */,
 				6791A5D61F4D66F7004C6729 /* IMG_2378.JPG in Resources */,
+				6791A5E11F4D6875004C6729 /* Tokyo1.2.jpg in Resources */,
 				67BCCF621F44488E00CAF600 /* criuse_ship.xcassets in Resources */,
 				67BCCF661F44488E00CAF600 /* ghotel.xcassets in Resources */,
 				67BCCF5B1F44488E00CAF600 /* boss.xcassets in Resources */,
+				6791A5E41F4D6875004C6729 /* Tokyo_Journey1.1.jpg in Resources */,
 				67BCCF671F44488E00CAF600 /* group.xcassets in Resources */,
 				67BCCF6D1F44488E00CAF600 /* package.xcassets in Resources */,
 				67BCCF701F44488E00CAF600 /* tnwifi.xcassets in Resources */,
@@ -599,6 +641,7 @@
 				67F5000B1F4C49A7001729A5 /* JourneySummaryNavigationTableView.swift in Sources */,
 				67A4626B1F42DA69003B7298 /* ViewController.swift in Sources */,
 				67524AA21F4547BD00B1729B /* NetworkProtocol.swift in Sources */,
+				6791A5E91F4D6CA5004C6729 /* ImageZoomViewController.swift in Sources */,
 				67A462651F42DA69003B7298 /* AppDelegate.swift in Sources */,
 				67BCCF181F4424B800CAF600 /* JourneyDetailViewController.swift in Sources */,
 				67A462691F42DA69003B7298 /* UIVIew+Extension.swift in Sources */,
@@ -622,6 +665,7 @@
 				67BCCF251F442DC600CAF600 /* JourenyDetailScenicEntity.swift in Sources */,
 				67BCCF2F1F44363300CAF600 /* ProdLineRouteDetail.swift in Sources */,
 				67524AAD1F45484400B1729B /* UIColor+Extension.swift in Sources */,
+				6791A5E71F4D6A9B004C6729 /* YSZoomView.swift in Sources */,
 				67524AA01F4547BD00B1729B /* CommonRequest.swift in Sources */,
 				67A4626E1F42DC98003B7298 /* Const.swift in Sources */,
 				67A462671F42DA69003B7298 /* String+Extension.swift in Sources */,
