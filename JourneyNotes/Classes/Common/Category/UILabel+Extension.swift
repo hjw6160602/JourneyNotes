@@ -18,7 +18,7 @@ extension UILabel{
             var size = CGRect();
             //计算label的字体
             let size2 = CGSize(width: 0, height: 0);//设置label的最大宽度
-            size = (text.boundingRect(with: size2, options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName: self.font!] , context: nil));
+            size = (text.boundingRect(with: size2, options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font: self.font!] , context: nil));
             return size.size
         } else{
             return CGSize(width: 0, height: 0)

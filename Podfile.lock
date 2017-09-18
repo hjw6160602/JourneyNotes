@@ -1,28 +1,44 @@
 PODS:
-  - Alamofire (4.5.0)
+  - Alamofire (4.5.1)
   - Himotoki (3.0.1)
-  - Kingfisher (3.10.4)
-  - RxCocoa (3.6.1):
-    - RxSwift (~> 3.6)
-  - RxSwift (3.6.1)
-  - SnapKit (3.2.0)
+  - Kingfisher (4.0.1)
+  - RxCocoa (4.0.0-beta.0):
+    - RxSwift (~> 4.0.0-beta.0)
+  - RxSwift (4.0.0-beta.0)
+  - SnapKit (4.0.0)
 
 DEPENDENCIES:
   - Alamofire
   - Himotoki
   - Kingfisher
-  - RxCocoa (~> 3.0)
-  - RxSwift (~> 3.0)
+  - RxCocoa (from `https://github.com/ReactiveX/RxSwift.git`, branch `swift4.0`)
+  - RxSwift (from `https://github.com/ReactiveX/RxSwift.git`, branch `swift4.0`)
   - SnapKit
 
-SPEC CHECKSUMS:
-  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
-  Himotoki: 85fda41d4d0e14f7228317a3b474175cdfb8f515
-  Kingfisher: dc3a4983e86d2dfa89513664983a82340c11a289
-  RxCocoa: 84a08739ab186248c7f31ce4ee92d6f8a947d690
-  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
-  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+EXTERNAL SOURCES:
+  RxCocoa:
+    :branch: swift4.0
+    :git: https://github.com/ReactiveX/RxSwift.git
+  RxSwift:
+    :branch: swift4.0
+    :git: https://github.com/ReactiveX/RxSwift.git
 
-PODFILE CHECKSUM: c06a0b03687b1efd7c103c4e40a034869ee87700
+CHECKOUT OPTIONS:
+  RxCocoa:
+    :commit: a0bf386834ca09e0438e2edf03d740eac3c4a6ce
+    :git: https://github.com/ReactiveX/RxSwift.git
+  RxSwift:
+    :commit: a0bf386834ca09e0438e2edf03d740eac3c4a6ce
+    :git: https://github.com/ReactiveX/RxSwift.git
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Himotoki: 85fda41d4d0e14f7228317a3b474175cdfb8f515
+  Kingfisher: b771785e9461ed4b8686d40e7145f9e58100cb24
+  RxCocoa: f2dff5e6b6a40f842867ec5915f449e1c3af563a
+  RxSwift: cafebeafadc860ca27a2f3fb3760a8bb8663f6ef
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+
+PODFILE CHECKSUM: 91bb15ef29176c87c6c1d8bf8e311c26ecff823d
 
 COCOAPODS: 1.1.1

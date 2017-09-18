@@ -62,8 +62,8 @@ extension String {
     
     /** 根据字体大小和 最大宽度算出 高度 */
     func height(with font: UIFont, maxW: CGFloat) -> CGFloat {
-        var attrs = [String: Any]()
-        attrs[NSFontAttributeName] = font
+        var attrs = [NSAttributedStringKey: Any]()
+        attrs[NSAttributedStringKey.font] = font
         
         let maxSize = CGSize(width: maxW, height: CGFloat(MAXFLOAT))
         let nsString: NSString = self as NSString

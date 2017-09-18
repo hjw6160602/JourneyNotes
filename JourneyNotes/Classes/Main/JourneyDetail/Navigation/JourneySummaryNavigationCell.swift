@@ -88,7 +88,7 @@ class JourneySummaryNavigationCell: UITableViewCell {
                         let paragraphStyle = NSMutableParagraphStyle()
                         paragraphStyle.lineSpacing = LineSpaceMargin
                         // 字体的行间距
-                        let textViewAttributes = [NSFontAttributeName: UIFont.systemFont(ofSize: 14), NSParagraphStyleAttributeName: paragraphStyle]
+                        let textViewAttributes = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14), NSAttributedStringKey.paragraphStyle: paragraphStyle]
                         let attributeContent = NSMutableAttributedString(string: content, attributes: textViewAttributes)
                         contentLabel.attributedText = attributeContent
                     }

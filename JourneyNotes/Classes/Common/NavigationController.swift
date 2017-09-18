@@ -17,7 +17,7 @@ class NavigationController: UINavigationController {
 //        let image2 = UIImage.init(named: "user_profile_header_background_320x100_");
         navigationBar.setBackgroundImage(image, for: .default)
         navigationBar.isTranslucent = false
-        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName:UIFont.boldSystemFont(ofSize: 18)]
+        navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font:UIFont.boldSystemFont(ofSize: 18)]
         interactivePopGestureRecognizer?.isEnabled = true
     }
     

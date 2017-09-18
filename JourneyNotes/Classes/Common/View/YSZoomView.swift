@@ -94,7 +94,7 @@ class ImageZoomView: UIControl, UIScrollViewDelegate {
     
     // MARK: - Event response
     // 单击手势事件
-    func singleTapClick(tap: UITapGestureRecognizer) {
+    @objc func singleTapClick(tap: UITapGestureRecognizer) {
         self.scrollView?.setZoomScale(self.minScale, animated: false)
         UIView.animate(withDuration: self.animDuration, delay: 0, options: .allowUserInteraction, animations: {
                 self.imageView?.frame = self.originFrame
@@ -112,8 +112,8 @@ class ImageZoomView: UIControl, UIScrollViewDelegate {
         }
     }
     
-    // 双击手势事件
-    func doubleTapClick(tap: UITapGestureRecognizer) {
+    // 双击手势事件@objc
+    @objc func doubleTapClick(tap: UITapGestureRecognizer) {
         self.touchX = tap.location(in: tap.view).x
         self.touchY = tap.location(in: tap.view).y
         
