@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67372B881F7DE93C00BA6E90 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67372B801F7DE93C00BA6E90 /* Himotoki.framework */; };
+		67372B891F7DE93C00BA6E90 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67372B811F7DE93C00BA6E90 /* Kingfisher.framework */; };
+		67372B8A1F7DE93C00BA6E90 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67372B821F7DE93C00BA6E90 /* RxCocoa.framework */; };
+		67372B8B1F7DE93C00BA6E90 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67372B831F7DE93C00BA6E90 /* Alamofire.framework */; };
+		67372B8C1F7DE93C00BA6E90 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67372B841F7DE93C00BA6E90 /* RxTest.framework */; };
+		67372B8D1F7DE93C00BA6E90 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67372B851F7DE93C00BA6E90 /* RxBlocking.framework */; };
+		67372B8E1F7DE93C00BA6E90 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67372B861F7DE93C00BA6E90 /* SnapKit.framework */; };
+		67372B8F1F7DE93C00BA6E90 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67372B871F7DE93C00BA6E90 /* RxSwift.framework */; };
 		67524A9F1F4547BD00B1729B /* CommonClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67524A921F4547BD00B1729B /* CommonClient.swift */; };
 		67524AA01F4547BD00B1729B /* CommonRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67524A931F4547BD00B1729B /* CommonRequest.swift */; };
 		67524AA11F4547BD00B1729B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67524A941F4547BD00B1729B /* NetworkManager.swift */; };
@@ -90,7 +98,14 @@
 
 /* Begin PBXFileReference section */
 		0418D4A591CF62CFC2E69384 /* Pods_JourneyNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JourneyNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		55CD01288BD0C377FCE98313 /* Pods-JourneyNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JourneyNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JourneyNotes/Pods-JourneyNotes.debug.xcconfig"; sourceTree = "<group>"; };
+		67372B801F7DE93C00BA6E90 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
+		67372B811F7DE93C00BA6E90 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		67372B821F7DE93C00BA6E90 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		67372B831F7DE93C00BA6E90 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		67372B841F7DE93C00BA6E90 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		67372B851F7DE93C00BA6E90 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		67372B861F7DE93C00BA6E90 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		67372B871F7DE93C00BA6E90 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		67524A921F4547BD00B1729B /* CommonClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonClient.swift; sourceTree = "<group>"; };
 		67524A931F4547BD00B1729B /* CommonRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonRequest.swift; sourceTree = "<group>"; };
 		67524A941F4547BD00B1729B /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -171,7 +186,6 @@
 		67F5000A1F4C49A7001729A5 /* JourneySummaryNavigationTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneySummaryNavigationTableView.swift; sourceTree = "<group>"; };
 		67F5000C1F4C4BC8001729A5 /* JourneySummaryNavigationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneySummaryNavigationCell.swift; sourceTree = "<group>"; };
 		67F500101F4C4BEF001729A5 /* JourneySummaryNavigationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JourneySummaryNavigationCell.xib; sourceTree = "<group>"; };
-		D1ABE4A5171AEC23FF466FF8 /* Pods-JourneyNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JourneyNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-JourneyNotes/Pods-JourneyNotes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +193,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67372B881F7DE93C00BA6E90 /* Himotoki.framework in Frameworks */,
+				67372B891F7DE93C00BA6E90 /* Kingfisher.framework in Frameworks */,
+				67372B8A1F7DE93C00BA6E90 /* RxCocoa.framework in Frameworks */,
+				67372B8B1F7DE93C00BA6E90 /* Alamofire.framework in Frameworks */,
+				67372B8C1F7DE93C00BA6E90 /* RxTest.framework in Frameworks */,
+				67372B8D1F7DE93C00BA6E90 /* RxBlocking.framework in Frameworks */,
+				67372B8E1F7DE93C00BA6E90 /* SnapKit.framework in Frameworks */,
+				67372B8F1F7DE93C00BA6E90 /* RxSwift.framework in Frameworks */,
 				718F38837847D8B0183910B5 /* Pods_JourneyNotes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,18 +208,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		20C0573B2AB78360C8A0F709 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				55CD01288BD0C377FCE98313 /* Pods-JourneyNotes.debug.xcconfig */,
-				D1ABE4A5171AEC23FF466FF8 /* Pods-JourneyNotes.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		4379439608CF86407D59B671 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				67372B831F7DE93C00BA6E90 /* Alamofire.framework */,
+				67372B801F7DE93C00BA6E90 /* Himotoki.framework */,
+				67372B811F7DE93C00BA6E90 /* Kingfisher.framework */,
+				67372B851F7DE93C00BA6E90 /* RxBlocking.framework */,
+				67372B821F7DE93C00BA6E90 /* RxCocoa.framework */,
+				67372B871F7DE93C00BA6E90 /* RxSwift.framework */,
+				67372B841F7DE93C00BA6E90 /* RxTest.framework */,
+				67372B861F7DE93C00BA6E90 /* SnapKit.framework */,
 				0418D4A591CF62CFC2E69384 /* Pods_JourneyNotes.framework */,
 			);
 			name = Frameworks;
@@ -256,7 +277,6 @@
 			children = (
 				677FE9201F42CF5900C2B1C5 /* JourneyNotes */,
 				677FE91F1F42CF5900C2B1C5 /* Products */,
-				20C0573B2AB78360C8A0F709 /* Pods */,
 				4379439608CF86407D59B671 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -798,7 +818,6 @@
 		};
 		677FE9311F42CF5900C2B1C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55CD01288BD0C377FCE98313 /* Pods-JourneyNotes.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -806,7 +825,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 7R3MSEN8NJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = JourneyNotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SaiDicaprio.JourneyNotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -818,7 +842,6 @@
 		};
 		677FE9321F42CF5900C2B1C5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1ABE4A5171AEC23FF466FF8 /* Pods-JourneyNotes.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -826,7 +849,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 7R3MSEN8NJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = JourneyNotes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SaiDicaprio.JourneyNotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
