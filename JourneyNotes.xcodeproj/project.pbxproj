@@ -11,8 +11,6 @@
 		67372B891F7DE93C00BA6E90 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67372B811F7DE93C00BA6E90 /* Kingfisher.framework */; };
 		67372B8A1F7DE93C00BA6E90 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67372B821F7DE93C00BA6E90 /* RxCocoa.framework */; };
 		67372B8B1F7DE93C00BA6E90 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67372B831F7DE93C00BA6E90 /* Alamofire.framework */; };
-		67372B8C1F7DE93C00BA6E90 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67372B841F7DE93C00BA6E90 /* RxTest.framework */; };
-		67372B8D1F7DE93C00BA6E90 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67372B851F7DE93C00BA6E90 /* RxBlocking.framework */; };
 		67372B8E1F7DE93C00BA6E90 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67372B861F7DE93C00BA6E90 /* SnapKit.framework */; };
 		67372B8F1F7DE93C00BA6E90 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67372B871F7DE93C00BA6E90 /* RxSwift.framework */; };
 		67524A9F1F4547BD00B1729B /* CommonClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67524A921F4547BD00B1729B /* CommonClient.swift */; };
@@ -93,11 +91,9 @@
 		67F5000B1F4C49A7001729A5 /* JourneySummaryNavigationTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F5000A1F4C49A7001729A5 /* JourneySummaryNavigationTableView.swift */; };
 		67F5000D1F4C4BC8001729A5 /* JourneySummaryNavigationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F5000C1F4C4BC8001729A5 /* JourneySummaryNavigationCell.swift */; };
 		67F500111F4C4BEF001729A5 /* JourneySummaryNavigationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F500101F4C4BEF001729A5 /* JourneySummaryNavigationCell.xib */; };
-		718F38837847D8B0183910B5 /* Pods_JourneyNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0418D4A591CF62CFC2E69384 /* Pods_JourneyNotes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0418D4A591CF62CFC2E69384 /* Pods_JourneyNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JourneyNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67372B801F7DE93C00BA6E90 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
 		67372B811F7DE93C00BA6E90 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		67372B821F7DE93C00BA6E90 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
@@ -193,15 +189,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67372B8B1F7DE93C00BA6E90 /* Alamofire.framework in Frameworks */,
 				67372B881F7DE93C00BA6E90 /* Himotoki.framework in Frameworks */,
 				67372B891F7DE93C00BA6E90 /* Kingfisher.framework in Frameworks */,
-				67372B8A1F7DE93C00BA6E90 /* RxCocoa.framework in Frameworks */,
-				67372B8B1F7DE93C00BA6E90 /* Alamofire.framework in Frameworks */,
-				67372B8C1F7DE93C00BA6E90 /* RxTest.framework in Frameworks */,
-				67372B8D1F7DE93C00BA6E90 /* RxBlocking.framework in Frameworks */,
-				67372B8E1F7DE93C00BA6E90 /* SnapKit.framework in Frameworks */,
 				67372B8F1F7DE93C00BA6E90 /* RxSwift.framework in Frameworks */,
-				718F38837847D8B0183910B5 /* Pods_JourneyNotes.framework in Frameworks */,
+				67372B8A1F7DE93C00BA6E90 /* RxCocoa.framework in Frameworks */,
+				67372B8E1F7DE93C00BA6E90 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +212,6 @@
 				67372B871F7DE93C00BA6E90 /* RxSwift.framework */,
 				67372B841F7DE93C00BA6E90 /* RxTest.framework */,
 				67372B861F7DE93C00BA6E90 /* SnapKit.framework */,
-				0418D4A591CF62CFC2E69384 /* Pods_JourneyNotes.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -502,12 +494,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 677FE9301F42CF5900C2B1C5 /* Build configuration list for PBXNativeTarget "JourneyNotes" */;
 			buildPhases = (
-				F4802C7CDF4112C8C1960C15 /* [CP] Check Pods Manifest.lock */,
 				677FE91A1F42CF5900C2B1C5 /* Sources */,
 				677FE91B1F42CF5900C2B1C5 /* Frameworks */,
 				677FE91C1F42CF5900C2B1C5 /* Resources */,
-				00BAF9C9E111C8C74E73F29C /* [CP] Embed Pods Frameworks */,
-				9FE7AA26C9C7607C0690CF8E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -604,54 +593,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		00BAF9C9E111C8C74E73F29C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JourneyNotes/Pods-JourneyNotes-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9FE7AA26C9C7607C0690CF8E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JourneyNotes/Pods-JourneyNotes-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F4802C7CDF4112C8C1960C15 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		677FE91A1F42CF5900C2B1C5 /* Sources */ = {
