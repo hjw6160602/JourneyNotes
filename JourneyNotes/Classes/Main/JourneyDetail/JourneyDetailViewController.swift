@@ -121,8 +121,9 @@ extension JourneyDetailViewController: UITableViewDataSource {
 extension JourneyDetailViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let cell = cellsArray[indexPath.row]
-        print("cell.hieht:", cell.height)
-        print("cell.cellHeight:", cell.cellHeight)
+//        print("cell.hieht:", cell.height)
+//        print("cell.cellHeight:", cell.cellHeight)
+//        需要使用cellHeight而不是height因为在第一次加载的时候，是从xib中加载进来的，这时候高度还是初始高度
         return cell.cellHeight
     }
     
