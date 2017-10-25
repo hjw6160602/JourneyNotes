@@ -121,7 +121,9 @@ extension JourneyDetailViewController: UITableViewDataSource {
 extension JourneyDetailViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let cell = cellsArray[indexPath.row]
-        return cell.height
+        print("cell.hieht:", cell.height)
+        print("cell.cellHeight:", cell.cellHeight)
+        return cell.cellHeight
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {

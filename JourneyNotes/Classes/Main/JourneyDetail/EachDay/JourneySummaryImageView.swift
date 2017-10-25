@@ -63,11 +63,12 @@ class JourneySummaryImageView: UIView {
             let tapGesture = UITapGestureRecognizer()
             view.addGestureRecognizer(tapGesture)
             _ = tapGesture.rx.event.subscribe({ (event) in
-                let zoomViewController = ImageZoomViewController()
-                zoomViewController.image = imgView.image
-                let navigationController = UIApplication.shared.delegate?.window??.rootViewController as! UINavigationController
-                
-                navigationController.pushViewController(zoomViewController, animated: true)
+                //暂时将添加的手势注释掉
+//                let zoomViewController = ImageZoomViewController()
+//                zoomViewController.image = imgView.image
+//                let navigationController = UIApplication.shared.delegate?.window??.rootViewController as! UINavigationController
+//
+//                navigationController.pushViewController(zoomViewController, animated: true)
             })
             
             let cover = UIView(frame: CGRect(x: 0, y: view.height - 25, width: view.width, height: 25))
