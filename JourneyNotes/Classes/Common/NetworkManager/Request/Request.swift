@@ -25,11 +25,8 @@ class AlamofireRequest: NSObject {
         print(jsonData)
         
 //         {"filter":{"keyword":"清水寺","mddid":""},"start":"0"}
-        
-        
         var params = ["jsonData" : jsonData,
-                      "x_auth_mode" : "client_auth",
-            "oauth_signature": "1/pLM9AnTKsliccPZ%2BhkkhXN9Nk%3D"]
+                      "x_auth_mode" : "client_auth",]
         
         self.request(method, params: &params) { (data) in
             finished(data)
@@ -45,11 +42,9 @@ class AlamofireRequest: NSObject {
     static func request(_ method: String, params: inout [String: String], finished:@escaping ((_ data:Any?) -> Void))  {
         let url = host + page + method
 
-        let tail = TailTool().tailDict
-        // 将参数尾巴拼接上去
-        params += tail
-        
-        print("最终的请求URL：\n\(url + params.flatmapOfDict)")
+        let dict = TailTool().requestParams(paramDict: params)
+
+        //            print("最终的请求URL：\n\(url + params.flatmapOfDict)")
         
         self.post(url: url, params: params , timeout: 20) { (response, error) in
             guard error != nil else{

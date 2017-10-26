@@ -91,7 +91,7 @@ enum CryptoAlgorithm {
 
 // MARK: - 加密方式的 extension
 extension String {
-    func hmac(algorithm: CryptoAlgorithm, key: String) -> String {
+    func hmac(algorithm: CryptoAlgorithm, key: String) -> Data {
         let str = self.cString(using: String.Encoding.utf8)
         let strLen = Int(self.lengthOfBytes(using: String.Encoding.utf8))
         let digestLen = algorithm.digestLength
@@ -100,9 +100,23 @@ extension String {
         let keyLen = Int(key.lengthOfBytes(using: String.Encoding.utf8))
         
         CCHmac(algorithm.HMACAlgorithm, keyStr!, keyLen, str!, strLen, result)
+        let digest = dataFromResult(result: result, length: digestLen)
         
+        result.deallocate(capacity: digestLen)
+        
+        return digest
+    }
+    
+    /** 字符串转md5加密 */
+    var md5:String {
+        let cStr = self.cString(using: String.Encoding.utf8)
+        let strLen = CC_LONG(self.lengthOfBytes(using: String.Encoding.utf8))
+        let digestLen = Int(CC_MD5_DIGEST_LENGTH)
+        //Swift 2.3
+//        let result = UnsafeMutablePointer<CUnsignedChar>(allocatingCapacity: DigestLen)
+        let result = UnsafeMutablePointer<UInt8>.allocate(capacity: digestLen)
+        CC_MD5(cStr!, strLen, result)
         let digest = stringFromResult(result: result, length: digestLen)
-        
         result.deallocate(capacity: digestLen)
         
         return digest
@@ -116,22 +130,16 @@ extension String {
         return String(hash)
     }
     
-    /** 字符串转md5加密 */
-    var md5:String{
-        let cStr = self.cString(using: String.Encoding.utf8)
-        let strLen = CC_LONG(self.lengthOfBytes(using: String.Encoding.utf8))
-        let DigestLen = Int(CC_MD5_DIGEST_LENGTH)
-        //Swift 2.3
-//        let result = UnsafeMutablePointer<CUnsignedChar>(allocatingCapacity: DigestLen)
-        let result = UnsafeMutablePointer<UInt8>.allocate(capacity: DigestLen)
-        CC_MD5(cStr!, strLen, result)
-        let hash = NSMutableString()
-        for i in 0..<DigestLen {
-            hash.appendFormat("%02x", result[i])
+    private func dataFromResult(result: UnsafeMutablePointer<CUnsignedChar>, length: Int) -> Data {
+        var bytesArray: Array<UInt8> = Array.init()
+        for i in 0..<length {
+            let byte:UInt8 = result[i]
+            bytesArray.append(byte)
         }
-        result.deallocate(capacity: DigestLen)
-        return String(format: hash as String)
+        let bytes = Data.init(bytes: bytesArray)
+        return bytes
     }
+    
 }
 
 // MARK: - 去空格和空行操作的extension

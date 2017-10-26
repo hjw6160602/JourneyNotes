@@ -8,8 +8,10 @@
 
 import UIKit
 
-
 struct TailTool {
+    static let PUBLICK_KEY = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQClC9S4wdxZMkEG4n3Jib6OMeaIz1G0ynONI1fh4UbpJoJ6qq+dg4YL4TS7hJsZcoqtZBgnqay7s8RL68HdNmj09XI9B1c7Q4dV5pzxlEApx0TRYBr5qGl6SQU1+uOWb8uJVMLmxO0aPtE+Ndx0obVoDL4SQl5mn9zd6U/ZD3MtXQIDAQAB"
+    static let rcAppKey = "c9kqb3rdcy4sj"
+    
     let tailDict:[String : String] = {
         //蚂蜂窝接口请求不传这个参数，获取当前网络类型
 //        let networkType =  (Utils.mobileNetworkCode().characters.count > 0) ? Utils.mobileNetworkCode() : "WIFI"
@@ -63,56 +65,27 @@ struct TailTool {
         return tailDict
     }()
     
-    public func requestParams(paramDict:[String : String], check:Bool, _ closure:((_ dict:inout [String: String]) -> ())?)-> [String : String]{
-        var requestDict = ["":""]
-        if let closure = closure {//如果是API请求
-            //将API请求参数拼接上version和method字段
-            requestDict = generateKeyDict(check, { ( tailDict ) in
-                closure(&tailDict)
-                // print("需要拼接的参数：\(tailDict)")
-            })
-        } else{//CMS请求
-            requestDict = generateKeyDict(check, nil)
-        }
-        
-//        print("请求参数添加后\(requestDict)")
+    public func requestParams(paramDict:[String : String])-> [String : String]{
         //将参数字典拿出来，然后拼接上尾巴字典，然后返回
-        requestDict += paramDict
-//        print("请求参数添加后\(requestDict)")
+        var requestDict = paramDict
+//        print(requestDict)
+        requestDict += tailDict
+        
         // 排序之后的字典拼接上&符号
         let params = requestDict.flatmapOfDict
+        
         //将参数后面拼接上固定的编码
-//        params += SIGN_KEY_DEFINE
-//        print("编码之前的参数：\(params)")
-        let lvtuKey = params.md5
+        print("编码之前的参数：\n",params)
+
+        let bytes = params.hmac(algorithm: .SHA1, key: TailTool.PUBLICK_KEY)
+        let oauth_signature = bytes.base64EncodedString(options: NSData.Base64EncodingOptions.init(rawValue: 0))
+        
 //        print("编码之后的lvtuKey：\(lvtuKey)")
         
         //将尾巴字典中的lvtukey编码出来，并赋值给"lvtukey"这个键
-        requestDict["lvtukey"] = lvtuKey
+        requestDict["oauth_signature"] = oauth_signature
 //        print("最终请求字典：\(requestDict)")
         //最终的请求参数字典
         return requestDict
-    }
-    
-    /// generateKeyDict 生成需要字节编码的字典
-    ///
-    /// - Parameters:
-    ///   - check: 是否需要检查版本
-    ///   - closure: 是否是API接口/CMS接口
-    /// - Returns: 最终可以进行字节编码的字典
-    private func generateKeyDict(_ check: Bool, _ closure:((_ dict: inout [String: String]) -> ())?) -> [String: String] {
-        var dict:[String:String] = [:]
-        if check {
-            dict["checkVersion"] = "True"
-        }
-        if let closure = closure {//如果有闭包传入
-            //证明是API借口，需要将字典拼接上"version"和"method"字段
-            closure(&dict)
-            print("编码需要拼接的参数：\(dict)")
-        }
-        //如果是CMS接口，则不用拼接字段，直接加上尾巴字典返回就可以
-        dict += tailDict
-        //        print("需要编码的参数字典：\(dict)")
-        return dict
     }
 }
