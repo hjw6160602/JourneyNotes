@@ -15,7 +15,8 @@ struct AnalyzingTool {
     /// 根据传入的资源文件名称引找到请求数据字典
     /// - Parameters:
     ///   - resource: 资源文件名称
-    /// - Returns: 返回需要请求的url，请求方法method，请求参数params
+    /// - Returns: 返回需要请求的url
+    // 请求方法method，请求参数params
     static func paramsFromPlist(resource:String) -> (host:String, page:String, method:String, params:[String: String]?){
         let path = Bundle.main.path(forResource: resource, ofType: "plist", inDirectory: Directory)
 
@@ -28,9 +29,10 @@ struct AnalyzingTool {
         let originParams = dict["params"] as! [String:String]
         
         var params:[String: String]?
-        if let version = dict["version"] {
-            params = ["version":version as! String]
-        }
+        // 蚂蜂窝的接口没有 version字段
+//        if let version = dict["version"] {
+//            params = ["version":version as! String]
+//        }
         
         for (key, value) in originParams {
             let valueString = value

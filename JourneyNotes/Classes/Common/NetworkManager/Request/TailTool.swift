@@ -11,40 +11,48 @@ import UIKit
 
 struct TailTool {
     let tailDict:[String : String] = {
-        let networkType =  (Utils.mobileNetworkCode().characters.count > 0) ? Utils.mobileNetworkCode() : "WIFI"
+        //蚂蜂窝接口请求不传这个参数，获取当前网络类型
+//        let networkType =  (Utils.mobileNetworkCode().characters.count > 0) ? Utils.mobileNetworkCode() : "WIFI"
         
-        let secondChanel = SECOND_CHANNEL_VALUE
         // 这里直接传 蚂蜂窝的 固定版本号
 //        let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
         let version = "8.0.6"
-        var debugStatus = "false"
-        #if DEBUG // 判断是否在测试环境下
-            debugStatus = "true"
-        #endif
+        // 经纬度
         let latitude = "31.238"
         let longitude = "121.403"
-        
+        let device_token = "90e68fc28d7e5eceb49215ef249724eaac4817ffa10802eef89e6d765b1994af"
         let stamp = String(Date().timeStamp)
         
-        let tailDict = ["mfwsdk_ver          : "20160401",
-                        "o_lat"              : latitude,
-                        "o_lng"              : longitude,
-                        "oauth_consumer_key" : "4",
-                        "oauth_nonce"        : "5cd35700-a835-435b-8b7f-af1b670f49ed",
-                        "oauth_timestamp"    : "1508923282",
-                        "oauth_token"        : "5450361_6e5238cf80d17ae9a883463db9c3f914",
-                        "oauth_version"      : "1.0",
-                        "open_udid"          : "56394509-A45F-4384-AE54-3986C2E68A58",
-                        "screen_height"      : "1136",
-                        "screen_scale"       : "2",
-                        "screen_width"       : "640",
-                        "sys_ver"            : "9.2",
-                        "time_offset"        : "480",
-                        "x_auth_mode"        : "client_auth" ]
+//        "after_style"        : "default",
+//        "put_style"          : "default",
+        // 拼接参数尾巴
+        let tailDict = [
+            "app_code"           : "cn.mafengwo.www",
+            "app_ver"            : version,
+            "channel_id"         : "App Store",
+            "device_token"       : device_token,
+            "device_type"        : "ios",
+            "hardware_model"     : "iPhone6,2",
+            "idfa"               : "9E53871C-F207-4143-9D6C-B30B9359FA08",
+            "idfv"               : "2E83C510-9E21-4DFD-886F-FBA0A7C73490",
+            "mfwsdk_ver"         : "20160401",
+            "o_lat"              : latitude,
+            "o_lng"              : longitude,
+            "oauth_consumer_key" : "4",
+            "oauth_nonce"        : "5cd35700-a835-435b-8b7f-af1b670f49ed",
+            "oauth_timestamp"    : stamp,
+            "oauth_version"      : "1.0",
+            "open_udid"          : "56394509-A45F-4384-AE54-3986C2E68A58",
+            "screen_height"      : "1136",
+            "screen_scale"       : "2",
+            "screen_width"       : "640",
+            "sys_ver"            : "9.2",
+            "time_offset"        : "480" ]
+        
+//        "oauth_token"        : "5450361_6e5238cf80d17ae9a883463db9c3f914",
 //        "oauth_signature"  : "1/pLM9AnTKsliccPZ+hkkhXN9Nk"  : "",
 //        "oauth_signature_method"  : "HMAC-SHA1",
-        
-        
+//        "x_auth_mode"        : "client_auth"
         return tailDict
     }()
     
@@ -53,11 +61,8 @@ struct TailTool {
         if let closure = closure {//如果是API请求
             //将API请求参数拼接上version和method字段
             requestDict = generateKeyDict(check, { ( tailDict ) in
-                if let version = paramDict["version"]{
-                    tailDict["version"] = version;
-                }
                 closure(&tailDict)
-                //                print("需要拼接的参数：\(tailDict)")
+                // print("需要拼接的参数：\(tailDict)")
             })
         } else{//CMS请求
             requestDict = generateKeyDict(check, nil)
@@ -70,7 +75,7 @@ struct TailTool {
         
         var params = requestDict.flatmapOfDict
         //将参数后面拼接上固定的编码
-        params += SIGN_KEY_DEFINE
+//        params += SIGN_KEY_DEFINE
 //        print("编码之前的参数：\(params)")
         let lvtuKey = params.md5
 //        print("编码之后的lvtuKey：\(lvtuKey)")

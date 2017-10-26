@@ -16,6 +16,8 @@
 		67395A071FA0954B002C91E8 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67395A061FA0954A002C91E8 /* UIDevice+Extension.swift */; };
 		67395A091FA09557002C91E8 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67395A081FA09557002C91E8 /* Date+Extension.swift */; };
 		67395A0E1FA09641002C91E8 /* KeychainItemWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67395A0D1FA09641002C91E8 /* KeychainItemWrapper.swift */; };
+		67395A101FA183A3002C91E8 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67395A0B1FA095E3002C91E8 /* Request.swift */; };
+		67395A111FA183A3002C91E8 /* TailTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67395A0C1FA095E3002C91E8 /* TailTool.swift */; };
 		67524A9F1F4547BD00B1729B /* CommonClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67524A921F4547BD00B1729B /* CommonClient.swift */; };
 		67524AA01F4547BD00B1729B /* CommonRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67524A931F4547BD00B1729B /* CommonRequest.swift */; };
 		67524AA11F4547BD00B1729B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67524A941F4547BD00B1729B /* NetworkManager.swift */; };
@@ -645,6 +647,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67395A101FA183A3002C91E8 /* Request.swift in Sources */,
+				67395A111FA183A3002C91E8 /* TailTool.swift in Sources */,
 				67F5000B1F4C49A7001729A5 /* JourneySummaryNavigationTableView.swift in Sources */,
 				67A4626B1F42DA69003B7298 /* ViewController.swift in Sources */,
 				67524AA21F4547BD00B1729B /* NetworkProtocol.swift in Sources */,
