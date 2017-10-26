@@ -22,15 +22,28 @@ extension Dictionary {
         return json
     }
     
+    /** 去掉空格和换行之后的展平字符串json */
+    var flatJson: String {
+        var json = self.json
+        json = json.removeAllSapce
+        json = json.removeAllNewlines
+        return json
+    }
+    
+    //字典排序
+    var sortedDict: [(key:Key, value:Value)]{
+        return self.sorted {
+            return ($0.key as! String) < ($1.key as! String)
+        }
+    }
+    
+    // url参数拼接
     var flatmapOfDict: String{
         var params = ""
         if self.count == 0{
             return params
         }
-        //字典排序
-        let sortedDict = self.sorted {
-            return ($0.key as! String) < ($1.key as! String)
-        }
+        let sortedDict = self.sortedDict
         var index = 1
         for (key, value) in sortedDict {
             let keyString = key as! String

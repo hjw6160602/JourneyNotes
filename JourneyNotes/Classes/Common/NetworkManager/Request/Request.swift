@@ -8,29 +8,50 @@
 
 import Alamofire
 
-
 class AlamofireRequest: NSObject {
     static let host = "https://mapi.mafengwo.cn/"
     static let page = "rest/app/"
+    
+    /// filterRequest
+    ///
+    /// - Parameters:
+    ///   - keyword: 请求接口的关键词
+    ///   - finished: 请求完成之后的闭包
+    static func filterRequest(keyword: String, finished:@escaping ((_ data:Any?) -> Void) ) {
+        // 搜索参数：
+        let method = "search/MixedItem/?"
+        let filter = "{\"keyword\":\"" + keyword + "\",\"mddid\":\"\"}"
+        let jsonData = "{\"filter\":" + filter + ",\"start\":\"0\"}"
+        print(jsonData)
+        
+//         {"filter":{"keyword":"清水寺","mddid":""},"start":"0"}
+        
+        
+        var params = ["jsonData" : jsonData,
+                      "x_auth_mode" : "client_auth",
+            "oauth_signature": "1/pLM9AnTKsliccPZ%2BhkkhXN9Nk%3D"]
+        
+        self.request(method, params: &params) { (data) in
+            finished(data)
+        }
+    }
+    
     /// request
     ///
     /// - Parameters:
-    ///   - api: 请求接口的method
+    ///   - method: 请求接口的method
+    ///   - params: 请求的参数
     ///   - finished: 请求完成之后的闭包
-    static func request(_ api: String, resource: String, finished:@escaping ((_ data:Any?) -> Void))  {
-        
-        let mathod: String = "search/MixedItem/?"
-        let url = host + page + mathod
-        
-        //将参数尾巴拼接上去
-        let params = [
-            "filter" : ["keyword":"清水寺", "mddid":""],
-            "start" : 0
-            ] as [String : Any]
+    static func request(_ method: String, params: inout [String: String], finished:@escaping ((_ data:Any?) -> Void))  {
+        let url = host + page + method
+
+        let tail = TailTool().tailDict
+        // 将参数尾巴拼接上去
+        params += tail
         
         print("最终的请求URL：\n\(url + params.flatmapOfDict)")
         
-        self.post(url: url, params: params as! [String : String], timeout: 20) { (response, error) in
+        self.post(url: url, params: params , timeout: 20) { (response, error) in
             guard error != nil else{
                 var data:Any?
                 if response is Dictionary<String, Any> {

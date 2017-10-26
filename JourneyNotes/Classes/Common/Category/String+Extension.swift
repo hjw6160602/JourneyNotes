@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+// MARK: - 获取沙盒路径和字典操作的 extension
 extension String {
     /** 字符串转字典 */
     var stringToDic : [String: AnyObject]? {
@@ -88,7 +89,7 @@ enum CryptoAlgorithm {
     }
 }
 
-
+// MARK: - 加密方式的 extension
 extension String {
     func hmac(algorithm: CryptoAlgorithm, key: String) -> String {
         let str = self.cString(using: String.Encoding.utf8)
@@ -130,5 +131,39 @@ extension String {
         }
         result.deallocate(capacity: DigestLen)
         return String(format: hash as String)
+    }
+}
+
+// MARK: - 去空格和空行操作的extension
+extension String {
+    /** 去掉首尾空格 */
+    var removeHeadAndTailSpace:String {
+        let whitespace = NSCharacterSet.whitespaces
+        return self.trimmingCharacters(in: whitespace)
+    }
+    
+    /** 去掉首尾空格 包括后面的换行 \n */
+    var removeHeadAndTailSpacePro:String {
+        let whitespace = NSCharacterSet.whitespacesAndNewlines
+        return self.trimmingCharacters(in: whitespace)
+    }
+    
+    /** 去掉所有空格 */
+    var removeAllSapce: String {
+        return self.replacingOccurrences(of: " ", with: "", options: .literal, range: nil)
+    }
+    
+    /** 去掉所有换行 */
+    var removeAllNewlines: String {
+        return self.replacingOccurrences(of: "\n", with: "", options: .literal, range: nil)
+    }
+    
+    /**去掉首尾空格 后 指定开头空格数 */
+    func beginSpaceNum(num: Int) -> String {
+        var beginSpace = ""
+        for _ in 0..<num {
+            beginSpace += " "
+        }
+        return beginSpace + self.removeHeadAndTailSpacePro
     }
 }
