@@ -8,9 +8,14 @@
 
 import UIKit
 
+let oauth_token = ""
+//"5450361_6e5238cf80d17ae9a883463db9c3f914"
+let oauth_token_secret = ""
+
 struct TailTool {
     static let PUBLICK_KEY = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQClC9S4wdxZMkEG4n3Jib6OMeaIz1G0ynONI1fh4UbpJoJ6qq+dg4YL4TS7hJsZcoqtZBgnqay7s8RL68HdNmj09XI9B1c7Q4dV5pzxlEApx0TRYBr5qGl6SQU1+uOWb8uJVMLmxO0aPtE+Ndx0obVoDL4SQl5mn9zd6U/ZD3MtXQIDAQAB"
     static let rcAppKey = "c9kqb3rdcy4sj"
+    static let appKey = "4e13f731431fe365e4000008"
     
     let tailDict:[String : String] = {
         //蚂蜂窝接口请求不传这个参数，获取当前网络类型
@@ -28,13 +33,13 @@ struct TailTool {
         let open_udid = idfv
         
         // 暂时写死时间戳
-        let stamp = "1508923282"
+        let stamp = "1509086135"
         // let stamp = String(Date().timeStamp)
         
 //        "after_style"        : "default",
 //        "put_style"          : "default",
         // 拼接参数尾巴
-        let tailDict = [
+        var tailDict = [
             "app_code"           : "cn.mafengwo.www",
             "app_ver"            : version,
             "channel_id"         : "App Store",
@@ -50,8 +55,6 @@ struct TailTool {
             "oauth_nonce"        : "5cd35700-a835-435b-8b7f-af1b670f49ed",
             "oauth_timestamp"    : stamp,
             "oauth_signature_method": "HMAC-SHA1",
-            "oauth_token"        : "5450361_6e5238cf80d17ae9a883463db9c3f914",
-            
             "oauth_version"      : "1.0",
             "open_udid"          : open_udid,
             "screen_height"      : "1136",
@@ -59,28 +62,45 @@ struct TailTool {
             "screen_width"       : "640",
             "sys_ver"            : "9.2",
             "time_offset"        : "480" ]
+        if oauth_token.characters.count > 0 {
+            tailDict += ["oauth_token": oauth_token]
+        }
         
 //        "oauth_signature"  : "1/pLM9AnTKsliccPZ+hkkhXN9Nk"  : "",
         
         return tailDict
     }()
     
-    public func requestParams(paramDict:[String : String])-> [String : String]{
-        //将参数字典拿出来，然后拼接上尾巴字典，然后返回
+    public func requestParams(url:String, httpMethod:HTTPMethod, params paramDict:[String : String])-> [String : String]{
+        // MARK: - Step 1. 构造源串
+        // 0.将参数字典拿出来，然后拼接上尾巴字典，然后返回
         var requestDict = paramDict
-//        print(requestDict)
         requestDict += tailDict
-        
-        // 排序之后的字典拼接上&符号
+        // 1.排序之后的字典拼接上&符号
         let params = requestDict.flatmapOfDict
+        // 2.将请求的url拼接上请求参数
+        let uri = url + "&" + params
+        // 3.再进行一次url编码
+        let encodedChain = uri.urlEncoded()
+        // 4.将请求方法和url编码串拼接起来得到源串
+        let originSignatureChain = httpMethod.rawValue + "&" + encodedChain
         
-        //将参数后面拼接上固定的编码
-        print("编码之前的参数：\n",params)
-
-        let bytes = params.hmac(algorithm: .SHA1, key: TailTool.PUBLICK_KEY)
+        // MARK: - Step 2. 构造密钥  oauth_consumer_secret & oauth_token_secret
+        let oauth_consumer_secret = TailTool.appKey
+        // 在oauth_consumer_secret后加&
+        var keyChain = oauth_consumer_secret + "&"
+        // OAuth认证一开始，不需要oauth_token_secret，置为空。
+        if oauth_token_secret.characters.count > 0 {
+            keyChain += oauth_token_secret
+        }
+        
+        print("需要签名加密编码的参数:\n\(originSignatureChain)")
+        
+        let bytes = params.hmac(algorithm: .SHA1, key: keyChain)
         let oauth_signature = bytes.base64EncodedString(options: NSData.Base64EncodingOptions.init(rawValue: 0))
         
-//        print("编码之后的lvtuKey：\(lvtuKey)")
+        print("编码之后的oauth_signature：\(oauth_signature)")
+//        ov27oMeS9aU3IBDICJs+gNn+4EU=
         
         //将尾巴字典中的lvtukey编码出来，并赋值给"lvtukey"这个键
         requestDict["oauth_signature"] = oauth_signature
