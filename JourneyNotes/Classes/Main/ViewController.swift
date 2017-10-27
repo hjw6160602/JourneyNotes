@@ -25,12 +25,10 @@ class ViewController: UIViewController {
         jsonList = readArrayFromPlist()
         parseEntityFromJson()
         // 发送网络请求
-        AlamofireRequest.loginRequest { (data) in
-            
-        }
-//        AlamofireRequest.filterRequest(keyword: "清水寺") { (data) in
-//            print(data)
+//        AlamofireRequest.loginRequest { (data) in
 //        }
+        AlamofireRequest.filterRequest(keyword: "清水寺") { (data) in
+        }
     }
     
     private func readArrayFromPlist() -> NSArray {

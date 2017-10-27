@@ -8,9 +8,11 @@
 
 import UIKit
 
-let oauth_token = ""
-//"5450361_6e5238cf80d17ae9a883463db9c3f914"
-let oauth_token_secret = ""
+// 通过登录请求获得
+let oauth_token = "5450361_6e5238cf80d17ae9a883463db9c3f914"
+let oauth_token_secret = "f5acb46a54f47168b26a18d146c28915"
+// 关键
+let oauth_consumer_secret = "c9kqb3rdcy4sj"
 
 struct TailTool {
     static let PUBLICK_KEY = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQClC9S4wdxZMkEG4n3Jib6OMeaIz1G0ynONI1fh4UbpJoJ6qq+dg4YL4TS7hJsZcoqtZBgnqay7s8RL68HdNmj09XI9B1c7Q4dV5pzxlEApx0TRYBr5qGl6SQU1+uOWb8uJVMLmxO0aPtE+Ndx0obVoDL4SQl5mn9zd6U/ZD3MtXQIDAQAB"
@@ -18,22 +20,17 @@ struct TailTool {
     static let appKey = "4e13f731431fe365e4000008"
     
     let tailDict:[String : String] = {
-        //蚂蜂窝接口请求不传这个参数，获取当前网络类型
-//        let networkType =  (Utils.mobileNetworkCode().characters.count > 0) ? Utils.mobileNetworkCode() : "WIFI"
-        
-        // 这里直接传 蚂蜂窝的 固定版本号
-//        let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
         let version = "8.0.6"
         // 经纬度
-        let latitude = "31.237887"
-        let longitude = "121.386825"
+        let latitude = "31.237871"
+        let longitude = "121.386779"
         let device_token = "90e68fc28d7e5eceb49215ef249724eaac4817ffa10802eef89e6d765b1994af"
         let idfa = "9E53871C-F207-4143-9D6C-B30B9359FA08"
         let idfv = "56394509-A45F-4384-AE54-3986C2E68A58"
         let open_udid = idfv
         
         // 暂时写死时间戳
-        let stamp = "1509086135"
+        let stamp = "1509097318"
         // let stamp = String(Date().timeStamp)
         
 //        "after_style"        : "default",
@@ -52,7 +49,7 @@ struct TailTool {
             "o_lat"              : latitude,
             "o_lng"              : longitude,
             "oauth_consumer_key" : "4",
-            "oauth_nonce"        : "5cd35700-a835-435b-8b7f-af1b670f49ed",
+            "oauth_nonce"        : "6cc1e348-334b-4587-bf58-ca81fb2c48d2",
             "oauth_timestamp"    : stamp,
             "oauth_signature_method": "HMAC-SHA1",
             "oauth_version"      : "1.0",
@@ -63,10 +60,9 @@ struct TailTool {
             "sys_ver"            : "9.2",
             "time_offset"        : "480" ]
         if oauth_token.characters.count > 0 {
+            //登录之后会有token，未登录没有
             tailDict += ["oauth_token": oauth_token]
         }
-        
-//        "oauth_signature"  : "1/pLM9AnTKsliccPZ+hkkhXN9Nk"  : "",
         
         return tailDict
     }()
@@ -79,14 +75,13 @@ struct TailTool {
         // 1.排序之后的字典拼接上&符号
         let params = requestDict.flatmapOfDict
         // 2.将请求的url拼接上请求参数
-        let uri = url + "&" + params
+        let uri = url + params
         // 3.再进行一次url编码
         let encodedChain = uri.urlEncoded()
         // 4.将请求方法和url编码串拼接起来得到源串
-        let originSignatureChain = httpMethod.rawValue + "&" + encodedChain
+        let signatureChain = httpMethod.rawValue + "&" + encodedChain
         
         // MARK: - Step 2. 构造密钥  oauth_consumer_secret & oauth_token_secret
-        let oauth_consumer_secret = TailTool.appKey
         // 在oauth_consumer_secret后加&
         var keyChain = oauth_consumer_secret + "&"
         // OAuth认证一开始，不需要oauth_token_secret，置为空。
@@ -94,9 +89,10 @@ struct TailTool {
             keyChain += oauth_token_secret
         }
         
-        print("需要签名加密编码的参数:\n\(originSignatureChain)")
-        
-        let bytes = params.hmac(algorithm: .SHA1, key: keyChain)
+        print("需要签名加密编码的参数:\n\(signatureChain)")
+        // 算出SHA1加密算法之后的字节码
+        let bytes = signatureChain.hmac(algorithm: .SHA1, key: keyChain)
+        // 摘要签名串
         let oauth_signature = bytes.base64EncodedString(options: NSData.Base64EncodingOptions.init(rawValue: 0))
         
         print("编码之后的oauth_signature：\(oauth_signature)")
