@@ -12,7 +12,7 @@ import UIKit
 let oauth_token = "5450361_6e5238cf80d17ae9a883463db9c3f914"
 let oauth_token_secret = "f5acb46a54f47168b26a18d146c28915"
 // 关键
-let oauth_consumer_secret = "c9kqb3rdcy4sj"
+let oauth_consumer_secret = "4e13f731431fe365e4000008"
 
 struct TailTool {
     static let PUBLICK_KEY = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQClC9S4wdxZMkEG4n3Jib6OMeaIz1G0ynONI1fh4UbpJoJ6qq+dg4YL4TS7hJsZcoqtZBgnqay7s8RL68HdNmj09XI9B1c7Q4dV5pzxlEApx0TRYBr5qGl6SQU1+uOWb8uJVMLmxO0aPtE+Ndx0obVoDL4SQl5mn9zd6U/ZD3MtXQIDAQAB"
@@ -75,10 +75,13 @@ struct TailTool {
         // 1.排序之后的字典拼接上&符号
         let params = requestDict.flatmapOfDict
         // 2.将请求的url拼接上请求参数
-        let uri = url + params
+        let str = "https://mapi.mafengwo.cn/rest/app/search/MixedItem&"
+//        let uri = url + params
+        let uri = str + params
         // 3.再进行一次url编码
         let encodedChain = uri.urlEncoded()
         // 4.将请求方法和url编码串拼接起来得到源串
+        
         let signatureChain = httpMethod.rawValue + "&" + encodedChain
         
         // MARK: - Step 2. 构造密钥  oauth_consumer_secret & oauth_token_secret
@@ -88,15 +91,15 @@ struct TailTool {
         if oauth_token_secret.characters.count > 0 {
             keyChain += oauth_token_secret
         }
-        
-        print("需要签名加密编码的参数:\n\(signatureChain)")
+
+        print("源串:\n\(signatureChain)")
+        print("密钥：\n\(keyChain)")
         // 算出SHA1加密算法之后的字节码
         let bytes = signatureChain.hmac(algorithm: .SHA1, key: keyChain)
         // 摘要签名串
         let oauth_signature = bytes.base64EncodedString(options: NSData.Base64EncodingOptions.init(rawValue: 0))
-        
-        print("编码之后的oauth_signature：\(oauth_signature)")
-//        ov27oMeS9aU3IBDICJs+gNn+4EU=
+        print("摘要签名：\n\(oauth_signature)")
+//      hIA1Oigg7La8owDQ%2Bu6MucBf0aI%3D
         
         //将尾巴字典中的lvtukey编码出来，并赋值给"lvtukey"这个键
         requestDict["oauth_signature"] = oauth_signature
@@ -105,3 +108,5 @@ struct TailTool {
         return requestDict
     }
 }
+
+
