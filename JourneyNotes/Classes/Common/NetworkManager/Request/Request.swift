@@ -81,7 +81,7 @@ class AlamofireRequest: NSObject {
     /** Alamofire方式发送网络请求 */
     static func post(url:String, params:[String:String], timeout:TimeInterval, closure:@escaping (_ responseObject:Any, _ error:Error?) -> ()) {
         Alamofire.request(url, method: .post, parameters: params).responseJSON { (json) in
-            closure(json.result.value, nil)
+            closure(json.result.value!, nil)
         }
     }
     

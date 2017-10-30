@@ -12,7 +12,9 @@ import UIKit
 let oauth_token = "5450361_6e5238cf80d17ae9a883463db9c3f914"
 let oauth_token_secret = "f5acb46a54f47168b26a18d146c28915"
 // 关键
-let oauth_consumer_secret = "4e13f731431fe365e4000008"
+let oauth_consumer_secret = "c9kqb3rdcy4sj"
+
+let real_user = "TUZXVUxNdWx0aVVzZXJTdXBwb3J0VjE6OjU0NTAzNjF8QF9AfDU0NTAzNjF8JnxmNWFjYjQ2YTU0ZjQ3MTY4YjI2YTE4ZDE0NmMyODkxNXwmfDU0NTAzNjFfNmU1MjM4Y2Y4MGQxN2FlOWE4ODM0NjNkYjljM2Y5MTQ="
 
 struct TailTool {
     static let PUBLICK_KEY = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQClC9S4wdxZMkEG4n3Jib6OMeaIz1G0ynONI1fh4UbpJoJ6qq+dg4YL4TS7hJsZcoqtZBgnqay7s8RL68HdNmj09XI9B1c7Q4dV5pzxlEApx0TRYBr5qGl6SQU1+uOWb8uJVMLmxO0aPtE+Ndx0obVoDL4SQl5mn9zd6U/ZD3MtXQIDAQAB"
@@ -76,13 +78,16 @@ struct TailTool {
         let params = requestDict.flatmapOfDict
         // 2.将请求的url拼接上请求参数
         let str = "https://mapi.mafengwo.cn/rest/app/search/MixedItem&"
+        
+        print(url)
 //        let uri = url + params
         let uri = str + params
+        
         // 3.再进行一次url编码
         let encodedChain = uri.urlEncoded()
         // 4.将请求方法和url编码串拼接起来得到源串
         
-        let signatureChain = httpMethod.rawValue + "&" + encodedChain
+        var signatureChain = httpMethod.rawValue + "&" + encodedChain
         
         // MARK: - Step 2. 构造密钥  oauth_consumer_secret & oauth_token_secret
         // 在oauth_consumer_secret后加&
