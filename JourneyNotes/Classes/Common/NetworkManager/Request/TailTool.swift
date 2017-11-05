@@ -87,7 +87,7 @@ struct TailTool {
         let encodedChain = uri.urlEncoded()
         // 4.将请求方法和url编码串拼接起来得到源串
         
-        var signatureChain = httpMethod.rawValue + "&" + encodedChain
+        let signatureChain = httpMethod.rawValue + "&" + encodedChain
         
         // MARK: - Step 2. 构造密钥  oauth_consumer_secret & oauth_token_secret
         // 在oauth_consumer_secret后加&
