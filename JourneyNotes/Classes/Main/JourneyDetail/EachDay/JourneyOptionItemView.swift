@@ -110,13 +110,13 @@ class JourneyOptionItemView: UIView {
     
     // MARK: - 处理UI
     private func initUI() {
-        if titleLabelTxt.characters.count > 0 {
+        if titleLabelTxt.count > 0 {
             addSubview(titleLabel)
         }
-        if briefLabelTxt.characters.count > 0 {
+        if briefLabelTxt.count > 0 {
             addSubview(briefLabel)
         }
-        if contentLabelTxt.characters.count > 0 {
+        if contentLabelTxt.count > 0 {
             addSubview(contentLabel)
         }
         if let imageView = summayImageView {
@@ -128,17 +128,17 @@ class JourneyOptionItemView: UIView {
         var currentHeight: CGFloat = 0
         let labelH: CGFloat = 20
         let titleW: CGFloat = SCREEN_WIDTH - titleX - MARGIN - 50
-        if titleLabelTxt.characters.count > 0 {
+        if titleLabelTxt.count > 0 {
             let titleY: CGFloat = currentHeight + 10
             titleLabel.frame = CGRect(x: titleX + 50, y: titleY, width: titleW, height: labelH)
             currentHeight += labelH + MARGIN_H
         }
-        if briefLabelTxt.characters.count > 0 {
+        if briefLabelTxt.count > 0 {
             let briefY: CGFloat = currentHeight + MARGIN
             briefLabel.frame = CGRect(x: titleX, y: briefY, width: titleW, height: labelH)
             currentHeight += labelH + MARGIN_H
         }
-        if contentLabelTxt.characters.count > 0 {
+        if contentLabelTxt.count > 0 {
             let contentY: CGFloat = currentHeight + MARGIN
             contentLabel.frame = CGRect(x: titleX, y: contentY, width: titleW, height: labelH)
             currentHeight += labelH + MARGIN_H

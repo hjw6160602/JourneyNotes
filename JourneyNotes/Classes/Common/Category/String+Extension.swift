@@ -179,10 +179,16 @@ extension String {
 // MARK: - URL编码与解码
 extension String {
     //将原始的url编码为合法的url
+    /* .urlHostAllowed:     被转义的字符有  "#%/<>?@\^`\{\|\}
+     * .urlPathAllowed:     被转义的字符有  "#%;<>?[\]^`\{\|\}
+     * .urlUserAllowed:     被转义的字符有   #%/<>?@\^`\{\|\}
+     * .urlQueryAllowed:    被转义的字符有  "#%<>[\]^`\{\|\}
+     * .urlPasswordAllowed: 被转义的字符有  "#%/:<>?@[\]^`\{\|\}
+     *  urlEncode:          被转义的字符有  !*'();:@&=+$,/?%#[]
+     */
     func urlEncoded() -> String {
-        var custom  = CharacterSet.urlPasswordAllowed
-        custom.remove(charactersIn: ",")
-        let encodeUrlString = self.addingPercentEncoding(withAllowedCharacters: custom)
+        let urlEncodeSet  = CharacterSet(charactersIn: "!*'();:@&=+$,/?%#[]").inverted
+        let encodeUrlString = self.addingPercentEncoding(withAllowedCharacters: urlEncodeSet)
         return encodeUrlString ?? ""
     }
     

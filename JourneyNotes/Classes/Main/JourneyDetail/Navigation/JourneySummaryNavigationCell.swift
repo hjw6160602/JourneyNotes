@@ -96,7 +96,7 @@ class JourneySummaryNavigationCell: UITableViewCell {
             }
         }
         
-        if content.characters.count > 0 {
+        if content.count > 0 {
             contentLabelHeightCons.constant = contentH
             cellHeight = 20 + contentH + 40
         }

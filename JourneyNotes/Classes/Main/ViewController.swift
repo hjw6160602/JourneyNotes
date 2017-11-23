@@ -88,7 +88,7 @@ extension ViewController: UITableViewDataSource {
             cell?.textLabel?.text = "查看全部行程"
         } else {
             let (titleName, iconName) = generateTitleAndIcon(indexPath: indexPath)
-            if iconName.characters.count > 0 {
+            if iconName.count > 0 {
                  cell?.imageView?.image = UIImage(named: iconName)
             }
            

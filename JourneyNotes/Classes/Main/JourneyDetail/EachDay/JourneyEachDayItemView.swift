@@ -151,7 +151,7 @@ class JourneyEachDayItemView: UIView {
     lazy var titleLabel: UILabel = {
         let titleLabel = UILabel()
         let titleW: CGFloat = SCREEN_WIDTH - titleX - MARGIN
-        if self.titleLabelTxt.characters.count > 0 {
+        if self.titleLabelTxt.count > 0 {
             titleLabel.frame = CGRect(x: titleX, y: MARGIN, width: titleW, height: 20)
         }
         titleLabel.numberOfLines = 0
