@@ -1,5 +1,5 @@
     
-    github "ReactiveX/RxSwift" ~> 3.0
+    github "ReactiveX/RxSwift" ~> 4.0
     github "Alamofire/Alamofire"
     github "SnapKit/SnapKit"
     github "onevcat/Kingfisher"
