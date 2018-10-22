@@ -1,0 +1,27 @@
+{
+  "Mac" : [
+    {
+      "name" : "Himotoki",
+      "hash" : "8f9b1f0ee16bf12cb0d39bed40f1e444a9188febcd0d90d2dbf529c4afe02d0b"
+    }
+  ],
+  "watchOS" : [
+    {
+      "name" : "Himotoki",
+      "hash" : "b5fa66ba2d32b3746583a066985802161c6998658c48a5d4e5fcb80733a2b27b"
+    }
+  ],
+  "tvOS" : [
+    {
+      "name" : "Himotoki",
+      "hash" : "9fc627661740375d0616deda722c9017a299cf6ab7dc010dd9316d92e808349f"
+    }
+  ],
+  "commitish" : "3.2.0",
+  "iOS" : [
+    {
+      "name" : "Himotoki",
+      "hash" : "0d2a6ab38d360085ef99eb60ea4c05ff6e09a547b2986729c74bf89012c266a1"
+    }
+  ]
+}
