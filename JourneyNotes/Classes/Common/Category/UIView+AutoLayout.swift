@@ -113,8 +113,8 @@ extension UIView {
         
         var cons = [NSLayoutConstraint]()
         
-        cons += NSLayoutConstraint.constraints(withVisualFormat: "H:|-\(insets.left)-[subView]-\(insets.right)-|", options: NSLayoutFormatOptions.alignAllLastBaseline, metrics: nil, views: ["subView" : self])
-        cons += NSLayoutConstraint.constraints(withVisualFormat: "V:|-\(insets.top)-[subView]-\(insets.bottom)-|", options: NSLayoutFormatOptions.alignAllLastBaseline, metrics: nil, views: ["subView" : self])
+        cons += NSLayoutConstraint.constraints(withVisualFormat: "H:|-\(insets.left)-[subView]-\(insets.right)-|", options: NSLayoutConstraint.FormatOptions.alignAllLastBaseline, metrics: nil, views: ["subView" : self])
+        cons += NSLayoutConstraint.constraints(withVisualFormat: "V:|-\(insets.top)-[subView]-\(insets.bottom)-|", options: NSLayoutConstraint.FormatOptions.alignAllLastBaseline, metrics: nil, views: ["subView" : self])
         
         superview?.addConstraints(cons)
         
@@ -182,7 +182,7 @@ extension UIView {
         
         let firstView = views[0]
         _ = firstView.xmg_AlignInner(type: XMG_AlignType.topLeft, referView: self, size: nil, offset: CGPoint(x: insets.left, y: insets.top))
-        cons.append(NSLayoutConstraint(item: firstView, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.bottom, multiplier: 1.0, constant: -insets.bottom))
+        cons.append(NSLayoutConstraint(item: firstView, attribute: NSLayoutConstraint.Attribute.bottom, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.bottom, multiplier: 1.0, constant: -insets.bottom))
         
         // 添加后续视图的约束
         var preView = firstView
@@ -194,7 +194,7 @@ extension UIView {
         }
         
         let lastView = views.last!
-        cons.append(NSLayoutConstraint(item: lastView, attribute: NSLayoutAttribute.right, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.right, multiplier: 1.0, constant: -insets.right))
+        cons.append(NSLayoutConstraint(item: lastView, attribute: NSLayoutConstraint.Attribute.right, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.right, multiplier: 1.0, constant: -insets.right))
         
         addConstraints(cons)
         return cons
@@ -216,7 +216,7 @@ extension UIView {
         
         let firstView = views[0]
         _ = firstView.xmg_AlignInner(type: XMG_AlignType.topLeft, referView: self, size: nil, offset: CGPoint(x: insets.left, y: insets.top))
-        cons.append(NSLayoutConstraint(item: firstView, attribute: NSLayoutAttribute.right, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.right, multiplier: 1.0, constant: -insets.right))
+        cons.append(NSLayoutConstraint(item: firstView, attribute: NSLayoutConstraint.Attribute.right, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.right, multiplier: 1.0, constant: -insets.right))
         
         // 添加后续视图的约束
         var preView = firstView
@@ -228,7 +228,7 @@ extension UIView {
         }
         
         let lastView = views.last!
-        cons.append(NSLayoutConstraint(item: lastView, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.bottom, multiplier: 1.0, constant: -insets.bottom))
+        cons.append(NSLayoutConstraint(item: lastView, attribute: NSLayoutConstraint.Attribute.bottom, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self, attribute: NSLayoutConstraint.Attribute.bottom, multiplier: 1.0, constant: -insets.bottom))
         
         addConstraints(cons)
         
@@ -243,7 +243,7 @@ extension UIView {
     
     :returns: 对应的约束
     */
-    public func xmg_Constraint(_ constraintsList: [NSLayoutConstraint], attribute: NSLayoutAttribute) -> NSLayoutConstraint? {
+    public func xmg_Constraint(_ constraintsList: [NSLayoutConstraint], attribute: NSLayoutConstraint.Attribute) -> NSLayoutConstraint? {
         for constraint in constraintsList {
             if constraint.firstItem as! NSObject == self && constraint.firstAttribute == attribute {
                 return constraint
@@ -293,8 +293,8 @@ extension UIView {
         
         var cons = [NSLayoutConstraint]()
         
-        cons.append(NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1.0, constant: size.width))
-        cons.append(NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1.0, constant: size.height))
+        cons.append(NSLayoutConstraint(item: self, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1.0, constant: size.width))
+        cons.append(NSLayoutConstraint(item: self, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1.0, constant: size.height))
         
         return cons
     }
@@ -311,8 +311,8 @@ extension UIView {
         
         var cons = [NSLayoutConstraint]()
         
-        cons.append(NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: referView, attribute: NSLayoutAttribute.width, multiplier: 1.0, constant: 0))
-        cons.append(NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: referView, attribute: NSLayoutAttribute.height, multiplier: 1.0, constant: 0))
+        cons.append(NSLayoutConstraint(item: self, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: referView, attribute: NSLayoutConstraint.Attribute.width, multiplier: 1.0, constant: 0))
+        cons.append(NSLayoutConstraint(item: self, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: referView, attribute: NSLayoutConstraint.Attribute.height, multiplier: 1.0, constant: 0))
         
         return cons
     }
@@ -330,8 +330,8 @@ extension UIView {
         
         var cons = [NSLayoutConstraint]()
         
-        cons.append(NSLayoutConstraint(item: self, attribute: attributes.horizontal, relatedBy: NSLayoutRelation.equal, toItem: referView, attribute: attributes.referHorizontal, multiplier: 1.0, constant: offset.x))
-        cons.append(NSLayoutConstraint(item: self, attribute: attributes.vertical, relatedBy: NSLayoutRelation.equal, toItem: referView, attribute: attributes.referVertical, multiplier: 1.0, constant: offset.y))
+        cons.append(NSLayoutConstraint(item: self, attribute: attributes.horizontal, relatedBy: NSLayoutConstraint.Relation.equal, toItem: referView, attribute: attributes.referHorizontal, multiplier: 1.0, constant: offset.x))
+        cons.append(NSLayoutConstraint(item: self, attribute: attributes.vertical, relatedBy: NSLayoutConstraint.Relation.equal, toItem: referView, attribute: attributes.referVertical, multiplier: 1.0, constant: offset.y))
         
         return cons
     }
@@ -339,19 +339,19 @@ extension UIView {
 
 ///  布局属性
 private final class XMG_LayoutAttributes {
-    var horizontal:         NSLayoutAttribute
-    var referHorizontal:    NSLayoutAttribute
-    var vertical:           NSLayoutAttribute
-    var referVertical:      NSLayoutAttribute
+    var horizontal:         NSLayoutConstraint.Attribute
+    var referHorizontal:    NSLayoutConstraint.Attribute
+    var vertical:           NSLayoutConstraint.Attribute
+    var referVertical:      NSLayoutConstraint.Attribute
     
     init() {
-        horizontal = NSLayoutAttribute.left
-        referHorizontal = NSLayoutAttribute.left
-        vertical = NSLayoutAttribute.top
-        referVertical = NSLayoutAttribute.top
+        horizontal = NSLayoutConstraint.Attribute.left
+        referHorizontal = NSLayoutConstraint.Attribute.left
+        vertical = NSLayoutConstraint.Attribute.top
+        referVertical = NSLayoutConstraint.Attribute.top
     }
     
-    init(horizontal: NSLayoutAttribute, referHorizontal: NSLayoutAttribute, vertical: NSLayoutAttribute, referVertical: NSLayoutAttribute) {
+    init(horizontal: NSLayoutConstraint.Attribute, referHorizontal: NSLayoutConstraint.Attribute, vertical: NSLayoutConstraint.Attribute, referVertical: NSLayoutConstraint.Attribute) {
         
         self.horizontal = horizontal
         self.referHorizontal = referHorizontal
@@ -359,14 +359,14 @@ private final class XMG_LayoutAttributes {
         self.referVertical = referVertical
     }
     
-    fileprivate func horizontals(_ from: NSLayoutAttribute, to: NSLayoutAttribute) -> Self {
+    fileprivate func horizontals(_ from: NSLayoutConstraint.Attribute, to: NSLayoutConstraint.Attribute) -> Self {
         horizontal = from
         referHorizontal = to
         
         return self
     }
     
-    fileprivate func verticals(_ from: NSLayoutAttribute, to: NSLayoutAttribute) -> Self {
+    fileprivate func verticals(_ from: NSLayoutConstraint.Attribute, to: NSLayoutConstraint.Attribute) -> Self {
         vertical = from
         referVertical = to
         

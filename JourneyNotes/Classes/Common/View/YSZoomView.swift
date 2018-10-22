@@ -100,7 +100,7 @@ class ImageZoomView: UIControl, UIScrollViewDelegate {
                 self.imageView?.frame = self.originFrame
                 self.scrollView?.backgroundColor = UIColor.clear
                 // 把keyWindow的windowLevel设置为UIWindowLevelNormal
-                UIApplication.shared.keyWindow?.windowLevel = UIWindowLevelNormal
+                UIApplication.shared.keyWindow?.windowLevel = UIWindow.Level.normal
             }) { (finished) in
                 self.alpha = 0
                 self.scrollView?.backgroundColor = UIColor.black

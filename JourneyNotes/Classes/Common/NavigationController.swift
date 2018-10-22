@@ -17,7 +17,7 @@ class NavigationController: UINavigationController {
 //        let image2 = UIImage.init(named: "user_profile_header_background_320x100_");
         navigationBar.setBackgroundImage(image, for: .default)
         navigationBar.isTranslucent = false
-        navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font:UIFont.boldSystemFont(ofSize: 18)]
+        navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font:UIFont.boldSystemFont(ofSize: 18)]
         interactivePopGestureRecognizer?.isEnabled = true
     }
     
@@ -26,13 +26,13 @@ class NavigationController: UINavigationController {
      *  @param viewController 即将push进来的控制器
      */
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
-        if (childViewControllers.count > 0) {
+        if (children.count > 0) {
             // 这时push进来的控制器viewController，不是第一个控制器（不是根控制器）
             navigationBar.isHidden = false
             
             let backBtn = UIButton()
             backBtn.size = CGSize(width: 25, height: 25)
-            backBtn.setImage(UIImage(named: "dc_back_button_white_11x19_"), for: UIControlState())
+            backBtn.setImage(UIImage(named: "dc_back_button_white_11x19_"), for: UIControl.State())
             _ = backBtn.rx.tap.shareReplay(1).subscribe(onNext: {
                 self.popToRootViewController(animated: true)
             })

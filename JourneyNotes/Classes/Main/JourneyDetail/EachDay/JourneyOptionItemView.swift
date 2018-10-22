@@ -184,7 +184,7 @@ class JourneyOptionItemView: UIView {
         var paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = LineSpaceMargin
         // 字体的行间距
-        var textViewAttributes: [NSAttributedStringKey: Any] = [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14), NSAttributedStringKey.paragraphStyle: paragraphStyle]
+        var textViewAttributes: [NSAttributedString.Key: Any] = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14), NSAttributedString.Key.paragraphStyle: paragraphStyle]
         var attributeContent = NSMutableAttributedString(string: self.contentLabelTxt, attributes: textViewAttributes)
         label.attributedText = attributeContent
         return label

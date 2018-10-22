@@ -126,7 +126,7 @@ class JourneyEachDayItemView: UIView {
         shapeLayer.strokeColor = grayColor(220).cgColor
         // 设置虚线宽度
         shapeLayer.lineWidth = 1
-        shapeLayer.lineJoin = kCALineJoinRound
+        shapeLayer.lineJoin = CAShapeLayerLineJoin.round
         shapeLayer.lineDashPhase = 0
         // 设置线宽，线间距
         shapeLayer.lineDashPattern = [NSNumber(value: 4), NSNumber(value: 2)]
