@@ -2,8 +2,8 @@
 //  AdditionProductBranch.swift
 //  驴妈妈Swift
 //
-//  Created by 贺嘉炜 on 2017/1/3.
-//  Copyright © 2017年 贺嘉炜. All rights reserved.
+//  Created by SaiDicaprio on 2017/1/3.
+//  Copyright © 2017年 SaiDicaprio. All rights reserved.
 //
 
 import UIKit

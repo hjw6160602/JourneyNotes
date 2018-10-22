@@ -1,6 +1,6 @@
 //
 //  NSDictionaryExtension.swift
-//  贝思客Swift
+//  JourneyNotes
 //
 //  Created by SaiDicaprio on 15/12/23.
 //  Copyright © 2015年 SaiDicaprio. All rights reserved.

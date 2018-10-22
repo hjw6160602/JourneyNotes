@@ -2,8 +2,8 @@
 //  Request.swift
 //  驴妈妈Swift
 //
-//  Created by 贺嘉炜 on 2016/12/21.
-//  Copyright © 2016年 贺嘉炜. All rights reserved.
+//  Created by SaiDicaprio on 2016/12/21.
+//  Copyright © 2016年 SaiDicaprio. All rights reserved.
 //
 
 import Foundation
