@@ -33,7 +33,7 @@ class NavigationController: UINavigationController {
             let backBtn = UIButton()
             backBtn.size = CGSize(width: 25, height: 25)
             backBtn.setImage(UIImage(named: "dc_back_button_white_11x19_"), for: UIControl.State())
-            _ = backBtn.rx.tap.shareReplay(1).subscribe(onNext: {
+            _ = backBtn.rx.tap.share(replay:1).subscribe(onNext: {
                 self.popToRootViewController(animated: true)
             })
             
